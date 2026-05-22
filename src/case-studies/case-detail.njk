@@ -1,0 +1,112 @@
+---
+layout: base.njk
+pagination:
+  data: case_studies
+  size: 1
+  alias: case
+permalink: /case-studies/{{ case.slug }}/
+title: "{{ case.client }} Case Study"
+description: "{{ case.client }} grew by {{ case.results[0].metric | first }} with digital marketing."
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow reveal" style="--d:.05s">Case Study</span>
+      <h1 class="reveal" style="--d:.12s">{{ case.results[0].metric }} increase<br>for {{ case.client }}</h1>
+      <p class="lead reveal" style="--d:.22s">{{ case.industry }} • {{ case.location }}</p>
+    </div>
+  </div>
+  <div class="watermark">CASE STUDY</div>
+</section>
+
+<!-- CHALLENGE & SOLUTION -->
+<section style="background:var(--parchment);color:var(--black);padding:96px 0">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start">
+      <div>
+        <h2 style="font-size:clamp(28px,3.5vw,42px);margin:0 0 20px">The Challenge</h2>
+        <p style="font-size:16px;line-height:1.7;color:#33312d">{{ case.challenge }}</p>
+      </div>
+      <div>
+        <h2 style="font-size:clamp(28px,3.5vw,42px);margin:0 0 20px">Our Solution</h2>
+        <p style="font-size:16px;line-height:1.7;color:#33312d">{{ case.solution }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section style="background:#111;color:#fff;padding:96px 0">
+  <div class="wrap">
+    <h2 style="font-size:clamp(32px,4vw,52px);text-align:center;margin:0 0 64px">Results.</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;max-width:900px;margin:0 auto">
+      {% for result in case.results %}
+        <div style="text-align:center;padding:30px;background:var(--black-3);border:1px solid rgba(255,255,255,.05)">
+          <div style="font-size:clamp(36px,6vw,56px);font-weight:900;color:var(--coral);line-height:1;margin-bottom:14px">{{ result.metric }}</div>
+          <div style="font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#b9b4ab">{{ result.label }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+{% if case.quote %}
+<section style="background:var(--parchment);color:var(--black);padding:96px 0">
+  <div class="wrap" style="max-width:800px;margin:0 auto">
+    <blockquote style="text-align:center;margin:0">
+      <div style="font-family:Georgia,serif;font-size:60px;line-height:.8;color:var(--coral);font-weight:700;margin-bottom:20px">❝</div>
+      <p style="font-size:18px;line-height:1.7;color:#33312d;margin:0 0 30px">{{ case.quote }}</p>
+      <footer style="font-size:14px;font-weight:700;color:#111">— {{ case.quoteAuthor }}, {{ case.quoteRole }}</footer>
+    </blockquote>
+  </div>
+</section>
+{% endif %}
+
+<!-- KEY LEARNINGS -->
+<section style="background:#111;color:#fff;padding:96px 0">
+  <div class="wrap" style="max-width:800px;margin:0 auto">
+    <h2 style="font-size:clamp(28px,3.5vw,42px);text-align:center;margin:0 0 48px">What Made The Difference</h2>
+    <ul style="list-style:none;padding:0;margin:0">
+      <li style="padding:20px 0;border-bottom:1px solid rgba(255,255,255,.1);display:flex;gap:16px">
+        <span style="color:var(--lime);font-weight:900;flex-shrink:0">✓</span>
+        <span style="line-height:1.6">Data-driven strategy tailored to their specific industry and goals</span>
+      </li>
+      <li style="padding:20px 0;border-bottom:1px solid rgba(255,255,255,.1);display:flex;gap:16px">
+        <span style="color:var(--lime);font-weight:900;flex-shrink:0">✓</span>
+        <span style="line-height:1.6">Continuous optimization and A/B testing to improve results</span>
+      </li>
+      <li style="padding:20px 0;border-bottom:1px solid rgba(255,255,255,.1);display:flex;gap:16px">
+        <span style="color:var(--lime);font-weight:900;flex-shrink:0">✓</span>
+        <span style="line-height:1.6">Transparent reporting so they always knew what was working</span>
+      </li>
+      <li style="padding:20px 0;display:flex;gap:16px">
+        <span style="color:var(--lime);font-weight:900;flex-shrink:0">✓</span>
+        <span style="line-height:1.6">Focus on metrics that matter (leads, revenue) not vanity metrics</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctaband">
+  <div class="wrap ctaband-inner">
+    <div class="txt">
+      <div>
+        <h2>Ready for results like this?</h2>
+        <p>Let's build a strategy that drives real growth for your business.</p>
+      </div>
+    </div>
+    <a href="/contact/" class="btn btn-lime">Book a Strategy Call <span class="arr">→</span></a>
+  </div>
+</section>
+
+<!-- MORE CASE STUDIES -->
+<section style="background:var(--parchment);color:var(--black);padding:96px 0">
+  <div class="wrap" style="text-align:center">
+    <h2 style="font-size:clamp(28px,3.5vw,42px);margin:0 0 48px">More Success Stories</h2>
+    <a href="/case-studies/" class="link-underline">View All Case Studies →</a>
+  </div>
+</section>

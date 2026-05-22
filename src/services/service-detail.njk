@@ -1,0 +1,101 @@
+---
+layout: base.njk
+pagination:
+  data: services
+  size: 1
+  alias: service
+permalink: /services/{{ service.slug }}/
+title: "{{ service.title }} in Boston"
+description: "{{ service.shortDesc }}"
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow reveal" style="--d:.05s">{{ service.hero.eyebrow }}</span>
+      <h1 class="reveal" style="--d:.12s">{{ service.hero.headline }}</h1>
+      <p class="lead reveal" style="--d:.22s">{{ service.hero.lead }}</p>
+      <div class="hero-cta reveal" style="--d:.3s">
+        <a href="/contact/" class="btn btn-lime">Book a Strategy Call <span class="arr">→</span></a>
+        <a href="/case-studies/" class="link-underline">View Our Results →</a>
+      </div>
+    </div>
+  </div>
+  <div class="watermark">{{ service.title | upper }}</div>
+</section>
+
+<!-- PROBLEMS SECTION -->
+{% if service.problems %}
+<section style="background:var(--parchment);color:var(--black);padding:96px 0">
+  <div class="wrap">
+    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 54px;text-align:center">Most campaigns have the same problems.</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px">
+      {% for problem in service.problems %}
+        <div style="text-align:center">
+          <div style="width:60px;height:60px;border-radius:50%;background:var(--coral);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px">
+            {% if problem.icon == 'trending-down' %}↓
+            {% elif problem.icon == 'trending-up' %}↑
+            {% elif problem.icon == 'users' %}👥
+            {% elif problem.icon == 'clock' %}⏱
+            {% elif problem.icon == 'activity' %}📊
+            {% elif problem.icon == 'search' %}🔍
+            {% else %}●{% endif %}
+          </div>
+          <h3 style="font-size:16px;font-weight:900;margin:0 0 12px;color:#111">{{ problem.title }}</h3>
+          <p style="color:#55524c;line-height:1.6">{{ problem.desc }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- BENEFITS SECTION -->
+{% if service.benefits %}
+<section style="background:#111;color:#fff;padding:96px 0">
+  <div class="wrap">
+    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 54px;text-align:center">What you get.</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px">
+      {% for benefit in service.benefits %}
+        <div style="text-align:center">
+          <div style="width:60px;height:60px;border-radius:50%;background:var(--lime);color:#111;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px;font-weight:900">✓</div>
+          <h3 style="font-size:16px;font-weight:900;margin:0 0 12px;color:#fff">{{ benefit.title }}</h3>
+          <p style="color:#b9b4ab;line-height:1.6">{{ benefit.desc }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- PROCESS SECTION -->
+{% if service.process %}
+<section style="background:var(--parchment);color:var(--black);padding:96px 0">
+  <div class="wrap">
+    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 54px;text-align:center">Our process.</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;max-width:1000px;margin:0 auto">
+      {% for step in service.process %}
+        <div style="text-align:center;position:relative">
+          <div style="width:50px;height:50px;border-radius:50%;background:var(--lime);color:#111;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px">{{ loop.index }}</div>
+          <h3 style="font-size:14px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin:0 0 12px">{{ step.title or step }}</h3>
+          {% if step.desc %}<p style="color:#55524c;font-size:13px;line-height:1.5">{{ step.desc }}</p>{% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<!-- CTA -->
+<section class="ctaband">
+  <div class="wrap ctaband-inner">
+    <div class="txt">
+      <div>
+        <h2>Ready to get started?</h2>
+        <p>Let's build a custom {{ service.title | lower }} strategy for your business.</p>
+      </div>
+    </div>
+    <a href="/contact/" class="btn btn-lime">Book a Strategy Call <span class="arr">→</span></a>
+  </div>
+</section>

@@ -1,0 +1,342 @@
+[
+  {
+    "id": 1,
+    "slug": "dental-practices",
+    "title": "Dental Marketing",
+    "shortTitle": "Dentists",
+    "icon": "tooth",
+    "hero": {
+      "eyebrow": "Digital Marketing for Dental Practices",
+      "headline": "More Patient Appointments. More Revenue.",
+      "lead": "We help dental practices attract new patients, fill appointment slots, and build a loyal patient base through proven digital marketing strategies."
+    },
+    "challenges": [
+      { "icon": "users-slash", "title": "Low Patient Acquisition", "desc": "Struggling to find new patients in a competitive market." },
+      { "icon": "trending-down", "title": "Inconsistent Appointments", "desc": "New patient flow is unpredictable or seasonal." },
+      { "icon": "clock", "title": "Time-Consuming Marketing", "desc": "Trying to manage marketing while running the practice." }
+    ],
+    "solutions": [
+      "Local SEO to dominate Google searches for dental services",
+      "Google Ads campaigns targeting high-intent patient searches",
+      "Social media marketing to build patient community and trust",
+      "Website optimization to convert visitors into calls/appointments",
+      "Patient retention email marketing",
+      "Reputation management (Google reviews, testimonials)"
+    ],
+    "caseStudy": {
+      "client": "Bright Smile Dental",
+      "results": [
+        { "metric": "156%", "label": "More New Patients" },
+        { "metric": "38%", "label": "Lower Cost Per Patient" },
+        { "metric": "4.2x", "label": "Return on Ad Spend" }
+      ],
+      "quote": "Our new patient numbers have never been higher. The marketing is bringing in quality patients who are ready to book."
+    }
+  },
+  {
+    "id": 2,
+    "slug": "dermatology",
+    "title": "Dermatology Marketing",
+    "shortTitle": "Dermatologists",
+    "icon": "skin",
+    "hero": {
+      "eyebrow": "Digital Marketing for Dermatologists",
+      "headline": "Attract Quality Patients. Book More Appointments.",
+      "lead": "Specialized marketing for dermatology practices. We help you reach patients seeking skincare, cosmetic, and medical dermatology services."
+    },
+    "challenges": [
+      { "icon": "trending-down", "title": "Patient Acquisition Costs", "desc": "High CAC compared to patient lifetime value." },
+      { "icon": "users", "title": "Wrong Audience", "desc": "Reaching curious clickers instead of high-intent patients." },
+      { "icon": "activity", "title": "No Procedures Booked", "desc": "Traffic to website but low conversion to appointments." }
+    ],
+    "solutions": [
+      "Targeted Google Ads for cosmetic dermatology procedures",
+      "Local SEO for dermatology-specific searches",
+      "Before/after social media content and ads",
+      "Landing pages optimized for procedures (Botox, fillers, laser, etc.)",
+      "Patient education content marketing",
+      "Conversion rate optimization for appointment requests"
+    ],
+    "caseStudy": {
+      "client": "Radiant Skin Dermatology",
+      "results": [
+        { "metric": "203%", "label": "Increase in Consultations" },
+        { "metric": "45%", "label": "Lower CPA" },
+        { "metric": "3.8x", "label": "Return on Ad Spend" }
+      ],
+      "quote": "We went from 5-10 new procedure patients a month to 30+. The targeting is incredibly precise."
+    }
+  },
+  {
+    "id": 3,
+    "slug": "pest-control",
+    "title": "Pest Control Marketing",
+    "shortTitle": "Pest Control",
+    "icon": "bug",
+    "hero": {
+      "eyebrow": "Digital Marketing for Pest Control Companies",
+      "headline": "More Service Calls. More Revenue.",
+      "lead": "Pest control companies need leads NOW. We deliver high-intent, local customers ready to schedule service immediately."
+    },
+    "challenges": [
+      { "icon": "clock", "title": "Seasonal Demand", "desc": "Lead volume spikes in certain seasons, drops in others." },
+      { "icon": "trending-up", "title": "Rising CAC", "desc": "Harder to compete with national chains." },
+      { "icon": "activity", "title": "No-Shows & Cancellations", "desc": "Getting calls but losing revenue to no-shows." }
+    ],
+    "solutions": [
+      "Google Local Services Ads (gets you at top of Google)",
+      "Google Ads for pest-specific searches (termites, ants, roaches, etc.)",
+      "Local SEO and Google My Business optimization",
+      "Service area targeting (neighborhood-level)",
+      "Seasonal campaign management",
+      "Call tracking and conversion optimization"
+    ],
+    "caseStudy": {
+      "client": "BugFree Pest Solutions",
+      "results": [
+        { "metric": "189%", "label": "More Service Calls" },
+        { "metric": "42%", "label": "Lower Cost Per Call" },
+        { "metric": "3.6x", "label": "Return on Ad Spend" }
+      ],
+      "quote": "We're booked 2-3 weeks out now instead of scrambling for calls. The system works year-round."
+    }
+  },
+  {
+    "id": 4,
+    "slug": "landscaping",
+    "title": "Landscaping Marketing",
+    "shortTitle": "Landscapers",
+    "icon": "leaf",
+    "hero": {
+      "eyebrow": "Digital Marketing for Landscaping Companies",
+      "headline": "More Landscaping Jobs. Bigger Contracts.",
+      "lead": "We help landscaping and lawn care companies get high-value residential and commercial jobs through targeted digital marketing."
+    },
+    "challenges": [
+      { "icon": "trending-down", "title": "Price Pressure", "desc": "Competing on price instead of value." },
+      { "icon": "users", "title": "Low-Quality Leads", "desc": "Getting quote requests from bargain hunters." },
+      { "icon": "activity", "title": "Seasonal Business", "desc": "Boom and bust cycles make planning difficult." }
+    ],
+    "solutions": [
+      "Google Local Services Ads for landscaping",
+      "Google Ads targeting high-value keywords (landscape design, hardscaping, commercial landscaping)",
+      "Local SEO to dominate neighborhood searches",
+      "Before/after portfolio marketing on social media",
+      "Google Reviews and reputation management",
+      "Website optimization for estimate requests"
+    ],
+    "caseStudy": {
+      "client": "Premier Landscapes",
+      "results": [
+        { "metric": "198%", "label": "More Job Requests" },
+        { "metric": "35%", "label": "Higher Average Job Value" },
+        { "metric": "4.1x", "label": "Return on Ad Spend" }
+      ],
+      "quote": "We went from commodity landscaping to design-focused projects. The quality of leads is night and day."
+    }
+  },
+  {
+    "id": 5,
+    "slug": "garage-floor-coating",
+    "title": "Garage Floor Coating Marketing",
+    "shortTitle": "Garage Flooring",
+    "icon": "home",
+    "hero": {
+      "eyebrow": "Digital Marketing for Garage Floor Coating Companies",
+      "headline": "Fill Your Estimate Calendar.",
+      "lead": "Homeowners are searching for garage floor solutions. We put your business in front of them at the moment they're ready to buy."
+    },
+    "challenges": [
+      { "icon": "search", "title": "Low Visibility", "desc": "Homeowners don't know you exist in their area." },
+      { "icon": "trending-down", "title": "Seasonal Demand", "desc": "Most calls in spring/summer, dead in winter." },
+      { "icon": "clock", "title": "Long Sales Cycle", "desc": "People research for weeks before calling." }
+    ],
+    "solutions": [
+      "Google Local Services Ads (highest intent)",
+      "Google Ads for \"garage floor coating near me\" type keywords",
+      "Local SEO for service area dominance",
+      "Before/after Instagram marketing (visual results sell)",
+      "Landing pages for specific coating types",
+      "Video testimonials and project showcases"
+    ],
+    "caseStudy": {
+      "client": "DurableCoat Flooring",
+      "results": [
+        { "metric": "221%", "label": "More Estimate Requests" },
+        { "metric": "48%", "label": "Lower Customer Acquisition Cost" },
+        { "metric": "4.3x", "label": "Return on Ad Spend" }
+      ],
+      "quote": "Our calendar stays booked 6-8 weeks out. The targeting gets serious homeowners, not tire kickers."
+    }
+  },
+  {
+    "id": 6,
+    "slug": "med-spa",
+    "title": "Med Spa Marketing",
+    "shortTitle": "Med Spas",
+    "icon": "spa",
+    "hero": {
+      "eyebrow": "Digital Marketing for Medical Spas",
+      "headline": "More Aesthetic Treatments. Higher Revenue Per Client.",
+      "lead": "Med spas thrive on repeat customers and referrals. We build your brand, fill your calendar, and create loyal clients."
+    },
+    "challenges": [
+      { "icon": "users", "title": "High CAC", "desc": "Aesthetic treatments can cost a lot to acquire customers for." },
+      { "icon": "trending-down", "title": "Low Repeat Rate", "desc": "Clients come once and disappear." },
+      { "icon": "activity", "title": "Limited Awareness", "desc": "Consumers don't know what services you offer." }
+    ],
+    "solutions": [
+      "Instagram & TikTok marketing (visual-first audience)",
+      "Google Ads for procedure-specific searches (Botox, fillers, laser, etc.)",
+      "Before/after content and ads",
+      "Email marketing for client retention & upsells",
+      "Loyalty program marketing",
+      "Google My Business optimization with service menus"
+    ],
+    "caseStudy": {
+      "client": "Elevate Med Spa",
+      "results": [
+        { "metric": "156%", "label": "New Client Acquisitions" },
+        { "metric": "340%", "label": "Social Media Engagement" },
+        { "metric": "2.8x", "label": "Repeat Customer Rate" }
+      ],
+      "quote": "Our Instagram finally drives bookings. We went from vanity metrics to real revenue."
+    }
+  },
+  {
+    "id": 7,
+    "slug": "accountants-bookkeepers",
+    "title": "Accounting & Bookkeeping Marketing",
+    "shortTitle": "Accountants",
+    "icon": "calculator",
+    "hero": {
+      "eyebrow": "Digital Marketing for Accountants & Bookkeepers",
+      "headline": "Attract Quality Business Clients.",
+      "lead": "Most accountants rely on referrals. We help you build visibility, establish authority, and attract high-value clients actively searching for accounting services."
+    },
+    "challenges": [
+      { "icon": "trending-down", "title": "Feast or Famine", "desc": "Referrals are inconsistent; hard to plan." },
+      { "icon": "users", "title": "Price Competition", "desc": "Competing with online tax software and big firms." },
+      { "icon": "clock", "title": "Time Constraints", "desc": "Too busy in tax season to market." }
+    ],
+    "solutions": [
+      "Google Ads for accounting-related searches (bookkeeping, tax prep, CFO services, etc.)",
+      "Content marketing (blog posts, guides, tax tips)",
+      "Local SEO for \"accountant near me\" type searches",
+      "Thought leadership (positioning as expert)",
+      "Lead nurturing for long sales cycles",
+      "Service-specific landing pages"
+    ],
+    "caseStudy": {
+      "client": "Certified Accounting Partners",
+      "results": [
+        { "metric": "187%", "label": "More Qualified Leads" },
+        { "metric": "52%", "label": "Higher Average Client Value" },
+        { "metric": "3.9x", "label": "Return on Ad Spend" }
+      ],
+      "quote": "We went from referral-only to inbound leads. The client quality is excellent and they're less price-sensitive."
+    }
+  },
+  {
+    "id": 8,
+    "slug": "white-label-marketing",
+    "title": "White Label Marketing Services",
+    "shortTitle": "White Label",
+    "icon": "settings",
+    "hero": {
+      "eyebrow": "White Label Digital Marketing for Agencies",
+      "headline": "Expand Your Service Offerings. Increase Revenue.",
+      "lead": "Sell our digital marketing services under your brand. We handle execution; you own the client relationship and profit margins."
+    },
+    "challenges": [
+      { "icon": "trending-down", "title": "Service Limitations", "desc": "Can't offer full marketing without hiring more staff." },
+      { "icon": "users", "title": "Client Retention", "desc": "Clients want more services; you can't provide them." },
+      { "icon": "clock", "title": "Resource Constraints", "desc": "Don't have bandwidth to scale." }
+    ],
+    "solutions": [
+      "White label SEO, PPC, social media, content marketing",
+      "Flexible pricing models (commission, cost-plus, fixed)",
+      "Transparent reporting under your branding",
+      "Dedicated account managers for your clients",
+      "Training and resources for your team",
+      "Scalable without hiring"
+    ],
+    "caseStudy": {
+      "client": "Agency Growth Partners",
+      "results": [
+        { "metric": "340%", "label": "Service Revenue Increase" },
+        { "metric": "58%", "label": "Higher Profit Margins" },
+        { "metric": "24", "label": "New White Label Clients" }
+      ],
+      "quote": "Our team now offers full-service marketing without the overhead. Clients are happier and our revenue tripled."
+    }
+  },
+  {
+    "id": 9,
+    "slug": "home-services",
+    "title": "Home Services Marketing",
+    "shortTitle": "Home Services",
+    "icon": "home",
+    "hero": {
+      "eyebrow": "Digital Marketing for Home Service Companies",
+      "headline": "More Leads. More Jobs. More Revenue.",
+      "lead": "HVAC, plumbing, electrical, roofing — we help home service companies fill their calendars with high-quality leads."
+    },
+    "challenges": [
+      { "icon": "users-slash", "title": "Low Visibility", "desc": "Hard to compete with larger companies and franchises." },
+      { "icon": "trending-up", "title": "High Lead Costs", "desc": "Pay-per-lead marketplaces are expensive." },
+      { "icon": "activity", "title": "Seasonal Demand", "desc": "Busy season, dead season, no consistency." }
+    ],
+    "solutions": [
+      "Google Local Services Ads (shown at top of Google)",
+      "Google Ads targeting service-specific keywords",
+      "Local SEO and Google My Business optimization",
+      "Service area domination through geo-targeting",
+      "Call tracking and optimization",
+      "Reputation management and reviews"
+    ],
+    "caseStudy": {
+      "client": "Summit Home Services",
+      "results": [
+        { "metric": "217%", "label": "Increase in Leads" },
+        { "metric": "42%", "label": "Lower Cost Per Acquisition" },
+        { "metric": "3.6x", "label": "Return on Ad Spend" }
+      ],
+      "quote": "We're booked out weeks in advance. The leads are local, qualified, and ready to book."
+    }
+  },
+  {
+    "id": 10,
+    "slug": "roofing",
+    "title": "Roofing Marketing",
+    "shortTitle": "Roofing",
+    "icon": "roof",
+    "hero": {
+      "eyebrow": "Digital Marketing for Roofing Companies",
+      "headline": "More Roofing Jobs. Higher Profit Per Customer.",
+      "lead": "Homeowners search for roofers when they need them. We make sure they find you first, at the moment they're ready to book estimates."
+    },
+    "challenges": [
+      { "icon": "trending-down", "title": "High CAC", "desc": "Roofing jobs are high-ticket but competition is fierce." },
+      { "icon": "activity", "title": "Long Sales Cycle", "desc": "Customers research multiple companies, take time to decide." },
+      { "icon": "clock", "title": "Seasonal Peaks", "desc": "Storm season is busy, winter is slow." }
+    ],
+    "solutions": [
+      "Google Local Services Ads (top placement)",
+      "Google Ads for \"roof repair/replacement near me\" searches",
+      "Local SEO for service area domination",
+      "Before/after portfolio marketing",
+      "Storm-specific campaigns (rapid response)",
+      "Review management and social proof"
+    ],
+    "caseStudy": {
+      "client": "Summit Roofing Co.",
+      "results": [
+        { "metric": "187%", "label": "Increase in Leads" },
+        { "metric": "41%", "label": "Lower Cost Per Lead" },
+        { "metric": "4.2x", "label": "Return on Ad Spend" }
+      ],
+      "quote": "BDM completely changed our lead flow. We're looking out weeks in advance and finally know which marketing actually drives revenue."
+    }
+  }
+]
