@@ -1,0 +1,33 @@
+{
+  "global": [
+    {
+      "value": "217%",
+      "label": "Average Increase in Organic Traffic",
+      "note": "in the first 6 months for our clients",
+      "color": "lime"
+    },
+    {
+      "value": "3.6x",
+      "label": "Average Return on Ad Spend",
+      "note": "across all paid campaigns",
+      "color": "coral"
+    },
+    {
+      "value": "2.8x",
+      "label": "More Qualified Leads Generated",
+      "note": "compared to previous marketing efforts",
+      "color": "lime"
+    },
+    {
+      "value": "Top 3",
+      "label": "Average Google Rankings",
+      "note": "for competitive industry keywords",
+      "color": "coral"
+    }
+  ],
+  "clients": {
+    "value": "200+",
+    "label": "Businesses Grown",
+    "note": "Trusted by businesses across Boston and beyond"
+  }
+}

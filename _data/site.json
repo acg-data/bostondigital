@@ -1,0 +1,44 @@
+{
+  "name": "Boston Digital Marketing",
+  "tagline": "Own Your Market Online",
+  "phone": "(617) 123-4567",
+  "email": "hello@bostondigitalmarketing.com",
+  "location": "Boston, Massachusetts",
+  "description": "A Boston-based digital marketing agency focused on driving growth for businesses that want to lead their market online.",
+  "nav": [
+    { "label": "Services", "href": "/services/", "dropdown": true },
+    { "label": "Results", "href": "/case-studies/" },
+    { "label": "About", "href": "/about/" },
+    { "label": "Resources", "href": "/resources/", "dropdown": true }
+  ],
+  "ctaLabel": "Book a Strategy Call",
+  "ctaHref": "/contact/",
+  "socials": [
+    { "name": "LinkedIn", "href": "#", "icon": "linkedin" },
+    { "name": "Facebook", "href": "#", "icon": "facebook" },
+    { "name": "Instagram", "href": "#", "icon": "instagram" }
+  ],
+  "footerServices": [
+    { "label": "Search Engine Optimization", "href": "/services/seo/" },
+    { "label": "Paid Search & PPC", "href": "/services/google-ads/" },
+    { "label": "Social Media Marketing", "href": "/services/social-media/" },
+    { "label": "Content Marketing", "href": "/services/content-marketing/" },
+    { "label": "Conversion Rate Optimization", "href": "/services/cro/" },
+    { "label": "Web Design & Development", "href": "/services/web-design/" },
+    { "label": "Landing Page Design", "href": "/services/landing-pages/" },
+    { "label": "Email Marketing & Automation", "href": "/services/email-marketing/" }
+  ],
+  "footerCompany": [
+    { "label": "About Us", "href": "/about/" },
+    { "label": "Case Studies", "href": "/case-studies/" },
+    { "label": "Our Process", "href": "/#process" },
+    { "label": "Careers", "href": "/careers/" },
+    { "label": "Contact", "href": "/contact/" }
+  ],
+  "footerResources": [
+    { "label": "Blog", "href": "/resources/" },
+    { "label": "Guides & eBooks", "href": "/resources/" },
+    { "label": "Webinars", "href": "/resources/" },
+    { "label": "FAQs", "href": "/resources/" }
+  ]
+}

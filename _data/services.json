@@ -1,0 +1,234 @@
+[
+  {
+    "id": 1,
+    "slug": "seo",
+    "title": "Search Engine Optimization",
+    "shortDesc": "Rank higher. Get found. Drive qualified traffic that converts.",
+    "icon": "search",
+    "order": 1,
+    "hero": {
+      "eyebrow": "Search Engine Optimization in Boston",
+      "headline": "Rank Higher. Get Found. Drive Qualified Traffic.",
+      "lead": "We optimize your website to rank for the keywords your customers are searching for, driving consistent, qualified traffic that converts into customers."
+    },
+    "problems": [
+      { "icon": "trending-down", "title": "Low Visibility", "desc": "You're losing customers to competitors who rank higher in Google." },
+      { "icon": "search-off", "title": "Wrong Keywords", "desc": "Targeting keywords that don't match buyer intent." },
+      { "icon": "clock", "title": "Slow Results", "desc": "SEO takes time, and many agencies don't deliver consistent growth." }
+    ],
+    "benefits": [
+      { "icon": "trending-up", "title": "Higher Rankings", "desc": "Consistent top 3 placements for competitive keywords." },
+      { "icon": "users", "title": "More Traffic", "desc": "Organic traffic increases 217% on average in 6 months." },
+      { "icon": "zap", "title": "Lower CPA", "desc": "Organic leads cost far less than paid ads." }
+    ],
+    "process": [
+      { "step": 1, "icon": "compass", "title": "Discover", "desc": "We audit your site, analyze competitors, and identify ranking opportunities." },
+      { "step": 2, "icon": "target", "title": "Strategy", "desc": "We build a keyword strategy focused on high-intent, buyer-ready searches." },
+      { "step": 3, "icon": "edit", "title": "Optimize", "desc": "Technical SEO, on-page optimization, content creation, and link building." },
+      { "step": 4, "icon": "chart", "title": "Report", "desc": "Monthly reports showing rankings, traffic, and revenue impact." }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "google-ads",
+    "title": "Paid Search & PPC",
+    "shortDesc": "Smart campaigns. Lower costs. More high-intent leads.",
+    "icon": "target",
+    "order": 2,
+    "hero": {
+      "eyebrow": "Google Ads Management in Boston",
+      "headline": "Google Ads That Bring Customers. Not Just Clicks.",
+      "lead": "We manage high-performing Google Ads campaigns that drive qualified leads, lower your cost per acquisition, and grow your bottom line."
+    },
+    "problems": [
+      { "icon": "trending-up", "title": "High Costs", "desc": "Rising CPCs eating into profit margins." },
+      { "icon": "users-slash", "title": "Poor Leads", "desc": "Clicks come in, but conversions don't follow." },
+      { "icon": "activity", "title": "Low ROAS", "desc": "Campaigns aren't optimized for real business results." }
+    ],
+    "benefits": [
+      { "icon": "target", "title": "Qualified Traffic", "desc": "High-intent clicks from people actively searching." },
+      { "icon": "dollar-sign", "title": "Lower CPA", "desc": "Average 32% reduction in cost per acquisition." },
+      { "icon": "trending-up", "title": "3.6x ROAS", "desc": "Campaigns built for profitability, not just clicks." }
+    ],
+    "process": [
+      { "step": 1, "icon": "search", "title": "Audit & Research", "desc": "Deep dive into your account, competitors, and market opportunities." },
+      { "step": 2, "icon": "settings", "title": "Strategy & Setup", "desc": "Custom campaigns, ad copy, and landing pages for your goals." },
+      { "step": 3, "icon": "send", "title": "Launch & Test", "desc": "Go live with precision targeting and A/B testing." },
+      { "step": 4, "icon": "sliders", "title": "Optimize & Scale", "desc": "Continuous optimization to lower costs and scale revenue." }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "social-media",
+    "title": "Social Media Marketing",
+    "shortDesc": "Build your brand. Engage your audience. Drive real growth.",
+    "icon": "share-2",
+    "order": 3,
+    "hero": {
+      "eyebrow": "Social Media Marketing in Boston",
+      "headline": "Social That Sells. Not Just Followers.",
+      "lead": "We build authentic social strategies that engage your audience, build brand loyalty, and drive real business growth."
+    },
+    "problems": [
+      { "icon": "users", "title": "Low Engagement", "desc": "Posts disappear into the feed with little interaction." },
+      { "icon": "clock", "title": "Time Consuming", "desc": "Managing social takes resources your team doesn't have." },
+      { "icon": "trending-down", "title": "No ROI", "desc": "Activity ≠ results. You need leads, not just likes." }
+    ],
+    "benefits": [
+      { "icon": "heart", "title": "Engaged Community", "desc": "Build loyal followers who become customers." },
+      { "icon": "zap", "title": "Lead Generation", "desc": "Convert social followers into qualified leads." },
+      { "icon": "trending-up", "title": "Brand Authority", "desc": "Position yourself as a trusted industry leader." }
+    ],
+    "process": [
+      { "step": 1, "icon": "compass", "title": "Discover", "desc": "Understand your audience, competitors, and content gaps." },
+      { "step": 2, "icon": "edit", "title": "Strategy", "desc": "Content calendar, messaging, and posting schedule." },
+      { "step": 3, "icon": "send", "title": "Create & Post", "desc": "Engaging content, community management, and growth tactics." },
+      { "step": 4, "icon": "trending-up", "title": "Grow", "desc": "Monitor performance, iterate, and scale what works." }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "content-marketing",
+    "title": "Content Marketing",
+    "shortDesc": "Content that connects. Educates, ranks, and drives action.",
+    "icon": "file-text",
+    "order": 4,
+    "hero": {
+      "eyebrow": "Content Marketing in Boston",
+      "headline": "Content That Ranks. Converts. Sells.",
+      "lead": "Strategic content that educates your audience, ranks in Google, builds trust, and drives conversions."
+    },
+    "problems": [
+      { "icon": "search", "title": "Low Visibility", "desc": "Content exists, but doesn't rank or get found." },
+      { "icon": "users", "title": "Wrong Audience", "desc": "Content doesn't align with what your customers need." },
+      { "icon": "trending-down", "title": "No Conversions", "desc": "Traffic doesn't convert into leads or customers." }
+    ],
+    "benefits": [
+      { "icon": "trending-up", "title": "More Organic Traffic", "desc": "Content-driven SEO that compounds over time." },
+      { "icon": "shield", "title": "Build Authority", "desc": "Become the trusted expert in your industry." },
+      { "icon": "zap", "title": "Inbound Leads", "desc": "Customers find you because your content answers their questions." }
+    ],
+    "process": [
+      { "step": 1, "icon": "compass", "title": "Discover", "desc": "Keyword research, audience insights, and content gaps." },
+      { "step": 2, "icon": "target", "title": "Strategy", "desc": "Content calendar, topics, and distribution channels." },
+      { "step": 3, "icon": "edit", "title": "Create", "desc": "Blog posts, guides, videos, and pillar content." },
+      { "step": 4, "icon": "trending-up", "title": "Promote & Optimize", "desc": "Distribution, performance tracking, and continuous improvement." }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "cro",
+    "title": "Conversion Rate Optimization",
+    "shortDesc": "Turn more clicks into customers. Maximize ROI.",
+    "icon": "zap",
+    "order": 5,
+    "hero": {
+      "eyebrow": "Conversion Rate Optimization in Boston",
+      "headline": "More Conversions. Same Traffic.",
+      "lead": "We test, analyze, and optimize your website to convert more visitors into customers — multiplying the ROI of all your marketing efforts."
+    },
+    "problems": [
+      { "icon": "users", "title": "Low Conversion Rate", "desc": "Lots of traffic, but few conversions." },
+      { "icon": "trending-down", "title": "High CAC", "desc": "You need to spend more to get the same results." },
+      { "icon": "activity", "title": "Unclear Friction", "desc": "You don't know what's stopping people from converting." }
+    ],
+    "benefits": [
+      { "icon": "trending-up", "title": "2x More Conversions", "desc": "Small changes compound into big revenue increases." },
+      { "icon": "dollar-sign", "title": "Lower CAC", "desc": "Get more customers from the same ad spend." },
+      { "icon": "zap", "title": "Better UX", "desc": "Faster, clearer, more persuasive website experience." }
+    ],
+    "process": [
+      { "step": 1, "icon": "search", "title": "Audit", "desc": "Analyze user behavior, heatmaps, and conversion funnels." },
+      { "step": 2, "icon": "target", "title": "Hypothesize", "desc": "Identify high-impact optimization opportunities." },
+      { "step": 3, "icon": "flask", "title": "Test", "desc": "A/B test changes to landing pages, CTAs, copy, and design." },
+      { "step": 4, "icon": "trending-up", "title": "Scale", "desc": "Implement winners, measure impact, and iterate." }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "web-design",
+    "title": "Web Design & Development",
+    "shortDesc": "Fast, modern websites built to perform and convert.",
+    "icon": "monitor",
+    "order": 6,
+    "hero": {
+      "eyebrow": "Web Design & Development in Boston",
+      "headline": "Websites That Convert.",
+      "lead": "Custom-built websites designed for speed, mobile, and conversions. Your website is your 24/7 sales tool."
+    },
+    "problems": [
+      { "icon": "clock", "title": "Slow Sites", "desc": "Slow load times kill conversions and SEO rankings." },
+      { "icon": "mobile", "title": "Not Mobile", "desc": "Site looks great on desktop, terrible on phone." },
+      { "icon": "trending-down", "title": "Outdated Design", "desc": "Old design hurts credibility and conversions." }
+    ],
+    "benefits": [
+      { "icon": "zap", "title": "Lightning Fast", "desc": "Optimized for speed. Google's Core Web Vitals compliant." },
+      { "icon": "responsive", "title": "Mobile First", "desc": "Perfect experience on all devices." },
+      { "icon": "trending-up", "title": "Built for Conversion", "desc": "Every pixel designed to drive action." }
+    ],
+    "process": [
+      { "step": 1, "icon": "compass", "title": "Discover", "desc": "Goals, audience, competitors, and design inspiration." },
+      { "step": 2, "icon": "layers", "title": "Design", "desc": "Wireframes, mockups, and interactive prototypes." },
+      { "step": 3, "icon": "code", "title": "Build", "desc": "Clean, fast, responsive code. SEO-friendly structure." },
+      { "step": 4, "icon": "send", "title": "Launch & Optimize", "desc": "Deployment, testing, and performance monitoring." }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "landing-pages",
+    "title": "Landing Page Design",
+    "shortDesc": "High-converting landing pages built for campaigns.",
+    "icon": "target",
+    "order": 7,
+    "hero": {
+      "eyebrow": "Landing Page Design & Development",
+      "headline": "Landing Pages That Convert.",
+      "lead": "Custom landing pages designed and optimized for your campaigns. Every page is built to maximize conversions for that specific offer."
+    },
+    "problems": [
+      { "icon": "trending-down", "title": "Low Conversion Rate", "desc": "Generic pages don't convert campaign traffic." },
+      { "icon": "activity", "title": "Too Much Friction", "desc": "Multiple steps, confusing messaging, unclear CTAs." },
+      { "icon": "trending-up", "title": "High CAC", "desc": "You're paying for traffic, but not converting it." }
+    ],
+    "benefits": [
+      { "icon": "target", "title": "10%+ Conversion Rate", "desc": "Campaign-specific pages that match ad messaging." },
+      { "icon": "zap", "title": "Fast & Clean", "desc": "No navigation, no distractions. Just conversion." },
+      { "icon": "dollar-sign", "title": "Lower CPA", "desc": "Get more leads from the same ad spend." }
+    ],
+    "process": [
+      { "step": 1, "icon": "target", "title": "Strategy", "desc": "Match page to campaign goal and messaging." },
+      { "step": 2, "icon": "layers", "title": "Design", "desc": "Conversion-focused layout, copy, and visuals." },
+      { "step": 3, "icon": "code", "title": "Build", "desc": "Fast, mobile-optimized, analytics-ready." },
+      { "step": 4, "icon": "flask", "title": "Test & Optimize", "desc": "A/B test, gather data, improve conversion rate." }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "email-marketing",
+    "title": "Email Marketing & Automation",
+    "shortDesc": "Nurture leads, re-engage customers, and grow revenue.",
+    "icon": "mail",
+    "order": 8,
+    "hero": {
+      "eyebrow": "Email Marketing & Automation",
+      "headline": "Email That Nurtures. Converts. Sells.",
+      "lead": "Strategic email sequences that nurture leads, re-engage customers, and grow revenue — on autopilot."
+    },
+    "problems": [
+      { "icon": "users", "title": "Low Open Rates", "desc": "Emails don't get opened or read." },
+      { "icon": "trending-down", "title": "No Engagement", "desc": "Recipients don't click or convert." },
+      { "icon": "clock", "title": "Manual Process", "desc": "Building and sending emails manually wastes time." }
+    ],
+    "benefits": [
+      { "icon": "zap", "title": "Automated Nurture", "desc": "Sequences that work 24/7 to convert leads." },
+      { "icon": "trending-up", "title": "Higher Engagement", "desc": "Personalized, timely messages that resonate." },
+      { "icon": "dollar-sign", "title": "Recurring Revenue", "desc": "Re-engage past customers and drive repeat business." }
+    ],
+    "process": [
+      { "step": 1, "icon": "compass", "title": "Discover", "desc": "Map customer journey and identify key touchpoints." },
+      { "step": 2, "icon": "edit", "title": "Build", "desc": "Design email sequences, copy, and automation rules." },
+      { "step": 3, "icon": "send", "title": "Launch", "desc": "Set up automations and monitor performance." },
+      { "step": 4, "icon": "trending-up", "title": "Optimize", "desc": "Test subject lines, content, timing for better results." }
+    ]
+  }
+]

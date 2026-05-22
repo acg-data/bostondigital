@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "quote": "Boston Digital Marketing feels like an extension of our team. They're proactive, transparent, and most importantly—deliver results.",
+    "author": "Jennifer M.",
+    "role": "Marketing Director",
+    "company": "Metro Fitness",
+    "initials": "JM"
+  },
+  {
+    "id": 2,
+    "quote": "Our leads have increased dramatically and our ad spend is more efficient than ever. The BDM team knows their stuff.",
+    "author": "David R.",
+    "role": "Owner",
+    "company": "Premier Home Solutions",
+    "initials": "DR"
+  },
+  {
+    "id": 3,
+    "quote": "BDM is a true partner. They get our industry, bring in high-quality leads, and help us grow month after month.",
+    "author": "Mike D.",
+    "role": "Owner",
+    "company": "Summit Home Services",
+    "initials": "MD"
+  }
+]

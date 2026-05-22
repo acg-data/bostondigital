@@ -1,0 +1,24 @@
+<header id="header">
+  <div class="wrap nav">
+    <a href="/" class="logo" aria-label="{{ site.name }}">
+      <span class="word">BOS<span class="red">T</span>ON</span>
+      <span class="sub">DIGITAL MARKETING</span>
+    </a>
+    <nav>
+      <ul>
+        {% for item in site.nav %}
+          <li><a href="{{ item.href }}">{{ item.label }}{% if item.dropdown %} <svg viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6"/></svg>{% endif %}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <a href="{{ site.ctaHref }}" class="btn btn-lime">{{ site.ctaLabel }} <span class="arr">→</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  {% for item in site.nav %}
+    <a href="{{ item.href }}">{{ item.label }}</a>
+  {% endfor %}
+  <a href="{{ site.ctaHref }}" class="btn btn-lime">{{ site.ctaLabel }} →</a>
+</div>

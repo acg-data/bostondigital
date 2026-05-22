@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "slug": "summit-home-services-google-ads",
+    "client": "Summit Home Services",
+    "industry": "Home Services / HVAC",
+    "location": "Boston, MA",
+    "challenge": "Summit was spending on Google Ads but getting low-quality leads and high costs. Their campaigns lacked structure and optimization.",
+    "solution": "We audited their account, restructured campaigns, refined keywords and ad copy, and implemented continuous optimization. Focus on high-intent, local keywords.",
+    "results": [
+      { "metric": "187%", "label": "Increase in Leads", "icon": "trending-up" },
+      { "metric": "42%", "label": "Lower CPA", "icon": "trending-down" },
+      { "metric": "3.6x", "label": "Return on Ad Spend", "icon": "trending-up" }
+    ],
+    "quote": "BDM completely changed our lead flow. We're looking out weeks in advance and finally know which marketing actually drives revenue.",
+    "quoteAuthor": "Mike D.",
+    "quoteRole": "Owner, Summit Home Services",
+    "image": "summit-home-services.jpg",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "slug": "metro-fitness-seo",
+    "client": "Metro Fitness",
+    "industry": "Fitness",
+    "location": "Boston, MA",
+    "challenge": "Metro Fitness was getting lost in local search, overshadowed by larger gym chains. New members came mostly from referrals, not search.",
+    "solution": "Comprehensive SEO strategy: local keyword targeting, Google My Business optimization, on-page SEO, link building, and content marketing.",
+    "results": [
+      { "metric": "217%", "label": "Increase in Organic Traffic", "icon": "trending-up" },
+      { "metric": "89%", "label": "Increase in Leads", "icon": "trending-up" },
+      { "metric": "2.1x", "label": "Member Growth", "icon": "trending-up" }
+    ],
+    "quote": "Jennifer and her team felt like part of our business. We went from page 3 to page 1 in just 8 months.",
+    "quoteAuthor": "Jennifer M.",
+    "quoteRole": "Marketing Director, Metro Fitness",
+    "image": "metro-fitness.jpg",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "slug": "patriot-plumbing-conversion",
+    "client": "Patriot Plumbing",
+    "industry": "Plumbing",
+    "location": "Boston, MA",
+    "challenge": "Patriot was getting website traffic from ads and organic, but conversion rate was only 1.2%. They needed more jobs booked.",
+    "solution": "Website redesign, landing page optimization, A/B testing, call-to-action improvements, and service page optimization.",
+    "results": [
+      { "metric": "4.2%", "label": "Conversion Rate", "icon": "trending-up" },
+      { "metric": "250%", "label": "More Jobs Booked", "icon": "trending-up" },
+      { "metric": "Same", "label": "Ad Spend", "icon": "trending-right" }
+    ],
+    "quote": "The new website converts like crazy. We went from 1 lead a week to 4-5. Game changer.",
+    "quoteAuthor": "Tom K.",
+    "quoteRole": "Owner, Patriot Plumbing",
+    "image": "patriot-plumbing.jpg",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "slug": "elevate-med-spa-social",
+    "client": "Elevate Med Spa",
+    "industry": "Med Spa & Aesthetics",
+    "location": "Boston, MA",
+    "challenge": "Low follower engagement on Instagram. Social media posting was inconsistent and didn't drive bookings.",
+    "solution": "Content strategy, consistent posting schedule, community management, and social ads targeting ideal customers.",
+    "results": [
+      { "metric": "156%", "label": "Follower Growth", "icon": "trending-up" },
+      { "metric": "340%", "label": "Engagement", "icon": "trending-up" },
+      { "metric": "87", "label": "New Bookings via Social", "icon": "trending-up" }
+    ],
+    "quote": "Our Instagram finally feels alive. The new bookings from social have made a real impact on our bottom line.",
+    "quoteAuthor": "Sarah L.",
+    "quoteRole": "Owner, Elevate Med Spa",
+    "image": "elevate-med-spa.jpg",
+    "featured": false
+  }
+]
