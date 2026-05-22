@@ -1,6 +1,7 @@
 {
   "name": "Boston Digital Marketing",
   "tagline": "Own Your Market Online",
+  "siteUrl": "https://bostondigitalmarketing.com",
   "phone": "(617) 123-4567",
   "email": "hello@bostondigitalmarketing.com",
   "location": "Boston, Massachusetts",
@@ -40,5 +41,9 @@
     { "label": "Guides & eBooks", "href": "/resources/" },
     { "label": "Webinars", "href": "/resources/" },
     { "label": "FAQs", "href": "/resources/" }
+  ],
+  "footerLegal": [
+    { "label": "Privacy Policy", "href": "/privacy/" },
+    { "label": "Terms of Service", "href": "/terms/" }
   ]
 }

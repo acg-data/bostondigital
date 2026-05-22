@@ -60,7 +60,12 @@
   </div>
 
   <div class="wrap foot-bottom">
-    <span>© 2025 {{ site.name }}. All rights reserved.</span>
-    <span>Privacy Policy · Terms of Service</span>
+    <span>© 2026 {{ site.name }}. All rights reserved.</span>
+    <span>
+      {% for legal in site.footerLegal %}
+        <a href="{{ legal.href }}" style="color:#9c978f;text-decoration:none;transition:.2s;display:inline;margin:0 8px">{{ legal.label }}</a>
+        {% if not loop.last %}·{% endif %}
+      {% endfor %}
+    </span>
   </div>
 </footer>
