@@ -1,0 +1,66 @@
+---
+layout: base.njk
+title: Case Studies - Client Success Stories
+description: Real results from real Boston businesses. See how we've helped companies grow their revenue.
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow reveal" style="--d:.05s">Real Results. Real Businesses.</span>
+      <h1 class="reveal" style="--d:.12s">Success stories<br>from Boston<br>businesses<span class="dot">.</span></h1>
+      <p class="lead reveal" style="--d:.22s">See how we've helped companies across Boston grow their revenue, get more leads, and dominate their market.</p>
+      <div class="hero-cta reveal" style="--d:.3s">
+        <a href="/contact/" class="btn btn-lime">{{ site.ctaLabel }} <span class="arr">→</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="watermark">CASE STUDIES</div>
+</section>
+
+<!-- CASE STUDIES GRID -->
+<section class="cases">
+  <div class="wrap cases-inner">
+    <div style="display:none"></div>
+    <div class="case-grid">
+      {% for cs in case_studies %}
+        <div class="case reveal">
+          <div class="case-img" style="background:linear-gradient(135deg,#2a2a2a,#161616)">
+            <div class="corner"></div>
+            <div class="ph-ico">
+              {% if cs.industry == 'Home Services / HVAC' %}
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4"><path d="M3 12a2 2 0 012-2h14a2 2 0 012 2v5h-2v-2H5v2H3z"/><path d="M5 10V8a2 2 0 012-2h10a2 2 0 012 2v2"/></svg>
+              {% elif cs.industry == 'Fitness' %}
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4"><path d="M6.5 9v6M17.5 9v6M4 10v4M20 10v4M6.5 12h11"/></svg>
+              {% elif cs.industry == 'Plumbing' %}
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4"><path d="M2 16l3-7 3 1 2-2 4 1 4-1 4 2-1 5z"/><path d="M2 16h20"/></svg>
+              {% else %}
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/></svg>
+              {% endif %}
+            </div>
+          </div>
+          <div class="case-body">
+            <div class="case-tag">{{ cs.industry }}</div>
+            <h3>{{ cs.results[0].metric }} increase in leads</h3>
+            <p>{{ cs.challenge }}</p>
+            <a href="/case-studies/{{ cs.slug }}/" class="view">View Case Study →</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctaband">
+  <div class="wrap ctaband-inner">
+    <div class="txt">
+      <div>
+        <h2>Ready to grow your business?</h2>
+        <p>Let's build a strategy that drives real results.</p>
+      </div>
+    </div>
+    <a href="/contact/" class="btn btn-lime">{{ site.ctaLabel }} <span class="arr">→</span></a>
+  </div>
+</section>

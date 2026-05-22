@@ -1,0 +1,66 @@
+---
+layout: base.njk
+title: Book a Growth Audit - Contact Us
+description: Schedule your free strategy call with our team. Let's discuss how we can help grow your business.
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow reveal" style="--d:.05s">Let's Talk</span>
+      <h1 class="reveal" style="--d:.12s">Ready to grow<br>your business<span class="dot">?</span></h1>
+      <p class="lead reveal" style="--d:.22s">Schedule a free strategy call with our team. We'll discuss your goals, challenges, and how we can help drive real growth.</p>
+      <div class="hero-cta reveal" style="--d:.3s">
+        <p style="font-weight:bold;margin:0">Or call us: <a href="tel:{{ site.phone }}" style="color:var(--lime)">{{ site.phone }}</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="watermark">CONTACT</div>
+</section>
+
+<!-- CONTACT FORM -->
+<section style="background:var(--parchment);color:var(--black);padding:96px 0;text-align:center">
+  <div class="wrap">
+    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 22px">Get in touch</h2>
+    <p style="font-size:16px;color:#55524c;margin:0 auto 54px;max-width:500px">Fill out the form below and we'll get back to you within one business day.</p>
+
+    <form style="max-width:500px;margin:0 auto;text-align:left;background:#fff;padding:40px;border:1px solid rgba(0,0,0,.08)">
+      <div style="margin-bottom:24px">
+        <label style="display:block;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;color:#111">Name</label>
+        <input type="text" name="name" required style="width:100%;padding:12px;border:1px solid #ddd;font-family:Archivo,sans-serif;font-size:14px" />
+      </div>
+      <div style="margin-bottom:24px">
+        <label style="display:block;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;color:#111">Email</label>
+        <input type="email" name="email" required style="width:100%;padding:12px;border:1px solid #ddd;font-family:Archivo,sans-serif;font-size:14px" />
+      </div>
+      <div style="margin-bottom:24px">
+        <label style="display:block;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;color:#111">Company</label>
+        <input type="text" name="company" style="width:100%;padding:12px;border:1px solid #ddd;font-family:Archivo,sans-serif;font-size:14px" />
+      </div>
+      <div style="margin-bottom:24px">
+        <label style="display:block;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;color:#111">Message</label>
+        <textarea name="message" rows="5" style="width:100%;padding:12px;border:1px solid #ddd;font-family:Archivo,sans-serif;font-size:14px;resize:vertical"></textarea>
+      </div>
+      <button type="submit" class="btn btn-lime" style="width:100%;justify-content:center">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- INFO SECTION -->
+<section style="background:#111;color:#fff;padding:54px 0;text-align:center">
+  <div class="wrap" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;align-items:center;text-align:center;max-width:800px">
+    <div>
+      <div style="font-size:24px;font-weight:900;margin-bottom:8px">{{ site.phone }}</div>
+      <div style="font-size:12px;color:#9c978f;text-transform:uppercase;letter-spacing:.08em">Phone</div>
+    </div>
+    <div>
+      <div style="font-size:14px;font-weight:700;margin-bottom:8px;word-break:break-word">{{ site.email }}</div>
+      <div style="font-size:12px;color:#9c978f;text-transform:uppercase;letter-spacing:.08em">Email</div>
+    </div>
+    <div>
+      <div style="font-size:14px;font-weight:700;margin-bottom:8px">{{ site.location }}</div>
+      <div style="font-size:12px;color:#9c978f;text-transform:uppercase;letter-spacing:.08em">Address</div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,72 @@
+---
+layout: base.njk
+title: Digital Marketing Services
+description: Full-service digital marketing agency in Boston. SEO, Google Ads, social media, content marketing, and more.
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow reveal" style="--d:.05s">Our Services</span>
+      <h1 class="reveal" style="--d:.12s">Full-Service Digital<br>Marketing That<br>Drives Real Growth<span class="dot">.</span></h1>
+      <p class="lead reveal" style="--d:.22s">From strategy to execution, we deliver data-driven marketing that attracts the right traffic, converts more customers, and grows your business — sustainably.</p>
+      <div class="hero-cta reveal" style="--d:.3s">
+        <a href="/contact/" class="btn btn-lime">{{ site.ctaLabel }} <span class="arr">→</span></a>
+        <a href="/case-studies/" class="link-underline">View Our Results →</a>
+      </div>
+    </div>
+  </div>
+  <div class="watermark">OUR SERVICES</div>
+</section>
+
+<!-- ALL SERVICES GRID -->
+<section class="services" id="services">
+  <div class="wrap">
+    <span class="eyebrow coral center reveal">End-to-end marketing.</span>
+    <h2 class="reveal">Built around your goals<span class="dot">.</span></h2>
+    <div class="svc-grid">
+      {% for service in services %}
+        <div class="svc reveal">
+          <div class="svc-ico">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="{% if service.slug == 'google-ads' or service.slug == 'cro' or service.slug == 'content-marketing' %}#FF4F3E{% else %}#111{% endif %}" stroke-width="1.6">
+              {% if service.slug == 'seo' %}
+                <circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/>
+              {% elif service.slug == 'google-ads' %}
+                <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="#FF4F3E"/>
+              {% elif service.slug == 'social-media' %}
+                <path d="M3 10v4h4l6 5V5L7 10H3z"/><path d="M16 9a4 4 0 010 6" stroke="#FF4F3E"/>
+              {% elif service.slug == 'content-marketing' %}
+                <path d="M6 3h9l4 4v14H6z"/><path d="M9 9h7M9 13h7M9 17h4" stroke="#FF4F3E"/>
+              {% elif service.slug == 'cro' %}
+                <path d="M3 20h18"/><path d="M5 20V12M10 20V8M15 20V13M20 20V5" stroke="#C7A800"/><path d="M4 13l5-5 4 3 7-7" stroke="#FF4F3E"/>
+              {% elif service.slug == 'landing-pages' %}
+                <path d="M12 2l-3 6h6l-3 6"/>
+              {% elif service.slug == 'email-marketing' %}
+                <path d="M4 4h16c1 0 2 1 2 2v12c0 1-1 2-2 2H4c-1 0-2-1-2-2V6c0-1 1-2 2-2z"/><path d="M2 6l10 7 10-7"/>
+              {% else %}
+                <rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 8h18" /><path d="M9 13l-2 2 2 2M15 13l2 2-2 2" stroke="#FF4F3E"/>
+              {% endif %}
+            </svg>
+          </div>
+          <h3>{{ service.title }}</h3>
+          <p>{{ service.shortDesc }}</p>
+          <a href="/services/{{ service.slug }}/" style="margin-top:18px;color:var(--coral);font-size:18px;transition:transform .2s;display:inline-block">→</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctaband">
+  <div class="wrap ctaband-inner">
+    <div class="txt">
+      <div>
+        <h2>Ready to grow your business?</h2>
+        <p>Let's build a strategy that drives real results.</p>
+      </div>
+    </div>
+    <a href="/contact/" class="btn btn-lime">{{ site.ctaLabel }} <span class="arr">→</span></a>
+  </div>
+</section>
