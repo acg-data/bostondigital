@@ -21,11 +21,10 @@ description: Real results from real Boston businesses. See how we've helped comp
 
 <!-- CASE STUDIES GRID -->
 <section class="cases">
-  <div class="wrap cases-inner">
-    <div style="display:none"></div>
-    <div class="case-grid">
+  <div class="wrap">
+    <div class="case-grid case-grid-index">
       {% for cs in case_studies %}
-        <div class="case reveal">
+        <a href="/case-studies/{{ cs.slug }}/" class="case case-link reveal">
           <div class="case-img" style="background:linear-gradient(135deg,#2a2a2a,#161616)">
             <div class="corner"></div>
             <div class="ph-ico">
@@ -42,11 +41,19 @@ description: Real results from real Boston businesses. See how we've helped comp
           </div>
           <div class="case-body">
             <div class="case-tag">{{ cs.industry }}</div>
-            <h3>{{ cs.results[0].metric }} increase in leads</h3>
+            <h3>{{ cs.client }}</h3>
             <p>{{ cs.challenge }}</p>
-            <a href="/case-studies/{{ cs.slug }}/" class="view">View Case Study →</a>
+            <div class="case-metrics">
+              {% for r in cs.results %}
+                <div class="case-metric">
+                  <span class="case-metric-num">{{ r.metric }}</span>
+                  <span class="case-metric-lbl">{{ r.label }}</span>
+                </div>
+              {% endfor %}
+            </div>
+            <span class="view">View Case Study →</span>
           </div>
-        </div>
+        </a>
       {% endfor %}
     </div>
   </div>

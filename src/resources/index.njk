@@ -1,29 +1,96 @@
 ---
 layout: base.njk
 title: Resources & Blog - Boston Digital Marketing
-description: Digital marketing guides, insights, and resources to help your business grow online.
+description: Digital marketing guides, insights, and case studies to help your business grow online.
 ---
 
 <!-- HERO -->
 <section class="hero">
   <div class="wrap hero-inner hero-solo">
     <div>
-      <span class="eyebrow reveal" style="--d:.05s">Learn & Grow</span>
-      <h1 class="reveal" style="--d:.12s">Digital Marketing<br>Resources & Insights<span class="dot">.</span></h1>
-      <p class="lead reveal" style="--d:.22s">Free guides, case studies, and insights to help you master digital marketing and grow your business.</p>
+      <span class="eyebrow reveal" style="--d:.05s">Resources & Insights</span>
+      <h1 class="reveal" style="--d:.12s">Marketing playbooks<br>that actually work<span class="dot">.</span></h1>
+      <p class="lead reveal" style="--d:.22s">Real strategies, real numbers, real results from the campaigns we're running for Boston businesses every day.</p>
     </div>
   </div>
   <div class="watermark">RESOURCES</div>
 </section>
 
-<!-- COMING SOON -->
-<section style="background:var(--parchment);color:var(--black);padding:96px 0;text-align:center">
-  <div class="wrap" style="max-width:600px;margin:0 auto">
-    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 20px">Blog Coming Soon</h2>
-    <p style="font-size:16px;line-height:1.7;color:#33312d;margin:0 0 40px">
-      We're currently building our resource library with in-depth guides, case studies, and actionable insights on digital marketing strategies that work.
-    </p>
-    <a href="/contact/" class="btn btn-lime">Stay Notified <span class="arr">→</span></a>
+<!-- FEATURED + CATEGORY FILTER -->
+<section class="blog-section">
+  <div class="wrap">
+    {% for post in posts %}
+      {% if post.featured %}
+        <a href="/resources/{{ post.slug }}/" class="blog-featured reveal">
+          <div class="blog-featured-img">
+            <div class="blog-img-overlay"></div>
+            <span class="blog-featured-tag blog-tag-{{ post.categoryColor }}">{{ post.category }}</span>
+          </div>
+          <div class="blog-featured-body">
+            <div class="blog-meta">
+              <span>Featured</span>
+              <span class="dot-sep">·</span>
+              <span>{{ post.date }}</span>
+              <span class="dot-sep">·</span>
+              <span>{{ post.readTime }}</span>
+            </div>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.excerpt }}</p>
+            <div class="blog-author">
+              <div class="blog-author-avatar">{{ post.author | replace(" ", "") | truncate(2, true, "") | upper }}</div>
+              <div>
+                <div class="blog-author-name">{{ post.author }}</div>
+                <span class="blog-read">Read article <span class="arr">→</span></span>
+              </div>
+            </div>
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
+
+    <div class="blog-section-head">
+      <h2>Latest Articles</h2>
+      <span class="blog-section-sub">Fresh insights every week</span>
+    </div>
+
+    <div class="blog-grid">
+      {% for post in posts %}
+        {% if not post.featured %}
+          <a href="/resources/{{ post.slug }}/" class="blog-card reveal">
+            <div class="blog-card-img">
+              <span class="blog-tag blog-tag-{{ post.categoryColor }}">{{ post.category }}</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>{{ post.date }}</span>
+                <span class="dot-sep">·</span>
+                <span>{{ post.readTime }}</span>
+              </div>
+              <h3>{{ post.title }}</h3>
+              <p>{{ post.excerpt }}</p>
+              <span class="blog-read">Read more <span class="arr">→</span></span>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="blog-newsletter">
+  <div class="wrap blog-newsletter-inner">
+    <div>
+      <span class="eyebrow coral">Get the Playbooks</span>
+      <h2>One weekly email. Zero fluff.</h2>
+      <p>Join 2,400+ Boston business owners getting the marketing strategies that actually move the needle.</p>
+    </div>
+    <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="newsletter-form" action="/thank-you/">
+      <input type="hidden" name="form-name" value="newsletter">
+      <p hidden><input name="bot-field"></p>
+      <input type="email" name="email" required placeholder="you@yourbusiness.com" autocomplete="email" />
+      <button type="submit" class="btn btn-lime">Subscribe <span class="arr">→</span></button>
+    </form>
   </div>
 </section>
 

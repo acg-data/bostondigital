@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Alex Carter",
+    "role": "Founder & CEO",
+    "bio": "15+ years scaling local businesses with data-driven marketing. Former growth lead at two Boston SaaS startups.",
+    "initials": "AC",
+    "accent": "lime"
+  },
+  {
+    "name": "Maya Patel",
+    "role": "Head of Strategy",
+    "bio": "Strategy obsessed. Builds custom growth roadmaps for every client. Previously led brand at a national agency.",
+    "initials": "MP",
+    "accent": "coral"
+  },
+  {
+    "name": "Jordan Lee",
+    "role": "Director of Paid Media",
+    "bio": "Google Premier Partner with 200+ campaigns under management. Specializes in lowering CPA without sacrificing volume.",
+    "initials": "JL",
+    "accent": "lime"
+  },
+  {
+    "name": "Sam Rivera",
+    "role": "SEO & Content Lead",
+    "bio": "Ranks Boston businesses on page one. Built content engines that drove 200%+ organic growth for service-based clients.",
+    "initials": "SR",
+    "accent": "coral"
+  }
+]

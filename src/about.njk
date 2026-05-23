@@ -32,6 +32,29 @@ description: Learn about Boston Digital Marketing's mission, team, and approach 
   </div>
 </section>
 
+<!-- TEAM -->
+<section class="team-section">
+  <div class="wrap">
+    <div class="team-head">
+      <span class="eyebrow coral reveal">The Team Behind the Results</span>
+      <h2 class="reveal">Meet the people growing your business<span class="dot">.</span></h2>
+      <p class="team-intro reveal">A senior team obsessed with results. No account managers passing you off to juniors — you work directly with the strategists running your campaigns.</p>
+    </div>
+    <div class="team-grid">
+      {% for member in team %}
+        <div class="team-card reveal">
+          <div class="team-avatar team-avatar-{{ member.accent }}">
+            <span>{{ member.initials }}</span>
+          </div>
+          <h3>{{ member.name }}</h3>
+          <div class="team-role">{{ member.role }}</div>
+          <p>{{ member.bio }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <!-- VALUES -->
 <section style="background:#111;color:#fff;padding:96px 0">
   <div class="wrap">

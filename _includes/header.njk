@@ -7,7 +7,40 @@
     <nav>
       <ul>
         {% for item in site.nav %}
-          <li><a href="{{ item.href }}">{{ item.label }}{% if item.dropdown %} <svg viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6"/></svg>{% endif %}</a></li>
+          {% if item.label == 'Services' %}
+            <li class="has-dropdown">
+              <a href="{{ item.href }}" aria-haspopup="true">{{ item.label }} <svg class="chev" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+              <div class="dropdown" role="menu">
+                <div class="dropdown-inner">
+                  <div class="dropdown-col">
+                    <div class="dropdown-head">All Services</div>
+                    {% for s in services %}
+                      <a href="/services/{{ s.slug }}/" role="menuitem">
+                        <span class="dd-title">{{ s.title }}</span>
+                        <span class="dd-sub">{{ s.shortDesc }}</span>
+                      </a>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
+            </li>
+          {% elif item.label == 'Resources' %}
+            <li class="has-dropdown">
+              <a href="{{ item.href }}" aria-haspopup="true">{{ item.label }} <svg class="chev" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+              <div class="dropdown dropdown-narrow" role="menu">
+                <div class="dropdown-inner">
+                  <div class="dropdown-col">
+                    <a href="/resources/" role="menuitem"><span class="dd-title">Blog</span><span class="dd-sub">Articles & insights</span></a>
+                    <a href="/resources/" role="menuitem"><span class="dd-title">Guides & eBooks</span><span class="dd-sub">In-depth playbooks</span></a>
+                    <a href="/resources/" role="menuitem"><span class="dd-title">Webinars</span><span class="dd-sub">Live trainings</span></a>
+                    <a href="/resources/" role="menuitem"><span class="dd-title">FAQs</span><span class="dd-sub">Common questions</span></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          {% else %}
+            <li><a href="{{ item.href }}">{{ item.label }}</a></li>
+          {% endif %}
         {% endfor %}
       </ul>
     </nav>
@@ -18,7 +51,25 @@
 
 <div class="mobile-menu" id="mobileMenu">
   {% for item in site.nav %}
-    <a href="{{ item.href }}">{{ item.label }}</a>
+    {% if item.label == 'Services' %}
+      <details class="mm-group">
+        <summary>{{ item.label }}<svg viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+        <a href="/services/" class="mm-sub mm-sub-all">All Services →</a>
+        {% for s in services %}
+          <a href="/services/{{ s.slug }}/" class="mm-sub">{{ s.title }}</a>
+        {% endfor %}
+      </details>
+    {% elif item.label == 'Resources' %}
+      <details class="mm-group">
+        <summary>{{ item.label }}<svg viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6"/></svg></summary>
+        <a href="/resources/" class="mm-sub">Blog</a>
+        <a href="/resources/" class="mm-sub">Guides & eBooks</a>
+        <a href="/resources/" class="mm-sub">Webinars</a>
+        <a href="/resources/" class="mm-sub">FAQs</a>
+      </details>
+    {% else %}
+      <a href="{{ item.href }}">{{ item.label }}</a>
+    {% endif %}
   {% endfor %}
   <a href="{{ site.ctaHref }}" class="btn btn-lime">{{ site.ctaLabel }} →</a>
 </div>
