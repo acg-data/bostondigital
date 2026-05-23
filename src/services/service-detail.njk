@@ -11,7 +11,7 @@ description: "{{ service.shortDesc }}"
 
 <!-- HERO -->
 <section class="hero">
-  <div class="wrap hero-inner">
+  <div class="wrap hero-inner hero-solo">
     <div>
       <span class="eyebrow reveal" style="--d:.05s">{{ service.hero.eyebrow }}</span>
       <h1 class="reveal" style="--d:.12s">{{ service.hero.headline }}</h1>
@@ -33,14 +33,22 @@ description: "{{ service.shortDesc }}"
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px">
       {% for problem in service.problems %}
         <div style="text-align:center">
-          <div style="width:60px;height:60px;border-radius:50%;background:var(--coral);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px">
-            {% if problem.icon == 'trending-down' %}↓
-            {% elif problem.icon == 'trending-up' %}↑
-            {% elif problem.icon == 'users' %}👥
-            {% elif problem.icon == 'clock' %}⏱
-            {% elif problem.icon == 'activity' %}📊
-            {% elif problem.icon == 'search' %}🔍
-            {% else %}●{% endif %}
+          <div style="width:60px;height:60px;border-radius:50%;background:var(--coral);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:#fff">
+            {% if problem.icon == 'trending-down' %}
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7l9 9 4-4 5 5"/><path d="M21 17v-4h-4"/></svg>
+            {% elif problem.icon == 'trending-up' %}
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 17l9-9 4 4 5-5"/><path d="M21 7v4h-4"/></svg>
+            {% elif problem.icon == 'users' %}
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            {% elif problem.icon == 'clock' %}
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            {% elif problem.icon == 'activity' %}
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            {% elif problem.icon == 'search' %}
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+            {% else %}
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+            {% endif %}
           </div>
           <h3 style="font-size:16px;font-weight:900;margin:0 0 12px;color:#111">{{ problem.title }}</h3>
           <p style="color:#55524c;line-height:1.6">{{ problem.desc }}</p>

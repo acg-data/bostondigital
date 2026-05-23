@@ -11,7 +11,7 @@ description: "{{ industry.hero.lead }}"
 
 <!-- HERO -->
 <section class="hero">
-  <div class="wrap hero-inner">
+  <div class="wrap hero-inner hero-solo">
     <div>
       <span class="eyebrow reveal" style="--d:.05s">{{ industry.hero.eyebrow }}</span>
       <h1 class="reveal" style="--d:.12s">{{ industry.hero.headline }}</h1>
@@ -45,7 +45,7 @@ description: "{{ industry.hero.lead }}"
 {% if industry.solutions %}
 <section style="background:#111;color:#fff;padding:96px 0">
   <div class="wrap">
-    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 54px;text-align:center">Built for {{ industry.shortTitle | lower }}.</h2>
+    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 54px;text-align:center">Built for {{ industry.shortTitle | lower }}<span class="dot">.</span></h2>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;max-width:1100px;margin:0 auto">
       {% for solution in industry.solutions %}
         <div style="padding:24px;background:var(--black-3);border-radius:4px;border-left:4px solid var(--lime)">
@@ -62,7 +62,7 @@ description: "{{ industry.hero.lead }}"
 {% if industry.caseStudy %}
 <section style="background:var(--parchment);color:var(--black);padding:96px 0">
   <div class="wrap">
-    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 54px;text-align:center">Real results for {{ industry.shortTitle | lower }}.</h2>
+    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 54px;text-align:center">Real results for {{ industry.shortTitle | lower }}<span class="dot">.</span></h2>
 
     <div style="background:#fff;padding:54px;max-width:800px;margin:0 auto;border:1px solid rgba(0,0,0,.08)">
       <h3 style="font-size:18px;font-weight:900;margin:0 0 8px">{{ industry.caseStudy.client }}</h3>
@@ -90,8 +90,8 @@ description: "{{ industry.hero.lead }}"
   <div class="wrap ctaband-inner">
     <div class="txt">
       <div>
-        <h2>Ready to grow your {{ industry.shortTitle | lower }} business?</h2>
-        <p>Let's build a strategy tailored to your industry and goals.</p>
+        <h2>Ready to grow your practice?</h2>
+        <p>Let's build a {{ industry.title | lower }} strategy tailored to your goals.</p>
       </div>
     </div>
     <a href="/contact/" class="btn btn-lime">Book a Strategy Call <span class="arr">→</span></a>

@@ -191,7 +191,8 @@ description: Data-driven marketing strategies that drive real growth for Boston 
       <a href="/case-studies/" class="link-underline reveal">View All Case Studies →</a>
     </div>
     <div class="case-grid">
-      {% for cs in case_studies | slice(0, 3) %}
+      {% for cs in case_studies %}
+        {% if loop.index <= 3 %}
         <div class="case reveal">
           <div class="case-img" style="background:linear-gradient(135deg,#2a2a2a,#161616)">
             <div class="corner"></div>
@@ -204,6 +205,7 @@ description: Data-driven marketing strategies that drive real growth for Boston 
             <a href="/case-studies/{{ cs.slug }}/" class="view">View Case Study →</a>
           </div>
         </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
@@ -216,7 +218,8 @@ description: Data-driven marketing strategies that drive real growth for Boston 
       <span class="eyebrow coral reveal">Clients Love Working With Us</span>
       <h2 class="reveal" style="margin-top:18px">Real relationships.<br>Real results<span class="dot">.</span></h2>
     </div>
-    {% for testi in testimonials | slice(0, 2) %}
+    {% for testi in testimonials %}
+      {% if loop.index <= 2 %}
       <div class="quote reveal">
         <div class="mark">"</div>
         <p>{{ testi.quote }}</p>
@@ -228,6 +231,7 @@ description: Data-driven marketing strategies that drive real growth for Boston 
           </div>
         </div>
       </div>
+      {% endif %}
     {% endfor %}
   </div>
 </section>
