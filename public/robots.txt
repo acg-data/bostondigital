@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bostondigitalmarketing.com/sitemap.xml
+Sitemap: https://thebostonmarketingcompany.com/sitemap.xml

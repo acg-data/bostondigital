@@ -25,9 +25,11 @@ description: Schedule your free strategy call with our team. Let's discuss how w
     <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 22px">Get in touch</h2>
     <p style="font-size:16px;color:#55524c;margin:0 auto 54px;max-width:500px">Fill out the form below and we'll get back to you within one business day.</p>
 
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" style="max-width:500px;margin:0 auto;text-align:left;background:#fff;padding:40px;border:1px solid rgba(0,0,0,.08)">
-      <input type="hidden" name="form-name" value="contact">
-      <p hidden><input name="bot-field"></p>
+    <form action="https://formspree.io/f/{{ site.formspreeId }}" method="POST" style="max-width:500px;margin:0 auto;text-align:left;background:#fff;padding:40px;border:1px solid rgba(0,0,0,.08)">
+      <input type="hidden" name="_subject" value="New contact form submission">
+      <input type="hidden" name="_next" value="{{ site.siteUrl }}/thank-you/">
+      <input type="hidden" name="form_source" value="contact-page">
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
       <div style="margin-bottom:24px">
         <label style="display:block;font-weight:800;font-size:13px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;color:#111">Name</label>
         <input type="text" name="name" required style="width:100%;padding:12px;border:1px solid #ddd;font-family:Archivo,sans-serif;font-size:14px" />
