@@ -85,11 +85,13 @@ description: Digital marketing guides, insights, and case studies to help your b
       <h2>One weekly email. Zero fluff.</h2>
       <p>Join 2,400+ Boston business owners getting the marketing strategies that actually move the needle.</p>
     </div>
-    <form action="https://formspree.io/f/{{ site.formspreeId }}" method="POST" class="newsletter-form">
+    <form action="{{ site.formEndpoint }}" method="POST" class="newsletter-form">
       <input type="hidden" name="_subject" value="New newsletter subscriber">
       <input type="hidden" name="_next" value="{{ site.siteUrl }}/thank-you/">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
       <input type="hidden" name="form_source" value="newsletter">
-      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <input type="email" name="email" required placeholder="you@yourbusiness.com" autocomplete="email" />
       <button type="submit" class="btn btn-lime">Subscribe <span class="arr">→</span></button>
     </form>

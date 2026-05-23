@@ -2,7 +2,7 @@
   "name": "Boston Digital Marketing",
   "tagline": "Own Your Market Online",
   "siteUrl": "https://thebostonmarketingcompany.com",
-  "formspreeId": "REPLACE_WITH_FORMSPREE_ID",
+  "formEndpoint": "https://formsubmit.co/justin@aryocg.com",
   "phone": "(617) 123-4567",
   "email": "hello@bostondigitalmarketing.com",
   "location": "Boston, Massachusetts",

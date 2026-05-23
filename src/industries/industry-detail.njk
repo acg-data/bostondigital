@@ -25,11 +25,13 @@ description: "{{ industry.hero.lead }}"
         <span class="hero-form-eyebrow">Free Strategy Call</span>
         <h3>Get more {{ industry.shortTitle | lower }} clients.</h3>
         <p class="hero-form-sub">Tell us about your practice. We'll respond within 24 hours with a custom {{ industry.title | lower }} plan — no obligation.</p>
-        <form action="https://formspree.io/f/{{ site.formspreeId }}" method="POST" class="hero-form">
+        <form action="{{ site.formEndpoint }}" method="POST" class="hero-form">
           <input type="hidden" name="_subject" value="Strategy call request — {{ industry.title }}">
           <input type="hidden" name="_next" value="{{ site.siteUrl }}/thank-you/">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
           <input type="hidden" name="form_source" value="industry:{{ industry.slug }}">
-          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <input type="text" name="name" required placeholder="Your name" autocomplete="name" />
           <input type="email" name="email" required placeholder="Email address" autocomplete="email" />
           <input type="tel" name="phone" placeholder="Phone (optional)" autocomplete="tel" />
