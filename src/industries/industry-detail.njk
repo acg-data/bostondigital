@@ -11,18 +11,62 @@ description: "{{ industry.hero.lead }}"
 
 <!-- HERO -->
 <section class="hero">
-  <div class="wrap hero-inner hero-solo">
+  <div class="wrap hero-inner hero-form-layout">
     <div>
       <span class="eyebrow reveal" style="--d:.05s">{{ industry.hero.eyebrow }}</span>
       <h1 class="reveal" style="--d:.12s">{{ industry.hero.headline }}</h1>
       <p class="lead reveal" style="--d:.22s">{{ industry.hero.lead }}</p>
       <div class="hero-cta reveal" style="--d:.3s">
-        <a href="/contact/" class="btn btn-lime">Book a Strategy Call <span class="arr">→</span></a>
         <a href="/case-studies/" class="link-underline">View Our Results →</a>
       </div>
     </div>
+    <aside class="reveal" style="--d:.2s">
+      <div class="hero-form-card">
+        <span class="hero-form-eyebrow">Free Strategy Call</span>
+        <h3>Get more {{ industry.shortTitle | lower }} clients.</h3>
+        <p class="hero-form-sub">Tell us about your practice. We'll respond within 24 hours with a custom {{ industry.title | lower }} plan — no obligation.</p>
+        <form name="strategy-call" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="hero-form" action="/thank-you/">
+          <input type="hidden" name="form-name" value="strategy-call">
+          <input type="hidden" name="source" value="industry:{{ industry.slug }}">
+          <p hidden><input name="bot-field"></p>
+          <input type="text" name="name" required placeholder="Your name" autocomplete="name" />
+          <input type="email" name="email" required placeholder="Email address" autocomplete="email" />
+          <input type="tel" name="phone" placeholder="Phone (optional)" autocomplete="tel" />
+          <textarea name="message" rows="3" placeholder="What are you looking to achieve?"></textarea>
+          <button type="submit" class="btn btn-lime hero-form-btn">Get My Free Plan <span class="arr">→</span></button>
+          <div class="hero-form-trust">
+            <span><span class="check">✓</span> No obligation</span>
+            <span><span class="check">✓</span> 24hr response</span>
+            <span><span class="check">✓</span> 100% private</span>
+          </div>
+          <div class="hero-form-call">Prefer to talk? Call <a href="tel:{{ site.phone }}">{{ site.phone }}</a></div>
+        </form>
+      </div>
+    </aside>
   </div>
   <div class="watermark">{{ industry.title | upper }}</div>
+</section>
+
+<!-- PROOF BAR -->
+<section class="proof-bar">
+  <div class="wrap proof-bar-inner">
+    <div class="proof-stat">
+      <span class="proof-num">200+</span>
+      <span class="proof-lbl">Boston Clients Served</span>
+    </div>
+    <div class="proof-stat">
+      <span class="proof-num">3.6x</span>
+      <span class="proof-lbl">Avg Return on Ad Spend</span>
+    </div>
+    <div class="proof-stat">
+      <span class="proof-num">4.9★</span>
+      <span class="proof-lbl">Client Satisfaction</span>
+    </div>
+    <div class="proof-stat">
+      <span class="proof-num">24hr</span>
+      <span class="proof-lbl">Response Time</span>
+    </div>
+  </div>
 </section>
 
 <!-- WHY CHOOSE US -->
