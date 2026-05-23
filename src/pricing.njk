@@ -1,0 +1,107 @@
+---
+layout: base.njk
+title: Pricing - Transparent Marketing Packages
+description: Honest, transparent pricing for digital marketing services in Boston. No hidden fees, no annual contracts. Plans starting at $2,500/month.
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner hero-solo">
+    <div>
+      <span class="eyebrow reveal" style="--d:.05s">Pricing</span>
+      <h1 class="reveal" style="--d:.12s">Transparent pricing<br>built for results<span class="dot">.</span></h1>
+      <p class="lead reveal" style="--d:.22s">{{ pricing.intro }}</p>
+    </div>
+  </div>
+  <div class="watermark">PRICING</div>
+</section>
+
+<!-- TIERS -->
+<section class="pricing-section">
+  <div class="wrap">
+    <div class="pricing-grid">
+      {% for tier in pricing.tiers %}
+        <div class="pricing-tier{% if tier.popular %} pricing-tier-popular{% endif %} pricing-tier-{{ tier.accent }}">
+          {% if tier.popular %}<div class="pricing-badge">Most Popular</div>{% endif %}
+          <h3>{{ tier.name }}</h3>
+          <p class="pricing-tagline">{{ tier.tagline }}</p>
+          <div class="pricing-price">
+            <span class="pricing-amount">{{ tier.price }}</span>
+            <span class="pricing-period">{{ tier.period }}</span>
+          </div>
+          <ul class="pricing-features">
+            {% for feature in tier.features %}
+              <li><span class="pricing-check">✓</span> {{ feature }}</li>
+            {% endfor %}
+          </ul>
+          <a href="/contact/" class="btn {% if tier.popular %}btn-lime{% else %}btn-outline{% endif %} pricing-cta">{{ tier.cta }} <span class="arr">→</span></a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ADDONS -->
+<section class="pricing-addons">
+  <div class="wrap">
+    <div class="pricing-addons-head">
+      <span class="eyebrow coral">Project-Based Services</span>
+      <h2>One-time projects<span class="dot">.</span></h2>
+      <p>Need a brand refresh, new website, or TV spot? These project-based services can stand alone or pair with any retainer.</p>
+    </div>
+    <div class="addon-grid">
+      {% for addon in pricing.addons %}
+        <div class="addon-card">
+          <h3>{{ addon.name }}</h3>
+          <div class="addon-price">{{ addon.price }}</div>
+          <p>{{ addon.desc }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="wrap">
+    <div class="faq-head">
+      <span class="eyebrow coral">Pricing Questions</span>
+      <h2>What you might be wondering<span class="dot">.</span></h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary><span>Do you require a long-term contract?</span><span class="faq-toggle" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="faq-answer">No. All retainers are month-to-month. We have to earn your business every month — that's the model we're proud of.</div>
+      </details>
+      <details class="faq-item">
+        <summary><span>What does "ad budget management" mean?</span><span class="faq-toggle" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="faq-answer">It's the maximum amount we'll actively manage in paid ad spend at no extra fee. Above that threshold, we add a small management percentage that's discussed up-front.</div>
+      </details>
+      <details class="faq-item">
+        <summary><span>What if I need something in between tiers?</span><span class="faq-toggle" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="faq-answer">Most clients customize their plan. Book a free strategy call and we'll scope an engagement specifically to your goals and budget.</div>
+      </details>
+      <details class="faq-item">
+        <summary><span>Are setup fees included?</span><span class="faq-toggle" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="faq-answer">For new accounts in paid media, there may be a one-time setup fee ($500-$1,500) for full restructure work. We discuss this transparently before signing.</div>
+      </details>
+      <details class="faq-item">
+        <summary><span>Do you offer discounts for annual contracts?</span><span class="faq-toggle" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="faq-answer">We don't do annual contracts because we don't believe in locking in clients. We earn renewals through performance.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctaband">
+  <div class="wrap ctaband-inner">
+    <div class="txt">
+      <div>
+        <h2>Not sure which plan is right?</h2>
+        <p>Book a free strategy call. We'll help you scope the engagement that fits your goals and budget.</p>
+      </div>
+    </div>
+    <a href="/contact/" class="btn btn-lime">Book a Free Call <span class="arr">→</span></a>
+  </div>
+</section>

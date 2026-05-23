@@ -1,0 +1,64 @@
+{
+  "intro": "Transparent pricing built for Boston businesses. No hidden fees, no annual contracts, no surprises.",
+  "tiers": [
+    {
+      "name": "Starter",
+      "tagline": "For local businesses just getting serious about marketing",
+      "price": "$2,500",
+      "period": "per month",
+      "features": [
+        "One channel focus (SEO, Google Ads, or Meta Ads)",
+        "Monthly strategy + execution",
+        "Bi-weekly reporting calls",
+        "Up to $3K ad budget management",
+        "Google Business Profile optimization",
+        "Email support (24hr response)"
+      ],
+      "cta": "Start with Starter",
+      "popular": false,
+      "accent": "lime"
+    },
+    {
+      "name": "Growth",
+      "tagline": "For established businesses ready to scale",
+      "price": "$5,000",
+      "period": "per month",
+      "features": [
+        "Multi-channel strategy (up to 3 channels)",
+        "Weekly optimization + creative refresh",
+        "Weekly reporting + monthly QBR",
+        "Up to $15K ad budget management",
+        "Landing page builds (2/quarter)",
+        "Email + Slack support (same-day response)",
+        "Dedicated senior strategist"
+      ],
+      "cta": "Most Popular",
+      "popular": true,
+      "accent": "coral"
+    },
+    {
+      "name": "Scale",
+      "tagline": "For high-growth businesses with serious marketing needs",
+      "price": "$10,000+",
+      "period": "per month",
+      "features": [
+        "Full-funnel strategy across all channels",
+        "Custom team allocation (2-4 specialists)",
+        "Real-time dashboards + weekly QBR",
+        "Unlimited ad budget management",
+        "Brand creative + landing pages included",
+        "Slack + dedicated phone line",
+        "C-level marketing partnership"
+      ],
+      "cta": "Book a Scale Consultation",
+      "popular": false,
+      "accent": "lime"
+    }
+  ],
+  "addons": [
+    { "name": "Brand Creation Project", "price": "from $8,000 one-time", "desc": "Full identity, naming, guidelines, rollout" },
+    { "name": "Website Redesign", "price": "from $12,000 one-time", "desc": "Strategy, design, build, launch — 8-12 weeks" },
+    { "name": "TV Ad Production", "price": "from $15,000 / spot", "desc": "Concept, script, production, post" },
+    { "name": "Free Strategy Audit", "price": "Always free", "desc": "We'll audit your current marketing at no cost — even if we don't work together" }
+  ]
+}

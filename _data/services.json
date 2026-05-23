@@ -13,25 +13,31 @@
     },
     "problems": [
       { "icon": "trending-down", "title": "Low Visibility", "desc": "You're losing customers to competitors who rank higher in Google." },
-      { "icon": "search-off", "title": "Wrong Keywords", "desc": "Targeting keywords that don't match buyer intent." },
+      { "icon": "search", "title": "Wrong Keywords", "desc": "Targeting keywords that don't match buyer intent." },
       { "icon": "clock", "title": "Slow Results", "desc": "SEO takes time, and many agencies don't deliver consistent growth." }
     ],
     "benefits": [
       { "icon": "trending-up", "title": "Higher Rankings", "desc": "Consistent top 3 placements for competitive keywords." },
       { "icon": "users", "title": "More Traffic", "desc": "Organic traffic increases 217% on average in 6 months." },
-      { "icon": "zap", "title": "Lower CPA", "desc": "Organic leads cost far less than paid ads." }
+      { "icon": "trending-down", "title": "Lower CPA", "desc": "Organic leads cost far less than paid ads." }
     ],
     "process": [
-      { "step": 1, "icon": "compass", "title": "Discover", "desc": "We audit your site, analyze competitors, and identify ranking opportunities." },
-      { "step": 2, "icon": "target", "title": "Strategy", "desc": "We build a keyword strategy focused on high-intent, buyer-ready searches." },
-      { "step": 3, "icon": "edit", "title": "Optimize", "desc": "Technical SEO, on-page optimization, content creation, and link building." },
-      { "step": 4, "icon": "chart", "title": "Report", "desc": "Monthly reports showing rankings, traffic, and revenue impact." }
+      { "step": 1, "title": "Discover", "desc": "We audit your site, analyze competitors, and identify ranking opportunities." },
+      { "step": 2, "title": "Strategy", "desc": "We build a keyword strategy focused on high-intent, buyer-ready searches." },
+      { "step": 3, "title": "Optimize", "desc": "Technical SEO, on-page optimization, content creation, and link building." },
+      { "step": 4, "title": "Report", "desc": "Monthly reports showing rankings, traffic, and revenue impact." }
+    ],
+    "faqs": [
+      { "q": "How long does SEO take to work?", "a": "Most clients see meaningful ranking improvements within 3-6 months. Quick wins (technical fixes, on-page optimization) can show results in weeks. Significant traffic compounds over 6-12 months." },
+      { "q": "How much does SEO cost in Boston?", "a": "Our SEO engagements start at $2,500/month and scale based on competitiveness of your market and scope of work. We don't believe in one-size-fits-all packages." },
+      { "q": "Do you guarantee specific Google rankings?", "a": "No ethical SEO agency can guarantee specific rankings because Google's algorithm is constantly changing. We guarantee transparent monthly progress reports and a documented strategy." },
+      { "q": "What's included in your SEO service?", "a": "Technical audits, keyword research, on-page optimization, content strategy and creation, link building, local SEO (Google Business Profile), and detailed monthly reporting." }
     ]
   },
   {
     "id": 2,
     "slug": "google-ads",
-    "title": "Paid Search & PPC",
+    "title": "Google Ads",
     "shortDesc": "Smart campaigns. Lower costs. More high-intent leads.",
     "icon": "target",
     "order": 2,
@@ -41,194 +47,446 @@
       "lead": "We manage high-performing Google Ads campaigns that drive qualified leads, lower your cost per acquisition, and grow your bottom line."
     },
     "problems": [
-      { "icon": "trending-up", "title": "High Costs", "desc": "Rising CPCs eating into profit margins." },
-      { "icon": "users-slash", "title": "Poor Leads", "desc": "Clicks come in, but conversions don't follow." },
+      { "icon": "trending-up", "title": "Rising Costs", "desc": "CPCs eating into profit margins year over year." },
+      { "icon": "users", "title": "Poor Quality Leads", "desc": "Clicks come in, but conversions don't follow." },
       { "icon": "activity", "title": "Low ROAS", "desc": "Campaigns aren't optimized for real business results." }
     ],
     "benefits": [
-      { "icon": "target", "title": "Qualified Traffic", "desc": "High-intent clicks from people actively searching." },
-      { "icon": "dollar-sign", "title": "Lower CPA", "desc": "Average 32% reduction in cost per acquisition." },
-      { "icon": "trending-up", "title": "3.6x ROAS", "desc": "Campaigns built for profitability, not just clicks." }
+      { "icon": "target", "title": "Qualified Traffic", "desc": "High-intent clicks from people actively searching for what you sell." },
+      { "icon": "trending-down", "title": "Lower CPA", "desc": "Average 32% reduction in cost per acquisition." },
+      { "icon": "trending-up", "title": "3.6x Average ROAS", "desc": "Campaigns built for profitability, not just clicks." }
     ],
     "process": [
-      { "step": 1, "icon": "search", "title": "Audit & Research", "desc": "Deep dive into your account, competitors, and market opportunities." },
-      { "step": 2, "icon": "settings", "title": "Strategy & Setup", "desc": "Custom campaigns, ad copy, and landing pages for your goals." },
-      { "step": 3, "icon": "send", "title": "Launch & Test", "desc": "Go live with precision targeting and A/B testing." },
-      { "step": 4, "icon": "sliders", "title": "Optimize & Scale", "desc": "Continuous optimization to lower costs and scale revenue." }
+      { "step": 1, "title": "Audit & Research", "desc": "Deep dive into your account, competitors, and market opportunities." },
+      { "step": 2, "title": "Strategy & Setup", "desc": "Custom campaigns, ad copy, and landing pages for your goals." },
+      { "step": 3, "title": "Launch & Test", "desc": "Go live with precision targeting and A/B testing." },
+      { "step": 4, "title": "Optimize & Scale", "desc": "Continuous optimization to lower costs and scale revenue." }
+    ],
+    "faqs": [
+      { "q": "How much should I budget for Google Ads?", "a": "Most local Boston businesses start with $2,000-5,000/month in media spend plus our management fee. We help right-size based on your goals and market." },
+      { "q": "Do you charge a setup fee?", "a": "Yes — typically $500-1,500 for new account setup, depending on complexity. This covers structure, conversion tracking, and initial campaign builds." },
+      { "q": "Can you take over my existing Google Ads account?", "a": "Yes. We audit your account, identify wins and waste, then restructure for performance. You keep ownership of the account." },
+      { "q": "What's a good ROAS for Google Ads?", "a": "It varies by industry, but 3-5x is typical for local service businesses. We optimize for revenue and profit, not vanity metrics." }
     ]
   },
   {
     "id": 3,
-    "slug": "social-media",
-    "title": "Social Media Marketing",
-    "shortDesc": "Build your brand. Engage your audience. Drive real growth.",
-    "icon": "share-2",
+    "slug": "meta-ads",
+    "title": "Meta Ads (Facebook & Instagram)",
+    "shortDesc": "Reach customers on Facebook and Instagram with high-converting creative.",
+    "icon": "users",
     "order": 3,
     "hero": {
-      "eyebrow": "Social Media Marketing in Boston",
-      "headline": "Social That Sells. Not Just Followers.",
-      "lead": "We build authentic social strategies that engage your audience, build brand loyalty, and drive real business growth."
+      "eyebrow": "Meta Ads in Boston",
+      "headline": "Stop the Scroll. Start the Conversion.",
+      "lead": "We build Meta Ads campaigns across Facebook, Instagram, and Messenger that turn endless scrolling into qualified leads and customers."
     },
     "problems": [
-      { "icon": "users", "title": "Low Engagement", "desc": "Posts disappear into the feed with little interaction." },
-      { "icon": "clock", "title": "Time Consuming", "desc": "Managing social takes resources your team doesn't have." },
-      { "icon": "trending-down", "title": "No ROI", "desc": "Activity ≠ results. You need leads, not just likes." }
+      { "icon": "trending-down", "title": "Wasted Ad Spend", "desc": "Boosting posts and hoping doesn't scale or drive ROI." },
+      { "icon": "search", "title": "Boring Creative", "desc": "Generic ads get ignored in busy feeds." },
+      { "icon": "activity", "title": "No Pixel Optimization", "desc": "Without proper tracking and event setup, you're flying blind." }
     ],
     "benefits": [
-      { "icon": "heart", "title": "Engaged Community", "desc": "Build loyal followers who become customers." },
-      { "icon": "zap", "title": "Lead Generation", "desc": "Convert social followers into qualified leads." },
-      { "icon": "trending-up", "title": "Brand Authority", "desc": "Position yourself as a trusted industry leader." }
+      { "icon": "users", "title": "Targeted Audiences", "desc": "Reach lookalikes of your best customers and warm retargeting pools." },
+      { "icon": "trending-up", "title": "Creative That Converts", "desc": "Video, UGC, and carousel ads designed to stop the scroll." },
+      { "icon": "target", "title": "Full-Funnel Strategy", "desc": "Awareness, consideration, conversion, and retention working together." }
     ],
     "process": [
-      { "step": 1, "icon": "compass", "title": "Discover", "desc": "Understand your audience, competitors, and content gaps." },
-      { "step": 2, "icon": "edit", "title": "Strategy", "desc": "Content calendar, messaging, and posting schedule." },
-      { "step": 3, "icon": "send", "title": "Create & Post", "desc": "Engaging content, community management, and growth tactics." },
-      { "step": 4, "icon": "trending-up", "title": "Grow", "desc": "Monitor performance, iterate, and scale what works." }
+      { "step": 1, "title": "Strategy", "desc": "Define target audience, funnel structure, and creative direction." },
+      { "step": 2, "title": "Creative", "desc": "Produce thumb-stopping ads, copy variants, and video creative." },
+      { "step": 3, "title": "Launch", "desc": "Set up campaigns, audiences, pixel events, and conversion tracking." },
+      { "step": 4, "title": "Optimize", "desc": "A/B test creative, refine audiences, scale what works." }
+    ],
+    "faqs": [
+      { "q": "How much should I spend on Meta Ads?", "a": "Most clients start at $2,000-5,000/month in media spend. We help you scale up as ROAS proves out." },
+      { "q": "How quickly will I see results from Meta Ads?", "a": "Lead generation and retargeting campaigns can drive results within days. Cold acquisition and awareness builds typically take 4-6 weeks to optimize fully." },
+      { "q": "Do you create the ad creative for me?", "a": "Yes — copy, static design, and short-form video creative are all included. You don't need an in-house creative team." },
+      { "q": "Will my ads run on Instagram too?", "a": "Yes. Meta Ads cover Facebook, Instagram, Messenger, and Audience Network. We pick the placements that perform best for your goal." }
     ]
   },
   {
     "id": 4,
-    "slug": "content-marketing",
-    "title": "Content Marketing",
-    "shortDesc": "Content that connects. Educates, ranks, and drives action.",
-    "icon": "file-text",
+    "slug": "local-service-ads",
+    "title": "Local Service Ads (LSA)",
+    "shortDesc": "Pay only for qualified leads. Get the Google Guaranteed badge.",
+    "icon": "map-pin",
     "order": 4,
     "hero": {
-      "eyebrow": "Content Marketing in Boston",
-      "headline": "Content That Ranks. Converts. Sells.",
-      "lead": "Strategic content that educates your audience, ranks in Google, builds trust, and drives conversions."
+      "eyebrow": "Local Service Ads Management in Boston",
+      "headline": "Show Up Above Google. Pay Per Lead — Not Per Click.",
+      "lead": "We manage your Local Service Ads end-to-end — from Google Guaranteed verification to lead dispute management — so you only pay for real opportunities."
     },
     "problems": [
-      { "icon": "search", "title": "Low Visibility", "desc": "Content exists, but doesn't rank or get found." },
-      { "icon": "users", "title": "Wrong Audience", "desc": "Content doesn't align with what your customers need." },
-      { "icon": "trending-down", "title": "No Conversions", "desc": "Traffic doesn't convert into leads or customers." }
+      { "icon": "search", "title": "Not Showing Up", "desc": "You're not in the LSA pack above the map results." },
+      { "icon": "trending-down", "title": "Paying for Junk Leads", "desc": "Wrong service requests, spam calls, and no-shows draining budget." },
+      { "icon": "clock", "title": "Slow Response Penalties", "desc": "Missed calls tank your ranking in the LSA stack." }
     ],
     "benefits": [
-      { "icon": "trending-up", "title": "More Organic Traffic", "desc": "Content-driven SEO that compounds over time." },
-      { "icon": "shield", "title": "Build Authority", "desc": "Become the trusted expert in your industry." },
-      { "icon": "zap", "title": "Inbound Leads", "desc": "Customers find you because your content answers their questions." }
+      { "icon": "trending-up", "title": "Top of Google", "desc": "LSA listings appear above paid search and the map pack." },
+      { "icon": "target", "title": "Pay Per Lead", "desc": "Only charged when someone actually calls or messages you." },
+      { "icon": "users", "title": "Lead Dispute Management", "desc": "We dispute every junk lead so you get refunded automatically." }
     ],
     "process": [
-      { "step": 1, "icon": "compass", "title": "Discover", "desc": "Keyword research, audience insights, and content gaps." },
-      { "step": 2, "icon": "target", "title": "Strategy", "desc": "Content calendar, topics, and distribution channels." },
-      { "step": 3, "icon": "edit", "title": "Create", "desc": "Blog posts, guides, videos, and pillar content." },
-      { "step": 4, "icon": "trending-up", "title": "Promote & Optimize", "desc": "Distribution, performance tracking, and continuous improvement." }
+      { "step": 1, "title": "Verify", "desc": "Google Guaranteed background check, license verification, and insurance setup." },
+      { "step": 2, "title": "Setup", "desc": "Profile optimization, service areas, business hours, and photos." },
+      { "step": 3, "title": "Launch", "desc": "Activate ads with proper budget, bidding strategy, and call routing." },
+      { "step": 4, "title": "Optimize", "desc": "Monitor ranking, dispute bad leads, and scale budget on quality leads." }
+    ],
+    "faqs": [
+      { "q": "What is Google Guaranteed?", "a": "A trust badge from Google that comes with a $2,000 money-back guarantee for customers if they're not satisfied. It dramatically boosts conversion rates from LSA listings." },
+      { "q": "Which businesses qualify for Local Service Ads?", "a": "Service businesses including plumbers, electricians, HVAC, lawyers, dentists, cleaners, locksmiths, contractors, and 70+ other categories." },
+      { "q": "How much does each LSA lead cost?", "a": "Varies by industry and city — typically $15-$80 per qualified call in the Boston market. Higher-value services (legal, HVAC) tend to cost more per lead." },
+      { "q": "Can you dispute bad leads to get refunds?", "a": "Yes — we dispute every junk lead (spam, wrong service, no-shows). Google refunds you for legitimate disputes, which keeps your effective CPA much lower." }
     ]
   },
   {
     "id": 5,
+    "slug": "tiktok-ads",
+    "title": "TikTok Ads",
+    "shortDesc": "Reach younger audiences with short-form video that drives action.",
+    "icon": "video",
+    "order": 5,
+    "hero": {
+      "eyebrow": "TikTok Ads in Boston",
+      "headline": "The Most Underpriced Ad Platform in 2026.",
+      "lead": "TikTok still has lower CPMs than Meta in most verticals — and your customers are there. We help you win with creative that fits the platform natively."
+    },
+    "problems": [
+      { "icon": "search", "title": "Wrong Creative Style", "desc": "Polished, broadcast-style ads flop on TikTok. Native UGC wins." },
+      { "icon": "users", "title": "Audience Mismatch Assumption", "desc": "You think your customers aren't on TikTok. They are." },
+      { "icon": "activity", "title": "Tracking Confusion", "desc": "iOS privacy changes broke attribution. Most agencies didn't adapt." }
+    ],
+    "benefits": [
+      { "icon": "trending-down", "title": "Lower CPMs", "desc": "TikTok reach is ~40% cheaper than Meta in most verticals right now." },
+      { "icon": "video", "title": "Native Creative", "desc": "Short-form video that fits the TikTok vibe — not recycled Instagram Reels." },
+      { "icon": "trending-up", "title": "Spark Ads", "desc": "Boost organic content for authentic reach at a fraction of the cost." }
+    ],
+    "process": [
+      { "step": 1, "title": "Discover", "desc": "Identify TikTok trends, sounds, and angles relevant to your niche." },
+      { "step": 2, "title": "Create", "desc": "Produce 5-10 native video variants per campaign with hooks designed for TikTok." },
+      { "step": 3, "title": "Launch", "desc": "Set up campaigns, audiences, and conversion tracking with iOS-aware setup." },
+      { "step": 4, "title": "Iterate", "desc": "Refresh creative every 7-14 days to fight ad fatigue and scale winners." }
+    ],
+    "faqs": [
+      { "q": "Is my industry right for TikTok Ads?", "a": "Likely yes — even B2B and high-ticket services work with the right creative approach. Local services, e-commerce, and education all see strong results." },
+      { "q": "Do I need to be on TikTok organically first?", "a": "No, but having organic presence helps Spark Ads perform better. We can build organic presence alongside paid." },
+      { "q": "How much should I budget for TikTok Ads?", "a": "$3,000-10,000/month for most local businesses lets us learn fast and find what works." },
+      { "q": "Will TikTok ads work for an older audience?", "a": "Yes — TikTok's user base is rapidly aging up. The 35+ demographic is the platform's fastest-growing segment." }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "reddit-ads",
+    "title": "Reddit Ads",
+    "shortDesc": "Reach engaged communities with native ads that don't feel like ads.",
+    "icon": "message-circle",
+    "order": 6,
+    "hero": {
+      "eyebrow": "Reddit Ads in Boston",
+      "headline": "70M+ Daily Users. Most Brands Are Ignoring Them.",
+      "lead": "Reddit is where research, recommendations, and purchase decisions actually happen — especially for considered purchases. We help you show up natively in the conversations that matter."
+    },
+    "problems": [
+      { "icon": "trending-down", "title": "Reddit Skepticism", "desc": "Hard-sell ads get downvoted into oblivion and waste budget." },
+      { "icon": "search", "title": "Wrong Subreddits", "desc": "Broad targeting wastes spend on irrelevant audiences." },
+      { "icon": "users", "title": "Corporate Voice", "desc": "Reddit users sniff out marketing-speak instantly." }
+    ],
+    "benefits": [
+      { "icon": "target", "title": "Niche Targeting", "desc": "Subreddit-level targeting reaches highly-engaged, intent-driven users." },
+      { "icon": "trending-up", "title": "Higher Intent", "desc": "Reddit users are researching purchases, not just scrolling for entertainment." },
+      { "icon": "message-circle", "title": "Authentic Voice", "desc": "Ad copy and creative that feels like part of the conversation." }
+    ],
+    "process": [
+      { "step": 1, "title": "Research", "desc": "Identify the right subreddits, conversations, and Reddit-native language for your audience." },
+      { "step": 2, "title": "Create", "desc": "Write Reddit-native copy and design visuals that don't read as ads." },
+      { "step": 3, "title": "Launch", "desc": "Carefully targeted campaigns starting with conservative budgets to validate." },
+      { "step": 4, "title": "Optimize", "desc": "Monitor sentiment, A/B test angles, and scale what resonates." }
+    ],
+    "faqs": [
+      { "q": "Does Reddit work for B2B?", "a": "Yes — Reddit has strong B2B, developer, finance, and professional communities. Some of the best B2B campaigns we run are on Reddit." },
+      { "q": "Can I target specific subreddits?", "a": "Yes — subreddit-level targeting is one of Reddit's strongest features. You can also target by interest, community size, and engagement." },
+      { "q": "How is Reddit different from Meta?", "a": "Higher engagement per impression, more research-driven users, longer dwell time, and stronger word-of-mouth potential. Lower volume but higher intent." },
+      { "q": "What does a Reddit ad actually look like?", "a": "Native promoted posts (text, image, or video) that appear in subreddit feeds and search results. The best ones feel like organic Reddit content." }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "tv-ads",
+    "title": "TV & Streaming Ads",
+    "shortDesc": "Connected TV, OTT, and broadcast ads that reach Boston households.",
+    "icon": "tv",
+    "order": 7,
+    "hero": {
+      "eyebrow": "TV & Streaming Ads in Boston",
+      "headline": "Get Your Brand In Front of Boston Households.",
+      "lead": "We plan and place TV ads — both connected TV (Hulu, YouTube TV, streaming) and traditional broadcast — that build brand awareness and drive measurable response."
+    },
+    "problems": [
+      { "icon": "users", "title": "Wasted Reach", "desc": "Buying broad audiences instead of household-precise targeting." },
+      { "icon": "search", "title": "No Attribution", "desc": "Can't tell if TV actually drove the conversion or sale." },
+      { "icon": "trending-up", "title": "Inflated Production Costs", "desc": "Agencies often inflate creative and production fees unnecessarily." }
+    ],
+    "benefits": [
+      { "icon": "target", "title": "Precise Targeting", "desc": "Connected TV lets you target by household, neighborhood, and demographic." },
+      { "icon": "activity", "title": "Cross-Device Attribution", "desc": "Tie TV impressions to web traffic, branded search lift, and conversions." },
+      { "icon": "video", "title": "In-House Creative", "desc": "We produce high-quality 15-30 second spots without inflated production costs." }
+    ],
+    "process": [
+      { "step": 1, "title": "Plan", "desc": "Audience research, market analysis, and optimal channel mix across CTV and broadcast." },
+      { "step": 2, "title": "Create", "desc": "Concept, script, produce, and edit your TV spot end-to-end." },
+      { "step": 3, "title": "Place", "desc": "Negotiate media buys across CTV, OTT, and broadcast at the best rates." },
+      { "step": 4, "title": "Measure", "desc": "Track lift in branded search, direct site traffic, and conversions." }
+    ],
+    "faqs": [
+      { "q": "What's the minimum TV ad budget?", "a": "$10,000/month for connected TV gets meaningful reach. Broadcast TV typically requires $25,000+/month to be effective in the Boston market." },
+      { "q": "How long does production take?", "a": "4-6 weeks from concept to first spot on air. Faster turnarounds are possible for simpler creative." },
+      { "q": "Does CTV really work for local businesses?", "a": "Yes — household-level targeting in Boston specifically, with lower waste than traditional broadcast. CTV is now the most cost-effective TV buy for most local advertisers." },
+      { "q": "Can I track if TV actually drove sales?", "a": "Yes — we use lift studies, branded search analysis, and cross-device attribution to measure direct response from TV." }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "social-media",
+    "title": "Social Media Marketing",
+    "shortDesc": "Build your brand. Engage your audience. Drive real growth.",
+    "icon": "share",
+    "order": 8,
+    "hero": {
+      "eyebrow": "Social Media Marketing in Boston",
+      "headline": "Social That Sells. Not Just Followers.",
+      "lead": "We build authentic organic social strategies that engage your audience, build brand loyalty, and drive real business growth across Instagram, LinkedIn, TikTok, and more."
+    },
+    "problems": [
+      { "icon": "users", "title": "Low Engagement", "desc": "Posts disappear into the feed with little interaction." },
+      { "icon": "clock", "title": "Time Consuming", "desc": "Managing social takes resources your team doesn't have." },
+      { "icon": "trending-down", "title": "No Business ROI", "desc": "Activity ≠ results. You need leads, not just likes." }
+    ],
+    "benefits": [
+      { "icon": "users", "title": "Engaged Community", "desc": "Build loyal followers who become customers and advocates." },
+      { "icon": "target", "title": "Lead Generation", "desc": "Convert social followers into qualified business leads." },
+      { "icon": "trending-up", "title": "Brand Authority", "desc": "Position yourself as a trusted leader in your industry." }
+    ],
+    "process": [
+      { "step": 1, "title": "Discover", "desc": "Understand your audience, competitors, and content opportunities." },
+      { "step": 2, "title": "Strategy", "desc": "Content calendar, messaging pillars, and posting cadence." },
+      { "step": 3, "title": "Create & Post", "desc": "Engaging content, community management, and growth tactics." },
+      { "step": 4, "title": "Grow", "desc": "Monitor performance, iterate on what works, and scale." }
+    ],
+    "faqs": [
+      { "q": "Which social platforms do you manage?", "a": "Instagram, LinkedIn, Facebook, TikTok, YouTube, and Pinterest — we pick the platforms where your audience actually spends time." },
+      { "q": "Do you create the content for me?", "a": "Yes — strategy, content creation (graphics, video, copy), posting, and community management are all included." },
+      { "q": "How often will you post?", "a": "Typically 3-5 posts per week per platform, plus daily story content where relevant." },
+      { "q": "Can you grow my followers organically?", "a": "Yes — but we focus on followers who actually engage and buy, not vanity follower counts." }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "brand-creation",
+    "title": "Brand Creation & Strategy",
+    "shortDesc": "Build a brand that customers remember, trust, and choose.",
+    "icon": "feather",
+    "order": 9,
+    "hero": {
+      "eyebrow": "Brand Creation & Strategy in Boston",
+      "headline": "Build the Brand They'll Remember.",
+      "lead": "Naming, visual identity, positioning, messaging — we build brands from the ground up. Whether you're launching new or rebranding, we create a foundation that sets you apart."
+    },
+    "problems": [
+      { "icon": "users", "title": "Blends In", "desc": "You look like every other competitor in your space." },
+      { "icon": "activity", "title": "Inconsistent Messaging", "desc": "Different voice in every channel, every touchpoint." },
+      { "icon": "search", "title": "DIY Identity", "desc": "Made it in Canva. Looks like it. Hurts credibility." }
+    ],
+    "benefits": [
+      { "icon": "feather", "title": "Distinct Identity", "desc": "Logo, colors, type, voice — all aligned and ownable in your market." },
+      { "icon": "target", "title": "Clear Positioning", "desc": "Tight statement of who you are, who you're for, and why you're different." },
+      { "icon": "trending-up", "title": "Brand Guidelines", "desc": "Documented standards so every touchpoint stays on-brand forever." }
+    ],
+    "process": [
+      { "step": 1, "title": "Discovery", "desc": "Workshops, stakeholder interviews, and competitive market research." },
+      { "step": 2, "title": "Strategy", "desc": "Positioning, brand voice, messaging architecture, and value props." },
+      { "step": 3, "title": "Identity", "desc": "Logo system, color palette, typography, and visual elements." },
+      { "step": 4, "title": "Activation", "desc": "Brand guidelines, asset library, and rollout across web, social, print." }
+    ],
+    "faqs": [
+      { "q": "How long does a brand identity project take?", "a": "Typically 6-10 weeks for a full identity project including discovery, strategy, design, and guidelines documentation." },
+      { "q": "Do you do brand naming too?", "a": "Yes — naming strategy, generation, trademark availability checks, and domain availability are all included if you need a new name." },
+      { "q": "What's the typical investment for branding?", "a": "Full brand identity projects range from $8,000-$25,000 depending on scope. Refresh projects start lower; rebrands with naming start higher." },
+      { "q": "Can you rebrand my existing business?", "a": "Yes — we handle full rebrands with phased rollout plans to minimize disruption while maximizing impact." }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "content-marketing",
+    "title": "Content Marketing",
+    "shortDesc": "Content that connects. Educates, ranks, and drives action.",
+    "icon": "file-text",
+    "order": 10,
+    "hero": {
+      "eyebrow": "Content Marketing in Boston",
+      "headline": "Content That Ranks. Converts. Sells.",
+      "lead": "Strategic content that educates your audience, ranks in Google, builds trust, and drives conversions over months and years."
+    },
+    "problems": [
+      { "icon": "search", "title": "Low Visibility", "desc": "Content exists, but doesn't rank or get found by your audience." },
+      { "icon": "users", "title": "Wrong Audience", "desc": "Content doesn't align with what your customers actually need." },
+      { "icon": "trending-down", "title": "No Conversions", "desc": "Traffic comes in but doesn't convert into leads or sales." }
+    ],
+    "benefits": [
+      { "icon": "trending-up", "title": "Compounding Traffic", "desc": "Content-driven SEO that compounds value over time." },
+      { "icon": "users", "title": "Build Authority", "desc": "Become the trusted expert in your industry." },
+      { "icon": "target", "title": "Inbound Leads", "desc": "Customers find you because your content answers their questions." }
+    ],
+    "process": [
+      { "step": 1, "title": "Discover", "desc": "Keyword research, audience insights, and content gap analysis." },
+      { "step": 2, "title": "Strategy", "desc": "Content calendar, pillar topics, and distribution channel plan." },
+      { "step": 3, "title": "Create", "desc": "Blog posts, guides, videos, case studies, and pillar content." },
+      { "step": 4, "title": "Promote & Optimize", "desc": "Distribution, performance tracking, and continuous improvement." }
+    ],
+    "faqs": [
+      { "q": "What kinds of content do you produce?", "a": "Blog posts, ebooks, white papers, video scripts, email sequences, sales collateral, and pillar content for SEO." },
+      { "q": "How long until content drives traffic?", "a": "Blog content typically ranks in 3-6 months and compounds traffic for years. Some pieces become evergreen lead generators." },
+      { "q": "Do you produce video content too?", "a": "Yes — strategy and scripts in-house, plus video production through trusted Boston-area partners." },
+      { "q": "How many articles per month is typical?", "a": "Most clients see strong results with 4-8 SEO-optimized posts per month, depending on category competitiveness." }
+    ]
+  },
+  {
+    "id": 11,
     "slug": "cro",
     "title": "Conversion Rate Optimization",
-    "shortDesc": "Turn more clicks into customers. Maximize ROI.",
-    "icon": "zap",
-    "order": 5,
+    "shortDesc": "Turn more clicks into customers. Maximize ROI from existing traffic.",
+    "icon": "trending-up",
+    "order": 11,
     "hero": {
       "eyebrow": "Conversion Rate Optimization in Boston",
       "headline": "More Conversions. Same Traffic.",
       "lead": "We test, analyze, and optimize your website to convert more visitors into customers — multiplying the ROI of all your marketing efforts."
     },
     "problems": [
-      { "icon": "users", "title": "Low Conversion Rate", "desc": "Lots of traffic, but few conversions." },
-      { "icon": "trending-down", "title": "High CAC", "desc": "You need to spend more to get the same results." },
-      { "icon": "activity", "title": "Unclear Friction", "desc": "You don't know what's stopping people from converting." }
+      { "icon": "users", "title": "Low Conversion Rate", "desc": "Lots of traffic, but few visitors become customers." },
+      { "icon": "trending-down", "title": "High CAC", "desc": "You need to spend more to acquire each new customer." },
+      { "icon": "search", "title": "Unclear Friction", "desc": "You don't know what's stopping people from converting." }
     ],
     "benefits": [
-      { "icon": "trending-up", "title": "2x More Conversions", "desc": "Small changes compound into big revenue increases." },
-      { "icon": "dollar-sign", "title": "Lower CAC", "desc": "Get more customers from the same ad spend." },
-      { "icon": "zap", "title": "Better UX", "desc": "Faster, clearer, more persuasive website experience." }
+      { "icon": "trending-up", "title": "2x More Conversions", "desc": "Small targeted changes compound into big revenue increases." },
+      { "icon": "target", "title": "Lower CAC", "desc": "Get more customers from the same ad spend and traffic." },
+      { "icon": "activity", "title": "Better UX", "desc": "Faster, clearer, more persuasive website experience." }
     ],
     "process": [
-      { "step": 1, "icon": "search", "title": "Audit", "desc": "Analyze user behavior, heatmaps, and conversion funnels." },
-      { "step": 2, "icon": "target", "title": "Hypothesize", "desc": "Identify high-impact optimization opportunities." },
-      { "step": 3, "icon": "flask", "title": "Test", "desc": "A/B test changes to landing pages, CTAs, copy, and design." },
-      { "step": 4, "icon": "trending-up", "title": "Scale", "desc": "Implement winners, measure impact, and iterate." }
+      { "step": 1, "title": "Audit", "desc": "Analyze user behavior, heatmaps, session recordings, and conversion funnels." },
+      { "step": 2, "title": "Hypothesize", "desc": "Identify high-impact optimization opportunities and prioritize tests." },
+      { "step": 3, "title": "Test", "desc": "A/B test changes to landing pages, CTAs, copy, design, and forms." },
+      { "step": 4, "title": "Scale", "desc": "Implement winners site-wide, measure impact, and iterate on next tests." }
+    ],
+    "faqs": [
+      { "q": "What's a good conversion rate?", "a": "It depends on industry — typical site-wide rates are 2-5%. Our clients often hit 8-15% on key landing pages after CRO work." },
+      { "q": "How quickly will I see CRO results?", "a": "First test wins usually appear in 30-60 days. Compound gains typically materialize over 6 months of continuous testing." },
+      { "q": "What tools do you use for CRO?", "a": "Hotjar, FullStory, Google Optimize alternatives, VWO, plus our own conversion frameworks based on hundreds of past tests." },
+      { "q": "Will you redesign my entire site?", "a": "Not necessarily — often surgical changes drive the biggest lifts. We only redesign when the data shows current architecture is the bottleneck." }
     ]
   },
   {
-    "id": 6,
+    "id": 12,
     "slug": "web-design",
     "title": "Web Design & Development",
     "shortDesc": "Fast, modern websites built to perform and convert.",
     "icon": "monitor",
-    "order": 6,
+    "order": 12,
     "hero": {
       "eyebrow": "Web Design & Development in Boston",
-      "headline": "Websites That Convert.",
-      "lead": "Custom-built websites designed for speed, mobile, and conversions. Your website is your 24/7 sales tool."
+      "headline": "Websites That Actually Convert.",
+      "lead": "Custom-built websites designed for speed, mobile, and conversions. Your website is your 24/7 sales tool — let's make it pay for itself."
     },
     "problems": [
-      { "icon": "clock", "title": "Slow Sites", "desc": "Slow load times kill conversions and SEO rankings." },
-      { "icon": "mobile", "title": "Not Mobile", "desc": "Site looks great on desktop, terrible on phone." },
-      { "icon": "trending-down", "title": "Outdated Design", "desc": "Old design hurts credibility and conversions." }
+      { "icon": "clock", "title": "Slow Sites", "desc": "Slow load times kill conversions and tank SEO rankings." },
+      { "icon": "users", "title": "Bad Mobile UX", "desc": "Site looks great on desktop, terrible on phone where most traffic happens." },
+      { "icon": "trending-down", "title": "Outdated Design", "desc": "Old design hurts credibility, trust, and conversions." }
     ],
     "benefits": [
-      { "icon": "zap", "title": "Lightning Fast", "desc": "Optimized for speed. Google's Core Web Vitals compliant." },
-      { "icon": "responsive", "title": "Mobile First", "desc": "Perfect experience on all devices." },
-      { "icon": "trending-up", "title": "Built for Conversion", "desc": "Every pixel designed to drive action." }
+      { "icon": "trending-up", "title": "Lightning Fast", "desc": "Optimized for speed. Google Core Web Vitals compliant out of the box." },
+      { "icon": "monitor", "title": "Mobile First", "desc": "Perfect experience on every device, from iPhone SE to ultrawide monitor." },
+      { "icon": "target", "title": "Built to Convert", "desc": "Every section, button, and pixel designed to drive action." }
     ],
     "process": [
-      { "step": 1, "icon": "compass", "title": "Discover", "desc": "Goals, audience, competitors, and design inspiration." },
-      { "step": 2, "icon": "layers", "title": "Design", "desc": "Wireframes, mockups, and interactive prototypes." },
-      { "step": 3, "icon": "code", "title": "Build", "desc": "Clean, fast, responsive code. SEO-friendly structure." },
-      { "step": 4, "icon": "send", "title": "Launch & Optimize", "desc": "Deployment, testing, and performance monitoring." }
+      { "step": 1, "title": "Discover", "desc": "Goals, audience, competitors, sitemap, and design inspiration." },
+      { "step": 2, "title": "Design", "desc": "Wireframes, mockups, and interactive prototypes for review." },
+      { "step": 3, "title": "Build", "desc": "Clean, fast, responsive code with SEO-friendly structure." },
+      { "step": 4, "title": "Launch & Optimize", "desc": "Deployment, QA, analytics setup, and performance monitoring." }
+    ],
+    "faqs": [
+      { "q": "How long does a website project take?", "a": "Typically 6-12 weeks from kickoff to launch, depending on scope and content readiness." },
+      { "q": "What platforms do you build on?", "a": "Webflow, WordPress, Shopify, and custom static sites (like this one) — we pick what fits your team and use case." },
+      { "q": "Do you handle hosting?", "a": "Yes — we set up fast, secure, optimized hosting on Cloudflare, Netlify, or your preferred provider." },
+      { "q": "Can you redesign without losing SEO rankings?", "a": "Yes — our migrations preserve URL structure, redirects, and content equity. Most clients see SEO improvements post-redesign." }
     ]
   },
   {
-    "id": 7,
+    "id": 13,
     "slug": "landing-pages",
     "title": "Landing Page Design",
-    "shortDesc": "High-converting landing pages built for campaigns.",
-    "icon": "target",
-    "order": 7,
+    "shortDesc": "High-converting landing pages built specifically for your campaigns.",
+    "icon": "layout",
+    "order": 13,
     "hero": {
-      "eyebrow": "Landing Page Design & Development",
+      "eyebrow": "Landing Page Design in Boston",
       "headline": "Landing Pages That Convert.",
-      "lead": "Custom landing pages designed and optimized for your campaigns. Every page is built to maximize conversions for that specific offer."
+      "lead": "Custom landing pages designed and optimized for your specific campaigns. Every page is built to maximize conversions for that specific audience and offer."
     },
     "problems": [
-      { "icon": "trending-down", "title": "Low Conversion Rate", "desc": "Generic pages don't convert campaign traffic." },
-      { "icon": "activity", "title": "Too Much Friction", "desc": "Multiple steps, confusing messaging, unclear CTAs." },
-      { "icon": "trending-up", "title": "High CAC", "desc": "You're paying for traffic, but not converting it." }
+      { "icon": "trending-down", "title": "Low Conversion Rate", "desc": "Generic pages don't convert paid traffic — campaigns lose money." },
+      { "icon": "activity", "title": "Too Much Friction", "desc": "Multiple steps, confusing messaging, weak CTAs kill conversions." },
+      { "icon": "trending-up", "title": "High CAC", "desc": "You're paying for clicks but not converting them into customers." }
     ],
     "benefits": [
-      { "icon": "target", "title": "10%+ Conversion Rate", "desc": "Campaign-specific pages that match ad messaging." },
-      { "icon": "zap", "title": "Fast & Clean", "desc": "No navigation, no distractions. Just conversion." },
-      { "icon": "dollar-sign", "title": "Lower CPA", "desc": "Get more leads from the same ad spend." }
+      { "icon": "target", "title": "10%+ Conversion Rate", "desc": "Campaign-specific pages that match ad messaging exactly." },
+      { "icon": "activity", "title": "Fast & Focused", "desc": "No navigation, no distractions. Just one clear path to conversion." },
+      { "icon": "trending-down", "title": "Lower CPA", "desc": "Get more leads or sales from the same paid traffic." }
     ],
     "process": [
-      { "step": 1, "icon": "target", "title": "Strategy", "desc": "Match page to campaign goal and messaging." },
-      { "step": 2, "icon": "layers", "title": "Design", "desc": "Conversion-focused layout, copy, and visuals." },
-      { "step": 3, "icon": "code", "title": "Build", "desc": "Fast, mobile-optimized, analytics-ready." },
-      { "step": 4, "icon": "flask", "title": "Test & Optimize", "desc": "A/B test, gather data, improve conversion rate." }
+      { "step": 1, "title": "Strategy", "desc": "Match page to campaign goal, audience, and ad messaging." },
+      { "step": 2, "title": "Design", "desc": "Conversion-focused layout, copy, visuals, and persuasion architecture." },
+      { "step": 3, "title": "Build", "desc": "Fast, mobile-optimized, analytics and pixel-ready." },
+      { "step": 4, "title": "Test & Optimize", "desc": "A/B test headlines, hero, CTAs to compound conversion gains." }
+    ],
+    "faqs": [
+      { "q": "How fast can you build a landing page?", "a": "5-10 business days from kickoff to launch for design and build, including copy and analytics setup." },
+      { "q": "What's included in a landing page project?", "a": "Strategy, copywriting, design, build, analytics setup, A/B testing framework, and post-launch optimization." },
+      { "q": "Can you build pages for our existing site?", "a": "Yes — we deploy to your existing CMS (WordPress, Webflow, etc.) or build standalone pages on your subdomain." },
+      { "q": "Do you A/B test landing pages?", "a": "Yes — every campaign includes split testing of headlines, hero sections, and CTAs to find your best performers." }
     ]
   },
   {
-    "id": 8,
+    "id": 14,
     "slug": "email-marketing",
     "title": "Email Marketing & Automation",
-    "shortDesc": "Nurture leads, re-engage customers, and grow revenue.",
+    "shortDesc": "Nurture leads, re-engage customers, and grow recurring revenue.",
     "icon": "mail",
-    "order": 8,
+    "order": 14,
     "hero": {
-      "eyebrow": "Email Marketing & Automation",
+      "eyebrow": "Email Marketing & Automation in Boston",
       "headline": "Email That Nurtures. Converts. Sells.",
-      "lead": "Strategic email sequences that nurture leads, re-engage customers, and grow revenue — on autopilot."
+      "lead": "Strategic email sequences and automations that nurture leads, re-engage past customers, and grow revenue — on autopilot."
     },
     "problems": [
-      { "icon": "users", "title": "Low Open Rates", "desc": "Emails don't get opened or read." },
-      { "icon": "trending-down", "title": "No Engagement", "desc": "Recipients don't click or convert." },
-      { "icon": "clock", "title": "Manual Process", "desc": "Building and sending emails manually wastes time." }
+      { "icon": "users", "title": "Low Open Rates", "desc": "Emails don't get opened or even reach the inbox." },
+      { "icon": "trending-down", "title": "No Engagement", "desc": "Recipients don't click, reply, or convert." },
+      { "icon": "clock", "title": "Manual Process", "desc": "Building and sending emails manually wastes hours every week." }
     ],
     "benefits": [
-      { "icon": "zap", "title": "Automated Nurture", "desc": "Sequences that work 24/7 to convert leads." },
-      { "icon": "trending-up", "title": "Higher Engagement", "desc": "Personalized, timely messages that resonate." },
-      { "icon": "dollar-sign", "title": "Recurring Revenue", "desc": "Re-engage past customers and drive repeat business." }
+      { "icon": "activity", "title": "Automated Nurture", "desc": "Sequences that work 24/7 to convert leads while you sleep." },
+      { "icon": "trending-up", "title": "Higher Engagement", "desc": "Personalized, well-timed messages that actually resonate." },
+      { "icon": "target", "title": "Recurring Revenue", "desc": "Re-engage past customers and drive repeat business reliably." }
     ],
     "process": [
-      { "step": 1, "icon": "compass", "title": "Discover", "desc": "Map customer journey and identify key touchpoints." },
-      { "step": 2, "icon": "edit", "title": "Build", "desc": "Design email sequences, copy, and automation rules." },
-      { "step": 3, "icon": "send", "title": "Launch", "desc": "Set up automations and monitor performance." },
-      { "step": 4, "icon": "trending-up", "title": "Optimize", "desc": "Test subject lines, content, timing for better results." }
+      { "step": 1, "title": "Discover", "desc": "Map customer journey and identify key touchpoints and triggers." },
+      { "step": 2, "title": "Build", "desc": "Design email sequences, copy, templates, and automation rules." },
+      { "step": 3, "title": "Launch", "desc": "Set up automations, integrate with your stack, and monitor deliverability." },
+      { "step": 4, "title": "Optimize", "desc": "Test subject lines, content, timing, and segmentation continuously." }
+    ],
+    "faqs": [
+      { "q": "Which email platform do you use?", "a": "Klaviyo, Mailchimp, HubSpot, ActiveCampaign — whichever fits your existing stack and use case." },
+      { "q": "What automations do you typically build?", "a": "Welcome sequences, abandoned cart, post-purchase, win-back, birthday, browse abandonment, and lead nurture flows." },
+      { "q": "How fast until email drives real revenue?", "a": "Welcome and post-purchase automations typically generate measurable revenue within the first week of launch." },
+      { "q": "Do you write the actual email copy?", "a": "Yes — copy, design, and strategy are all included in our email marketing engagements." }
     ]
   }
 ]

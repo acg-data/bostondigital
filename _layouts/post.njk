@@ -1,0 +1,68 @@
+---
+layout: base.njk
+---
+
+<!-- POST HERO -->
+<section class="post-hero">
+  <div class="wrap post-hero-inner">
+    <a href="/resources/" class="post-back">← All Articles</a>
+    <span class="blog-tag blog-tag-{{ categoryColor or 'lime' }}">{{ category }}</span>
+    <h1>{{ title }}</h1>
+    <div class="post-meta">
+      <div class="post-author">
+        <div class="post-author-avatar">{{ author | replace(" ", "") | truncate(2, true, "") | upper }}</div>
+        <div>
+          <div class="post-author-name">{{ author }}</div>
+          <div class="post-meta-line">{{ displayDate or "" }} · {{ readTime or "6 min read" }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POST BODY -->
+<article class="post-body">
+  <div class="wrap post-body-inner">
+    {{ content | safe }}
+
+    <div class="post-cta">
+      <h3>Want results like this for your business?</h3>
+      <p>Book a free strategy call. We'll review your current marketing and show you exactly where the biggest growth opportunities are.</p>
+      <a href="/contact/" class="btn btn-lime">Book a Strategy Call <span class="arr">→</span></a>
+    </div>
+  </div>
+</article>
+
+<!-- RELATED POSTS -->
+<section class="post-related">
+  <div class="wrap">
+    <div class="blog-section-head">
+      <h2>Keep reading</h2>
+      <a href="/resources/" class="link-underline">View All Articles →</a>
+    </div>
+    <div class="blog-grid">
+      {%- set currentSlug = page.fileSlug -%}
+      {%- set count = 0 -%}
+      {% for post in collections.post | reverse %}
+        {% if post.fileSlug != currentSlug and count < 3 %}
+          {% set count = count + 1 %}
+          <a href="{{ post.url }}" class="blog-card">
+            <div class="blog-card-img">
+              <span class="blog-tag blog-tag-{{ post.data.categoryColor or 'lime' }}">{{ post.data.category }}</span>
+            </div>
+            <div class="blog-card-body">
+              <div class="blog-meta">
+                <span>{{ post.data.displayDate }}</span>
+                <span class="dot-sep">·</span>
+                <span>{{ post.data.readTime or "6 min read" }}</span>
+              </div>
+              <h3>{{ post.data.title }}</h3>
+              <p>{{ post.data.excerpt }}</p>
+              <span class="blog-read">Read more <span class="arr">→</span></span>
+            </div>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>

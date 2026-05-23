@@ -6,6 +6,7 @@
   <title>{{ title or site.name }} — {{ site.tagline }}</title>
   <meta name="description" content="{{ description or site.description }}">
   <meta name="robots" content="index, follow">
+  {% if site.googleSiteVerification %}<meta name="google-site-verification" content="{{ site.googleSiteVerification }}">{% endif %}
 
   <!-- Canonical URL -->
   <link rel="canonical" href="{{ site.siteUrl }}{{ page.url }}">
@@ -16,13 +17,13 @@
   <meta property="og:url" content="{{ site.siteUrl }}{{ page.url }}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ site.name }}">
-  <meta property="og:image" content="{{ site.siteUrl }}/og-image.png">
+  <meta property="og:image" content="{{ site.siteUrl }}{{ site.ogImage }}">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title or site.name }}">
   <meta name="twitter:description" content="{{ description or site.description }}">
-  <meta name="twitter:image" content="{{ site.siteUrl }}/og-image.png">
+  <meta name="twitter:image" content="{{ site.siteUrl }}{{ site.ogImage }}">
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -33,8 +34,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  {%- if page.url == "/" -%}
+  <link rel="preload" as="image" href="/images/hero-boston.png" fetchpriority="high">
+  {%- endif -%}
 
-  <!-- JSON-LD Schema -->
+  <!-- LocalBusiness JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,14 +47,50 @@
     "url": "{{ site.siteUrl }}",
     "telephone": "{{ site.phone }}",
     "email": "{{ site.email }}",
+    "image": "{{ site.siteUrl }}{{ site.ogImage }}",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Boston",
       "addressRegion": "MA",
       "addressCountry": "US"
-    }
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Boston" },
+      { "@type": "City", "name": "Cambridge" },
+      { "@type": "City", "name": "Somerville" },
+      { "@type": "City", "name": "Newton" },
+      { "@type": "City", "name": "Brookline" }
+    ]
   }
   </script>
+
+  {%- set crumbs = page.url | breadcrumbs -%}
+  {%- if crumbs.length -%}
+  <!-- BreadcrumbList JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.siteUrl }}/" }
+      {%- for crumb in crumbs -%}
+        ,{ "@type": "ListItem", "position": {{ crumb.position }}, "name": "{{ crumb.name }}", "item": "{{ site.siteUrl }}{{ crumb.url }}" }
+      {%- endfor -%}
+    ]
+  }
+  </script>
+  {%- endif -%}
+
+  {%- if site.ga4Id and site.ga4Id != "G-REPLACE_WITH_YOUR_GA4_ID" -%}
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4Id }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.ga4Id }}');
+  </script>
+  {%- endif -%}
 </head>
 <body>
   {% include 'header.njk' %}

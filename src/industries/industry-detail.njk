@@ -132,6 +132,79 @@ description: "{{ industry.hero.lead }}"
 </section>
 {% endif %}
 
+<!-- FAQ SECTION -->
+{% set industryFaqs = [
+  { "q": "How long until I see new customers from marketing?", "a": "Most " + industry.shortTitle | lower + " see initial results in 30-60 days, with significant compounding growth at the 6-month mark. Paid channels deliver fastest; SEO and content compound over time." },
+  { "q": "How much should a " + industry.shortTitle | lower + " business budget for marketing?", "a": "Most of our " + industry.shortTitle | lower + " clients invest $3,000-$8,000/month total (media + management) to start. We help you right-size based on growth goals, current revenue, and competitive landscape." },
+  { "q": "Do you work with multi-location " + industry.shortTitle | lower + "?", "a": "Yes — we have proven playbooks for scaling marketing across multiple locations with location-specific campaigns, Google Business Profile management, and consolidated reporting." },
+  { "q": "What makes you different from other " + industry.title | lower + " agencies?", "a": "We specialize in " + industry.title | lower + " specifically — not a general agency that occasionally takes on " + industry.shortTitle | lower + " clients. That means proven creative angles, vetted strategies, and benchmarks from running campaigns in your exact category." }
+] %}
+<section class="faq-section">
+  <div class="wrap">
+    <div class="faq-head">
+      <span class="eyebrow coral">Common Questions</span>
+      <h2>{{ industry.title }} FAQs<span class="dot">.</span></h2>
+      <p>The questions {{ industry.shortTitle | lower }} ask us most about growing their practice.</p>
+    </div>
+    <div class="faq-list">
+      {% for faq in industryFaqs %}
+        <details class="faq-item">
+          <summary>
+            <span>{{ faq.q }}</span>
+            <span class="faq-toggle" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </summary>
+          <div class="faq-answer">{{ faq.a }}</div>
+        </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- FAQPage JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for faq in industryFaqs -%}
+    {
+      "@type": "Question",
+      "name": {{ faq.q | dump | safe }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ faq.a | dump | safe }}
+      }
+    }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ]
+}
+</script>
+
+<!-- RELATED INDUSTRIES + SERVICES -->
+<section class="related-section">
+  <div class="wrap">
+    <div class="related-head">
+      <span class="eyebrow coral">Services for {{ industry.shortTitle }}</span>
+      <h2>The services we typically use for {{ industry.shortTitle | lower }}<span class="dot">.</span></h2>
+    </div>
+    <div class="related-grid">
+      {%- set keyServices = ["seo", "google-ads", "meta-ads", "local-service-ads"] -%}
+      {% for s in services %}
+        {% if s.slug in keyServices %}
+          <a href="/services/{{ s.slug }}/" class="related-card">
+            <span class="related-tag">Service</span>
+            <h3>{{ s.title }}</h3>
+            <p>{{ s.shortDesc }}</p>
+            <span class="related-arrow">Learn more →</span>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="ctaband">
   <div class="wrap ctaband-inner">

@@ -1,0 +1,18 @@
+<section class="related-section">
+  <div class="wrap">
+    <div class="related-head">
+      <span class="eyebrow coral">{{ relatedEyebrow or "Keep Exploring" }}</span>
+      <h2>{{ relatedHeading or "Related services we offer" }}<span class="dot">.</span></h2>
+    </div>
+    <div class="related-grid">
+      {% for item in relatedItems %}
+        <a href="{{ item.url }}" class="related-card">
+          <span class="related-tag">{{ item.tag }}</span>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.desc }}</p>
+          <span class="related-arrow">Learn more →</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

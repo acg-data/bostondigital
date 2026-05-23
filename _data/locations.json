@@ -1,0 +1,68 @@
+[
+  {
+    "slug": "boston",
+    "city": "Boston",
+    "neighborhood": "Boston, MA",
+    "intro": "We're a Boston-based marketing agency serving businesses across the city — from downtown to South Boston, Back Bay to Dorchester.",
+    "highlights": [
+      "Local SEO that gets you ranking in Boston's most competitive neighborhoods",
+      "Hyper-local Google Ads campaigns targeting Boston-only searches",
+      "Deep market knowledge of Boston consumer behavior"
+    ]
+  },
+  {
+    "slug": "cambridge",
+    "city": "Cambridge",
+    "neighborhood": "Cambridge, MA",
+    "intro": "Marketing for Cambridge businesses — from Harvard Square to Kendall Square, Inman Square to Porter. We help local businesses stand out in one of the most competitive small markets in New England.",
+    "highlights": [
+      "Targeted campaigns for Cambridge's unique mix of students, professionals, and families",
+      "Local SEO optimized for Harvard Square and Kendall Square search terms",
+      "Strategies that work alongside MIT and Harvard's gravitational pull on attention"
+    ]
+  },
+  {
+    "slug": "somerville",
+    "city": "Somerville",
+    "neighborhood": "Somerville, MA",
+    "intro": "Davis Square. Union Square. Ball Square. Assembly Row. Somerville is one of the fastest-changing markets in greater Boston, and we help local businesses keep up.",
+    "highlights": [
+      "Hyper-local SEO targeting Somerville's distinct neighborhood searches",
+      "Campaigns optimized for Somerville's young, diverse demographic",
+      "Strategies for businesses competing with new arrivals at Assembly Row"
+    ]
+  },
+  {
+    "slug": "newton",
+    "city": "Newton",
+    "neighborhood": "Newton, MA",
+    "intro": "Marketing for Newton businesses across all 13 villages — from Newton Centre to Auburndale, Chestnut Hill to West Newton. Higher-income market with discerning customers who do their research.",
+    "highlights": [
+      "SEO + content strategies that match Newton's research-heavy customer base",
+      "Premium-positioned campaigns aligned with the Newton demographic",
+      "Hyper-local targeting across all 13 Newton villages"
+    ]
+  },
+  {
+    "slug": "brookline",
+    "city": "Brookline",
+    "neighborhood": "Brookline, MA",
+    "intro": "Coolidge Corner. Brookline Village. Washington Square. We help Brookline businesses reach a dense, educated, high-spending local market.",
+    "highlights": [
+      "Local SEO for Brookline's compact but high-value market",
+      "Multi-cultural targeting strategies for Brookline's diverse population",
+      "Campaigns that compete effectively with neighboring Boston advertisers"
+    ]
+  },
+  {
+    "slug": "quincy",
+    "city": "Quincy",
+    "neighborhood": "Quincy, MA",
+    "intro": "Marketing for Quincy businesses — from Quincy Center to Wollaston, Marina Bay to Squantum. The South Shore's largest market with strong local-first buying habits.",
+    "highlights": [
+      "Local SEO that captures Quincy-specific search intent (without Boston bleed)",
+      "Campaigns that resonate with Quincy's longtime resident base",
+      "Strategies for businesses competing across the Quincy / Braintree / Weymouth corridor"
+    ]
+  }
+]

@@ -142,6 +142,96 @@ description: "{{ service.shortDesc }}"
 </section>
 {% endif %}
 
+<!-- FAQ SECTION -->
+{% if service.faqs %}
+<section class="faq-section">
+  <div class="wrap">
+    <div class="faq-head">
+      <span class="eyebrow coral">Common Questions</span>
+      <h2>{{ service.title }} FAQs<span class="dot">.</span></h2>
+      <p>The questions Boston business owners ask us most about {{ service.title | lower }}.</p>
+    </div>
+    <div class="faq-list">
+      {% for faq in service.faqs %}
+        <details class="faq-item">
+          <summary>
+            <span>{{ faq.q }}</span>
+            <span class="faq-toggle" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </span>
+          </summary>
+          <div class="faq-answer">{{ faq.a }}</div>
+        </details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- FAQPage JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for faq in service.faqs -%}
+    {
+      "@type": "Question",
+      "name": {{ faq.q | dump | safe }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ faq.a | dump | safe }}
+      }
+    }{% if not loop.last %},{% endif %}
+    {%- endfor -%}
+  ]
+}
+</script>
+
+<!-- Service JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": {{ service.title | dump | safe }},
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "{{ site.name }}",
+    "url": "{{ site.siteUrl }}"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Boston"
+  },
+  "description": {{ service.shortDesc | dump | safe }},
+  "url": "{{ site.siteUrl }}/services/{{ service.slug }}/"
+}
+</script>
+{% endif %}
+
+<!-- RELATED SERVICES -->
+<section class="related-section">
+  <div class="wrap">
+    <div class="related-head">
+      <span class="eyebrow coral">Pair Well With {{ service.title }}</span>
+      <h2>Other services that complement {{ service.title | lower }}<span class="dot">.</span></h2>
+    </div>
+    <div class="related-grid">
+      {%- set shown = 0 -%}
+      {% for s in services %}
+        {% if s.slug != service.slug and shown < 3 %}
+          {% set shown = shown + 1 %}
+          <a href="/services/{{ s.slug }}/" class="related-card">
+            <span class="related-tag">Service</span>
+            <h3>{{ s.title }}</h3>
+            <p>{{ s.shortDesc }}</p>
+            <span class="related-arrow">Learn more →</span>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="ctaband">
   <div class="wrap ctaband-inner">

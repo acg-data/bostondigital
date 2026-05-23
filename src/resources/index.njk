@@ -16,37 +16,37 @@ description: Digital marketing guides, insights, and case studies to help your b
   <div class="watermark">RESOURCES</div>
 </section>
 
-<!-- FEATURED + CATEGORY FILTER -->
+<!-- FEATURED + LATEST -->
 <section class="blog-section">
   <div class="wrap">
-    {% for post in posts %}
-      {% if post.featured %}
-        <a href="/resources/{{ post.slug }}/" class="blog-featured reveal">
-          <div class="blog-featured-img">
-            <div class="blog-img-overlay"></div>
-            <span class="blog-featured-tag blog-tag-{{ post.categoryColor }}">{{ post.category }}</span>
+    {%- set sortedPosts = collections.post | reverse -%}
+    {%- set featured = sortedPosts[0] -%}
+    {%- if featured -%}
+      <a href="{{ featured.url }}" class="blog-featured reveal">
+        <div class="blog-featured-img">
+          <div class="blog-img-overlay"></div>
+          <span class="blog-featured-tag blog-tag-{{ featured.data.categoryColor or 'lime' }}">{{ featured.data.category }}</span>
+        </div>
+        <div class="blog-featured-body">
+          <div class="blog-meta">
+            <span>Featured</span>
+            <span class="dot-sep">·</span>
+            <span>{{ featured.data.displayDate }}</span>
+            <span class="dot-sep">·</span>
+            <span>{{ featured.data.readTime }}</span>
           </div>
-          <div class="blog-featured-body">
-            <div class="blog-meta">
-              <span>Featured</span>
-              <span class="dot-sep">·</span>
-              <span>{{ post.date }}</span>
-              <span class="dot-sep">·</span>
-              <span>{{ post.readTime }}</span>
-            </div>
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.excerpt }}</p>
-            <div class="blog-author">
-              <div class="blog-author-avatar">{{ post.author | replace(" ", "") | truncate(2, true, "") | upper }}</div>
-              <div>
-                <div class="blog-author-name">{{ post.author }}</div>
-                <span class="blog-read">Read article <span class="arr">→</span></span>
-              </div>
+          <h2>{{ featured.data.title }}</h2>
+          <p>{{ featured.data.excerpt }}</p>
+          <div class="blog-author">
+            <div class="blog-author-avatar">{{ featured.data.author | replace(" ", "") | truncate(2, true, "") | upper }}</div>
+            <div>
+              <div class="blog-author-name">{{ featured.data.author }}</div>
+              <span class="blog-read">Read article <span class="arr">→</span></span>
             </div>
           </div>
-        </a>
-      {% endif %}
-    {% endfor %}
+        </div>
+      </a>
+    {%- endif -%}
 
     <div class="blog-section-head">
       <h2>Latest Articles</h2>
@@ -54,20 +54,20 @@ description: Digital marketing guides, insights, and case studies to help your b
     </div>
 
     <div class="blog-grid">
-      {% for post in posts %}
-        {% if not post.featured %}
-          <a href="/resources/{{ post.slug }}/" class="blog-card reveal">
+      {% for post in sortedPosts %}
+        {% if loop.index > 1 %}
+          <a href="{{ post.url }}" class="blog-card reveal">
             <div class="blog-card-img">
-              <span class="blog-tag blog-tag-{{ post.categoryColor }}">{{ post.category }}</span>
+              <span class="blog-tag blog-tag-{{ post.data.categoryColor or 'lime' }}">{{ post.data.category }}</span>
             </div>
             <div class="blog-card-body">
               <div class="blog-meta">
-                <span>{{ post.date }}</span>
+                <span>{{ post.data.displayDate }}</span>
                 <span class="dot-sep">·</span>
-                <span>{{ post.readTime }}</span>
+                <span>{{ post.data.readTime }}</span>
               </div>
-              <h3>{{ post.title }}</h3>
-              <p>{{ post.excerpt }}</p>
+              <h3>{{ post.data.title }}</h3>
+              <p>{{ post.data.excerpt }}</p>
               <span class="blog-read">Read more <span class="arr">→</span></span>
             </div>
           </a>

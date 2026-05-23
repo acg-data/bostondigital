@@ -1,0 +1,122 @@
+---
+layout: base.njk
+pagination:
+  data: locations
+  size: 1
+  alias: location
+permalink: /digital-marketing-{{ location.slug }}/
+title: "Digital Marketing in {{ location.city }}"
+description: "Full-service digital marketing for {{ location.city }} businesses. SEO, Google Ads, Meta Ads, and more — built around the {{ location.city }} market."
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner hero-form-layout">
+    <div>
+      <span class="eyebrow reveal" style="--d:.05s">Digital Marketing in {{ location.city }}</span>
+      <h1 class="reveal" style="--d:.12s">Grow Your {{ location.city }} Business<span class="dot">.</span></h1>
+      <p class="lead reveal" style="--d:.22s">{{ location.intro }}</p>
+      <div class="hero-cta reveal" style="--d:.3s">
+        <a href="/case-studies/" class="link-underline">View Our Results →</a>
+      </div>
+    </div>
+    <aside class="reveal" style="--d:.2s">
+      <div class="hero-form-card">
+        <span class="hero-form-eyebrow">Free Strategy Call</span>
+        <h3>Get more {{ location.city }} customers.</h3>
+        <p class="hero-form-sub">Tell us about your {{ location.city }} business. We'll respond within 24 hours with a custom plan — no obligation.</p>
+        <form action="{{ site.formEndpoint }}" method="POST" class="hero-form">
+          <input type="hidden" name="_subject" value="Strategy call request — {{ location.city }}">
+          <input type="hidden" name="_next" value="{{ site.siteUrl }}/thank-you/">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="form_source" value="location:{{ location.slug }}">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="text" name="name" required placeholder="Your name" autocomplete="name" />
+          <input type="email" name="email" required placeholder="Email address" autocomplete="email" />
+          <input type="tel" name="phone" placeholder="Phone (optional)" autocomplete="tel" />
+          <textarea name="message" rows="3" placeholder="What are you looking to achieve?"></textarea>
+          <button type="submit" class="btn btn-lime hero-form-btn">Get My Free Plan <span class="arr">→</span></button>
+          <div class="hero-form-trust">
+            <span><span class="check">✓</span> No obligation</span>
+            <span><span class="check">✓</span> 24hr response</span>
+            <span><span class="check">✓</span> 100% private</span>
+          </div>
+          <div class="hero-form-call">Prefer to talk? Call <a href="tel:{{ site.phone }}">{{ site.phone }}</a></div>
+        </form>
+      </div>
+    </aside>
+  </div>
+  <div class="watermark">{{ location.city | upper }}</div>
+</section>
+
+<!-- PROOF BAR -->
+<section class="proof-bar">
+  <div class="wrap proof-bar-inner">
+    <div class="proof-stat">
+      <span class="proof-num">200+</span>
+      <span class="proof-lbl">Boston Clients Served</span>
+    </div>
+    <div class="proof-stat">
+      <span class="proof-num">3.6x</span>
+      <span class="proof-lbl">Avg Return on Ad Spend</span>
+    </div>
+    <div class="proof-stat">
+      <span class="proof-num">4.9★</span>
+      <span class="proof-lbl">Client Satisfaction</span>
+    </div>
+    <div class="proof-stat">
+      <span class="proof-num">24hr</span>
+      <span class="proof-lbl">Response Time</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US FOR THIS CITY -->
+<section style="background:var(--parchment);color:var(--black);padding:96px 0">
+  <div class="wrap" style="max-width:900px;margin:0 auto;text-align:center">
+    <span class="eyebrow coral center reveal">Built for {{ location.city }}</span>
+    <h2 class="reveal" style="font-size:clamp(30px,3.6vw,46px);margin:20px 0 26px">Why {{ location.city }} businesses choose us<span class="dot">.</span></h2>
+    <p style="font-size:16px;color:#55524c;line-height:1.7;max-width:680px;margin:0 auto 60px">We're not a generic agency that occasionally takes {{ location.city }} clients. We've run hundreds of campaigns specifically in the {{ location.city }} market — and we know what works here.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px;text-align:left">
+      {% for highlight in location.highlights %}
+        <div style="background:#fff;padding:28px;border-radius:6px;border:1px solid #ece8df">
+          <div style="width:36px;height:36px;border-radius:50%;background:var(--lime);color:var(--black);display:flex;align-items:center;justify-content:center;font-weight:900;margin-bottom:16px">{{ loop.index }}</div>
+          <p style="color:#33312d;line-height:1.6;font-size:14.5px;margin:0">{{ highlight }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES WE OFFER IN THIS CITY -->
+<section style="background:#111;color:#fff;padding:96px 0">
+  <div class="wrap">
+    <div style="text-align:center;max-width:680px;margin:0 auto 50px">
+      <span class="eyebrow reveal">Services for {{ location.city }} Businesses</span>
+      <h2 class="reveal" style="font-size:clamp(30px,3.6vw,46px);color:#fff;margin:16px 0 18px">Everything you need to grow<span class="dot">.</span></h2>
+      <p style="color:#b9b4ab;font-size:15px;line-height:1.6">Full-service digital marketing tailored to the {{ location.city }} market.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;max-width:1100px;margin:0 auto">
+      {% for service in services %}
+        <a href="/services/{{ service.slug }}/" style="display:block;background:var(--black-3);padding:24px;border-radius:4px;border:1px solid rgba(255,255,255,.05);text-decoration:none;color:#fff;transition:.2s">
+          <h3 style="font-size:15px;font-weight:900;color:var(--lime);margin:0 0 8px;text-transform:uppercase;letter-spacing:.04em">{{ service.title }}</h3>
+          <p style="font-size:13px;color:#b9b4ab;line-height:1.5;margin:0">{{ service.shortDesc }}</p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctaband">
+  <div class="wrap ctaband-inner">
+    <div class="txt">
+      <div>
+        <h2>Ready to grow your {{ location.city }} business?</h2>
+        <p>Let's build a marketing strategy tailored to the {{ location.city }} market.</p>
+      </div>
+    </div>
+    <a href="/contact/" class="btn btn-lime">Book a Strategy Call <span class="arr">→</span></a>
+  </div>
+</section>

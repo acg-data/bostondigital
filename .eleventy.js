@@ -8,6 +8,26 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addWatchTarget("css/");
   eleventyConfig.addWatchTarget("js/");
 
+  // Filters
+  eleventyConfig.addFilter("split", (str, sep) => {
+    if (typeof str !== "string") return [];
+    return str.split(sep);
+  });
+
+  eleventyConfig.addFilter("breadcrumbs", (url) => {
+    if (!url || url === "/") return [];
+    const parts = url.split("/").filter(Boolean);
+    let path = "";
+    return parts.map((part, i) => {
+      path += "/" + part;
+      return {
+        position: i + 2,
+        name: part.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()),
+        url: path + "/"
+      };
+    });
+  });
+
   return {
     dir: {
       input: "src",
