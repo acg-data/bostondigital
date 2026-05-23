@@ -1,0 +1,58 @@
+---
+layout: base.njk
+title: Service Areas - Boston Marketing Company
+description: We serve businesses across Boston, Newton, Cambridge, Brookline, Wellesley, Lexington, and more. Find your city's dedicated marketing page.
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner hero-solo">
+    <div>
+      <span class="eyebrow reveal" style="--d:.05s">Service Areas</span>
+      <h1 class="reveal" style="--d:.12s">The marketing company<br>for your city<span class="dot">.</span></h1>
+      <p class="lead reveal" style="--d:.22s">We serve businesses across the greater Boston area, with deep playbooks for the cities and neighborhoods where most of our work happens. Find your city below to see a market-specific overview of how we help.</p>
+    </div>
+  </div>
+  <div class="watermark">SERVICE AREAS</div>
+</section>
+
+<!-- AREAS GRID -->
+<section style="background:var(--parchment);color:var(--black);padding:96px 0">
+  <div class="wrap">
+    <div class="area-grid">
+      {% for area in areas %}
+        <a href="/{{ area.slug }}-marketing-company/" class="area-card">
+          <div class="area-card-head">
+            <span class="area-card-tag">Service Area</span>
+            <h2>{{ area.city }}</h2>
+            <div class="area-card-stats">
+              <span><strong>{{ area.population }}</strong> pop</span>
+              <span class="dot-sep">·</span>
+              <span><strong>{{ area.median_income }}</strong> median income</span>
+            </div>
+          </div>
+          <p>{{ area.intro | truncate(180, true, "…") }}</p>
+          <div class="area-card-industries">
+            {% for ind in area.keyIndustries %}
+              <span class="area-card-pill">{{ ind }}</span>
+            {% endfor %}
+          </div>
+          <span class="area-card-link">View {{ area.city }} marketing <span class="arr">→</span></span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctaband">
+  <div class="wrap ctaband-inner">
+    <div class="txt">
+      <div>
+        <h2>Don't see your city?</h2>
+        <p>We serve businesses across all of greater Boston. Book a call and let's talk.</p>
+      </div>
+    </div>
+    <a href="/contact/" class="btn btn-lime">Book a Strategy Call <span class="arr">→</span></a>
+  </div>
+</section>

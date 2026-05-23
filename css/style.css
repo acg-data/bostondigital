@@ -337,6 +337,65 @@ nav ul li.has-dropdown:focus-within .dropdown{
 .case .view{margin-top:20px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;display:inline-flex;gap:10px;align-items:center;transition:gap .2s}
 .case:hover .view{gap:16px;color:var(--lime)}
 
+/* ---------- service area cards ---------- */
+.area-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:26px;max-width:1140px;margin:0 auto}
+.area-card{
+  display:flex;flex-direction:column;background:#fff;padding:32px 30px 28px;
+  border-radius:8px;border:1px solid #ece8df;text-decoration:none;color:inherit;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+  position:relative;
+}
+.area-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--coral),var(--lime));
+  border-radius:8px 8px 0 0;opacity:0;transition:opacity .25s;
+}
+.area-card:hover{transform:translateY(-6px);box-shadow:0 24px 50px -18px rgba(0,0,0,.2);border-color:transparent}
+.area-card:hover::before{opacity:1}
+.area-card-head{margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid #ece8df}
+.area-card-tag{
+  display:inline-block;font-size:10px;font-weight:800;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--coral);margin-bottom:8px;
+}
+.area-card h2{font-size:28px;font-weight:900;letter-spacing:-.01em;margin:0 0 10px;color:var(--black)}
+.area-card-stats{font-size:12.5px;color:#7a7570;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.area-card-stats strong{color:var(--black);font-weight:800}
+.area-card p{font-size:14px;line-height:1.6;color:#55524c;margin:0 0 18px;flex:1}
+.area-card-industries{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.area-card-pill{
+  display:inline-block;background:var(--parchment);color:#33312d;
+  padding:5px 11px;font-size:11px;font-weight:700;letter-spacing:.02em;border-radius:30px;
+}
+.area-card-link{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--coral);padding-top:14px;border-top:1px solid #ece8df;
+  transition:gap .2s,color .2s;
+}
+.area-card-link .arr{transition:transform .2s}
+.area-card:hover .area-card-link{gap:14px;color:var(--black)}
+.area-card:hover .area-card-link .arr{transform:translateX(4px)}
+
+/* ---------- client logo strip ---------- */
+.logo-strip{background:var(--parchment);color:var(--black);padding:72px 0}
+.logo-strip-head{text-align:center;margin-bottom:44px}
+.logo-strip-grid{
+  display:grid;grid-template-columns:repeat(5,1fr);gap:36px 30px;
+  align-items:center;justify-items:center;max-width:1100px;margin:0 auto;
+}
+.logo-strip-item{
+  display:flex;align-items:center;justify-content:center;
+  width:100%;height:64px;
+}
+.logo-strip-item img{
+  max-width:100%;max-height:48px;width:auto;height:auto;object-fit:contain;
+  filter:grayscale(100%);opacity:.55;
+  transition:filter .25s ease,opacity .25s ease,transform .25s ease;
+}
+.logo-strip-item:hover img{
+  filter:grayscale(0%);opacity:1;transform:scale(1.05);
+}
+
 /* ---------- related content (internal linking) ---------- */
 .related-section{background:#fff;color:var(--black);padding:80px 0;border-top:1px solid #ece8df}
 .related-head{text-align:center;max-width:680px;margin:0 auto 50px}
@@ -687,6 +746,7 @@ footer{background:var(--black);padding:70px 0 40px;border-top:1px solid rgba(255
   .svc-grid{grid-template-columns:repeat(3,1fr);gap:30px 0}
   .svc-card-grid{grid-template-columns:repeat(3,1fr)}
   .team-grid{grid-template-columns:repeat(2,1fr)}
+  .logo-strip-grid{grid-template-columns:repeat(3,1fr);gap:30px 24px}
   .pricing-grid{grid-template-columns:1fr;max-width:520px}
   .pricing-tier-popular{transform:none}
   .pricing-tier-popular:hover{transform:translateY(-4px)}
@@ -754,6 +814,7 @@ footer{background:var(--black);padding:70px 0 40px;border-top:1px solid rgba(255
   .svc-grid{grid-template-columns:1fr}
   .svc-card-grid{grid-template-columns:1fr}
   .team-grid{grid-template-columns:1fr}
+  .logo-strip-grid{grid-template-columns:repeat(2,1fr);gap:24px 18px}
   .blog-grid{grid-template-columns:1fr}
   .blog-featured-body{padding:28px 22px}
   .blog-section-head{flex-direction:column;align-items:flex-start;gap:8px}

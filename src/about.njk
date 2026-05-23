@@ -19,6 +19,22 @@ description: Learn about Boston Digital Marketing's mission, team, and approach 
   <div class="watermark">ABOUT US</div>
 </section>
 
+<!-- CLIENT LOGOS -->
+<section class="logo-strip">
+  <div class="wrap">
+    <div class="logo-strip-head">
+      <span class="eyebrow coral center">Brands We've Helped Grow</span>
+    </div>
+    <div class="logo-strip-grid">
+      {% for client in clients %}
+        <div class="logo-strip-item">
+          <img src="/images/clients/{{ client.file }}" alt="{{ client.name }}" loading="lazy">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <!-- MISSION -->
 <section style="background:var(--parchment);color:var(--black);padding:96px 0">
   <div class="wrap" style="max-width:600px;margin:0 auto;text-align:center">

@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "newton",
+    "city": "Newton",
+    "population": "~88,000",
+    "median_income": "~$181K",
+    "intro": "From Newton Centre to Auburndale, Chestnut Hill to West Newton, we're the marketing company that Newton businesses trust to grow. With one of the highest-earning, most research-driven customer bases in Massachusetts, Newton businesses need marketing that matches the sophistication of the audience.",
+    "highlights": [
+      "Marketing campaigns built for Newton's affluent, research-heavy customer base",
+      "Hyper-local SEO targeting all 13 Newton villages",
+      "Premium positioning that aligns with Newton brand expectations"
+    ],
+    "keyIndustries": ["Med Spa & Cosmetic", "Home Services & Contractors", "Professional Services"]
+  },
+  {
+    "slug": "cambridge",
+    "city": "Cambridge",
+    "population": "~118,000",
+    "median_income": "~$112K",
+    "intro": "Harvard Square, Kendall Square, Inman Square, Porter Square — Cambridge's distinct neighborhoods each have their own customer base and competitive landscape. We're the Cambridge marketing company that knows how to win attention in one of the most over-marketed small cities in America.",
+    "highlights": [
+      "Cambridge-native targeting across Harvard, MIT, and biotech corridors",
+      "Strategies that compete with the gravitational pull of major universities",
+      "Multi-language, multi-cultural campaign experience"
+    ],
+    "keyIndustries": ["B2B & SaaS", "Restaurants & Hospitality", "Professional Services"]
+  },
+  {
+    "slug": "brookline",
+    "city": "Brookline",
+    "population": "~63,000",
+    "median_income": "~$133K",
+    "intro": "Coolidge Corner, Brookline Village, Washington Square — Brookline packs one of the highest-spending, most educated customer bases in Massachusetts into a tight, walkable footprint. We're the Brookline marketing company built for that density.",
+    "highlights": [
+      "Hyper-local SEO that captures Brookline-only searches (no Boston bleed)",
+      "Multi-cultural targeting for Brookline's diverse population",
+      "Compete effectively against neighboring Boston advertisers"
+    ],
+    "keyIndustries": ["Dental & Healthcare", "Restaurants & Retail", "Real Estate"]
+  },
+  {
+    "slug": "wellesley",
+    "city": "Wellesley",
+    "population": "~29,000",
+    "median_income": "~$230K",
+    "intro": "Wellesley is one of the wealthiest communities in the United States — and that means Wellesley businesses can charge premium prices, but only if their marketing matches the sophistication of the audience. We're the Wellesley marketing company that knows how to position premium services to discerning customers.",
+    "highlights": [
+      "Premium-positioned campaigns for high-end Wellesley audiences",
+      "Strategies built around longer consideration cycles and higher AOVs",
+      "Brand-forward creative that signals quality on first impression"
+    ],
+    "keyIndustries": ["High-End Med Spa", "Home Services & Renovation", "Boutique Retail"]
+  },
+  {
+    "slug": "lexington",
+    "city": "Lexington",
+    "population": "~34,000",
+    "median_income": "~$201K",
+    "intro": "Lexington's combination of high household income, top-rated schools, and strong professional class makes it one of the most lucrative markets in greater Boston. We're the Lexington marketing company that helps local businesses capture more of that wallet.",
+    "highlights": [
+      "SEO targeting Lexington-specific search terms with low competition",
+      "Campaigns optimized for Lexington's research-heavy buyer behavior",
+      "Local-first strategies that respect Lexington's tight-knit community"
+    ],
+    "keyIndustries": ["Education & Tutoring", "Home Services", "Professional Services"]
+  },
+  {
+    "slug": "needham",
+    "city": "Needham",
+    "population": "~32,000",
+    "median_income": "~$176K",
+    "intro": "Needham combines high household income with a strong commercial corridor — the rare suburb where you can target both wealthy residents and the small businesses serving them. We're the Needham marketing company that grows both sides of that equation.",
+    "highlights": [
+      "Local SEO optimized for Needham Centre and Needham Heights search terms",
+      "Campaigns aligned with Needham's high-income, family-oriented demographic",
+      "Strategies that work alongside the Route 128 commercial corridor"
+    ],
+    "keyIndustries": ["Dental & Healthcare", "Home Services", "Specialty Retail"]
+  },
+  {
+    "slug": "andover",
+    "city": "Andover",
+    "population": "~36,000",
+    "median_income": "~$165K",
+    "intro": "Andover is the largest of the wealthy North Shore communities, with a strong commercial base, top-tier schools, and high household incomes. We're the Andover marketing company that helps local businesses stand out in a market where customer expectations are high.",
+    "highlights": [
+      "North Shore-specific local SEO targeting Andover and surrounding towns",
+      "Campaigns that match Andover's high-quality-first buying behavior",
+      "Strategies for businesses competing across the Andover / North Andover / Reading corridor"
+    ],
+    "keyIndustries": ["Med Spa & Aesthetics", "Home Services & Renovation", "Professional Services"]
+  },
+  {
+    "slug": "concord",
+    "city": "Concord",
+    "population": "~20,000",
+    "median_income": "~$200K",
+    "intro": "Concord's wealth, history, and tight-knit community make it one of the most distinctive markets in Massachusetts. Local businesses here build through reputation, referrals, and authentic local presence — and that's exactly where we shine as the Concord marketing company.",
+    "highlights": [
+      "Reputation-driven SEO that respects Concord's local-first culture",
+      "Brand storytelling that fits Concord's historic, premium positioning",
+      "Strategies built for Concord's word-of-mouth-driven buying behavior"
+    ],
+    "keyIndustries": ["Specialty Retail & Galleries", "Restaurants & Hospitality", "Home Services"]
+  },
+  {
+    "slug": "winchester",
+    "city": "Winchester",
+    "population": "~22,000",
+    "median_income": "~$202K",
+    "intro": "Winchester is one of the most affluent commuter towns in Massachusetts — high-earning, well-educated, family-focused. We're the Winchester marketing company that local businesses turn to for grown-up, results-focused marketing that fits the market.",
+    "highlights": [
+      "Hyper-local Winchester SEO and Google Ads strategies",
+      "Campaigns calibrated for Winchester's high-trust, referral-driven market",
+      "Brand presentation that meets Winchester's professional standards"
+    ],
+    "keyIndustries": ["Dental & Healthcare", "Home Services & Contractors", "Professional Services"]
+  },
+  {
+    "slug": "waltham",
+    "city": "Waltham",
+    "population": "~64,000",
+    "median_income": "~$95K",
+    "intro": "Waltham sits at the intersection of two powerful trends: it's a major commercial hub (Brandeis, Bentley, the 128 tech corridor) AND a growing residential market. We're the Waltham marketing company built for that dual market.",
+    "highlights": [
+      "B2B strategies for Waltham's tech and professional services density",
+      "Local SEO that captures Waltham's growing residential consumer base",
+      "Mid-market campaigns that scale efficiently across both audiences"
+    ],
+    "keyIndustries": ["B2B & SaaS", "Restaurants & Hospitality", "Home Services"]
+  }
+]
