@@ -5,8 +5,9 @@ pagination:
   size: 1
   alias: industry
 permalink: /industries/{{ industry.slug }}/
-title: "{{ industry.title }} in Boston"
-description: "{{ industry.hero.lead }}"
+eleventyComputed:
+  title: "{{ industry.title }} — Marketing for {{ industry.shortTitle }} in Boston"
+  description: "{{ industry.hero.lead }} Built specifically for {{ industry.shortTitle | lower }}. Book a free strategy call."
 ---
 
 <!-- HERO -->

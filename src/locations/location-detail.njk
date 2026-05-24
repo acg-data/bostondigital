@@ -5,8 +5,9 @@ pagination:
   size: 1
   alias: location
 permalink: /digital-marketing-{{ location.slug }}/
-title: "Digital Marketing in {{ location.city }}"
-description: "Full-service digital marketing for {{ location.city }} businesses. SEO, Google Ads, Meta Ads, and more — built around the {{ location.city }} market."
+eleventyComputed:
+  title: "{{ location.city }} Digital Marketing Agency — SEO, Ads & More"
+  description: "Digital marketing services for {{ location.city }} businesses — SEO, Google Ads, Meta, content & more. Local expertise, measurable growth. Free strategy call."
 ---
 
 <!-- HERO -->

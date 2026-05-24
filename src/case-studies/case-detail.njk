@@ -5,8 +5,9 @@ pagination:
   size: 1
   alias: case
 permalink: /case-studies/{{ case.slug }}/
-title: "{{ case.client }} Case Study"
-description: "{{ case.client }}: {{ case.results[0].metric }} {{ case.results[0].label | lower }}. See how Boston Digital Marketing delivered results."
+eleventyComputed:
+  title: "{{ case.client }}: {{ case.results[0].metric }} {{ case.results[0].label }} — Case Study"
+  description: "How we helped {{ case.client }} ({{ case.industry }}) achieve {{ case.results[0].metric }} {{ case.results[0].label | lower }} and {{ case.results[1].metric }} {{ case.results[1].label | lower }}. Real strategy, real results."
 ---
 
 <!-- HERO -->

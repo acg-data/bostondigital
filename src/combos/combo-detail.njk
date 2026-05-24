@@ -5,8 +5,9 @@ pagination:
   size: 1
   alias: combo
 permalink: /{{ combo.slug }}/
-title: "{{ combo.title }}"
-description: "{{ combo.description }}"
+eleventyComputed:
+  title: "{{ combo.service.title }} in {{ combo.area.city }}, MA — Local Agency"
+  description: "{{ combo.service.shortDesc }} Built for {{ combo.area.city }} businesses. Free strategy call, response within 24hrs."
 ---
 
 {# Expose service + area as top-level vars so shared includes work identically #}

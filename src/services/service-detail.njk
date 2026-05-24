@@ -5,8 +5,9 @@ pagination:
   size: 1
   alias: service
 permalink: /services/{{ service.slug }}/
-title: "{{ service.title }} in Boston"
-description: "{{ service.shortDesc }}"
+eleventyComputed:
+  title: "{{ service.title }} in Boston — Strategy + Execution"
+  description: "{{ service.shortDesc }} Boston-built {{ service.title | lower }} strategy that drives measurable growth. Free strategy call — no obligation."
 ---
 
 <!-- HERO -->

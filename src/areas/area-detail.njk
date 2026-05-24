@@ -5,8 +5,9 @@ pagination:
   size: 1
   alias: area
 permalink: /{{ area.slug }}-marketing-company/
-title: "{{ area.city }} Marketing Company"
-description: "We're the marketing company for {{ area.city }} businesses. SEO, Google Ads, Meta, brand, web — built around the {{ area.city }} market. Book a free strategy call."
+eleventyComputed:
+  title: "{{ area.city }} Marketing Company — Local Marketing Agency"
+  description: "Full-service marketing agency for {{ area.city }}, MA businesses. SEO, Google Ads, Meta, brand & web — built around the {{ area.city }} market. Free strategy call."
 ---
 
 <!-- HERO -->
