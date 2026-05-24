@@ -8,22 +8,22 @@
   },
   {
     "name": "Josh Eissler",
-    "role": "Head of Paid Media",
-    "bio": "Manages 7-figures in annual ad spend across Google, Meta, TikTok, and LSAs. Cut his teeth running campaigns for one of Boston's largest auto groups — learned what high-stakes performance marketing actually looks like.",
+    "role": "Chief Technology Officer",
+    "bio": "Built the data, attribution, and automation stack that powers every campaign we run. Engineering background applied to marketing — believes the agencies that win the next decade will be the ones with the best tech under the hood.",
     "initials": "JE",
     "accent": "coral"
   },
   {
     "name": "Vivian Sierra",
-    "role": "Head of Brand & Creative",
-    "bio": "Built brand systems for local startups, restaurants, and SaaS companies before joining the team. Obsessed with consistency — believes the best logo work is invisible, and the best campaigns feel inevitable.",
+    "role": "Account Manager",
+    "bio": "Runs day-to-day client relationships and keeps every project on track. Worked in client services at two Boston agencies before joining — knows that great account management is half strategist, half therapist, all advocate.",
     "initials": "VS",
     "accent": "lime"
   },
   {
     "name": "Shohel Das",
-    "role": "Head of SEO & Analytics",
-    "bio": "Engineering background turned SEO specialist. Built ranking systems that put Boston businesses on page one for the keywords that actually drive revenue. Loves data, has zero tolerance for fluff.",
+    "role": "Growth Lead",
+    "bio": "Owns end-to-end growth for our key accounts — strategy, execution, optimization, expansion. Came up running paid media for B2B SaaS before going broader. Loves compounding wins, hates random-act-of-marketing decisions.",
     "initials": "SD",
     "accent": "coral"
   }

@@ -2,6 +2,7 @@
   {
     "id": 1,
     "slug": "seo",
+    "category": "organic",
     "title": "Search Engine Optimization",
     "shortDesc": "Rank higher. Get found. Drive qualified traffic that converts.",
     "icon": "search",
@@ -37,6 +38,7 @@
   {
     "id": 2,
     "slug": "google-ads",
+    "category": "paid",
     "title": "Google Ads",
     "shortDesc": "Smart campaigns. Lower costs. More high-intent leads.",
     "icon": "target",
@@ -72,6 +74,7 @@
   {
     "id": 3,
     "slug": "meta-ads",
+    "category": "paid",
     "title": "Meta Ads (Facebook & Instagram)",
     "shortDesc": "Reach customers on Facebook and Instagram with high-converting creative.",
     "icon": "users",
@@ -107,6 +110,7 @@
   {
     "id": 4,
     "slug": "local-service-ads",
+    "category": "paid",
     "title": "Local Service Ads (LSA)",
     "shortDesc": "Pay only for qualified leads. Get the Google Guaranteed badge.",
     "icon": "map-pin",
@@ -142,6 +146,7 @@
   {
     "id": 5,
     "slug": "tiktok-ads",
+    "category": "paid",
     "title": "TikTok Ads",
     "shortDesc": "Reach younger audiences with short-form video that drives action.",
     "icon": "video",
@@ -177,6 +182,7 @@
   {
     "id": 6,
     "slug": "reddit-ads",
+    "category": "paid",
     "title": "Reddit Ads",
     "shortDesc": "Reach engaged communities with native ads that don't feel like ads.",
     "icon": "message-circle",
@@ -212,6 +218,7 @@
   {
     "id": 7,
     "slug": "tv-ads",
+    "category": "paid",
     "title": "TV & Streaming Ads",
     "shortDesc": "Connected TV, OTT, and broadcast ads that reach Boston households.",
     "icon": "tv",
@@ -247,6 +254,7 @@
   {
     "id": 8,
     "slug": "social-media",
+    "category": "organic",
     "title": "Social Media Marketing",
     "shortDesc": "Build your brand. Engage your audience. Drive real growth.",
     "icon": "share",
@@ -282,6 +290,7 @@
   {
     "id": 9,
     "slug": "brand-creation",
+    "category": "brand",
     "title": "Brand Creation & Strategy",
     "shortDesc": "Build a brand that customers remember, trust, and choose.",
     "icon": "feather",
@@ -317,6 +326,7 @@
   {
     "id": 10,
     "slug": "content-marketing",
+    "category": "organic",
     "title": "Content Marketing",
     "shortDesc": "Content that connects. Educates, ranks, and drives action.",
     "icon": "file-text",
@@ -352,6 +362,7 @@
   {
     "id": 11,
     "slug": "cro",
+    "category": "conversion",
     "title": "Conversion Rate Optimization",
     "shortDesc": "Turn more clicks into customers. Maximize ROI from existing traffic.",
     "icon": "trending-up",
@@ -387,6 +398,7 @@
   {
     "id": 12,
     "slug": "web-design",
+    "category": "brand",
     "title": "Web Design & Development",
     "shortDesc": "Fast, modern websites built to perform and convert.",
     "icon": "monitor",
@@ -422,6 +434,7 @@
   {
     "id": 13,
     "slug": "landing-pages",
+    "category": "brand",
     "title": "Landing Page Design",
     "shortDesc": "High-converting landing pages built specifically for your campaigns.",
     "icon": "layout",
@@ -457,6 +470,7 @@
   {
     "id": 14,
     "slug": "email-marketing",
+    "category": "conversion",
     "title": "Email Marketing & Automation",
     "shortDesc": "Nurture leads, re-engage customers, and grow recurring revenue.",
     "icon": "mail",

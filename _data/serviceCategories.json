@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "paid",
+    "label": "Paid Media",
+    "description": "Performance campaigns across every platform that matters — built for ROI, not impressions."
+  },
+  {
+    "slug": "organic",
+    "label": "Organic Growth",
+    "description": "SEO, content, and social strategies that compound for years instead of stopping when you stop spending."
+  },
+  {
+    "slug": "brand",
+    "label": "Brand & Web",
+    "description": "Identity, websites, and landing pages designed to convert and last."
+  },
+  {
+    "slug": "conversion",
+    "label": "Conversion & Lifecycle",
+    "description": "Turn more visitors into customers, and more customers into repeat revenue."
+  }
+]

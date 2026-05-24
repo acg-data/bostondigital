@@ -10,17 +10,20 @@
           {% if item.label == 'Services' %}
             <li class="has-dropdown">
               <a href="{{ item.href }}" aria-haspopup="true">{{ item.label }} <svg class="chev" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6"/></svg></a>
-              <div class="dropdown" role="menu">
-                <div class="dropdown-inner">
-                  <div class="dropdown-col">
-                    <div class="dropdown-head">All Services</div>
-                    {% for s in services %}
-                      <a href="/services/{{ s.slug }}/" role="menuitem">
-                        <span class="dd-title">{{ s.title }}</span>
-                        <span class="dd-sub">{{ s.shortDesc }}</span>
-                      </a>
-                    {% endfor %}
-                  </div>
+              <div class="dropdown dropdown-mega" role="menu">
+                <div class="dropdown-inner dropdown-multicol">
+                  {% for cat in serviceCategories %}
+                    <div class="dropdown-col">
+                      <div class="dropdown-head">{{ cat.label }}</div>
+                      {% for s in services %}
+                        {% if s.category == cat.slug %}
+                          <a href="/services/{{ s.slug }}/" role="menuitem">
+                            <span class="dd-title">{{ s.title }}</span>
+                          </a>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  {% endfor %}
                 </div>
               </div>
             </li>
@@ -55,8 +58,13 @@
       <details class="mm-group">
         <summary>{{ item.label }}<svg viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6"/></svg></summary>
         <a href="/services/" class="mm-sub mm-sub-all">All Services →</a>
-        {% for s in services %}
-          <a href="/services/{{ s.slug }}/" class="mm-sub">{{ s.title }}</a>
+        {% for cat in serviceCategories %}
+          <div class="mm-cat-label">{{ cat.label }}</div>
+          {% for s in services %}
+            {% if s.category == cat.slug %}
+              <a href="/services/{{ s.slug }}/" class="mm-sub">{{ s.title }}</a>
+            {% endif %}
+          {% endfor %}
         {% endfor %}
       </details>
     {% elif item.label == 'Resources' %}
