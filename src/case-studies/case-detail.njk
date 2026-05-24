@@ -21,6 +21,13 @@ description: "{{ case.client }}: {{ case.results[0].metric }} {{ case.results[0]
   <div class="watermark">CASE STUDY</div>
 </section>
 
+<!-- OPTIONAL CASE STUDY IMAGE (drop /images/case-studies/{slug}.jpg to enable) -->
+<section class="case-image-band" data-image-slot>
+  <img src="/images/case-studies/{{ case.slug }}.jpg" alt="{{ case.client }} case study"
+       loading="lazy" decoding="async" width="1600" height="800"
+       onerror="this.closest('[data-image-slot]').remove()">
+</section>
+
 <!-- CHALLENGE & SOLUTION -->
 <section style="background:var(--parchment);color:var(--black);padding:96px 0">
   <div class="wrap">

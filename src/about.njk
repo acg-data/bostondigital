@@ -40,16 +40,27 @@ description: Learn about Boston Digital Marketing's mission, team, and approach 
 </section>
 
 <!-- MISSION -->
-<section style="background:var(--parchment);color:var(--black);padding:96px 0">
-  <div class="wrap" style="max-width:600px;margin:0 auto;text-align:center">
-    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 30px">Our Mission</h2>
-    <p style="font-size:16px;line-height:1.7;color:#33312d;margin:0 0 24px">
-      We help Boston businesses own their market online. No vanity metrics. No excuses. Just data-driven strategies that drive real, measurable growth.
-    </p>
-    <p style="font-size:16px;line-height:1.7;color:#55524c;margin:0">
-      We believe in transparency, accountability, and building partnerships, not transactions. Your success is our success.
-    </p>
+<section class="mission-section">
+  <div class="wrap mission-inner">
+    <div class="mission-copy">
+      <span class="eyebrow coral">Our Mission</span>
+      <h2>Help Boston businesses own their market<span class="dot">.</span></h2>
+      <p>No vanity metrics. No excuses. Just data-driven strategies that drive real, measurable growth.</p>
+      <p>We believe in transparency, accountability, and building partnerships, not transactions. Your success is our success.</p>
+    </div>
+    <figure class="page-image-frame" data-image-slot>
+      <img src="/images/about/office.jpg" alt="Boston Marketing Company office"
+           loading="lazy" decoding="async" width="1200" height="900"
+           onerror="this.closest('[data-image-slot]').remove()">
+    </figure>
   </div>
+</section>
+
+<!-- TEAM PHOTO BAND (optional — drop /images/about/team.jpg) -->
+<section class="team-photo-band" data-image-slot>
+  <img src="/images/about/team.jpg" alt="The Boston Marketing Company team"
+       loading="lazy" decoding="async" width="1920" height="720"
+       onerror="this.closest('[data-image-slot]').remove()">
 </section>
 
 <!-- TEAM -->

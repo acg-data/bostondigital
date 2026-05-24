@@ -20,6 +20,13 @@ layout: base.njk
   </div>
 </section>
 
+<!-- OPTIONAL POST HERO IMAGE (drop /images/blog/{slug}.jpg to enable) -->
+<section class="post-image-band" data-image-slot>
+  <img src="/images/blog/{{ page.fileSlug }}.jpg" alt="{{ title }}"
+       loading="lazy" decoding="async" width="1600" height="800"
+       onerror="this.closest('[data-image-slot]').remove()">
+</section>
+
 <!-- POST BODY -->
 <article class="post-body">
   <div class="wrap post-body-inner">

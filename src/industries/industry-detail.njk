@@ -72,6 +72,13 @@ description: "{{ industry.hero.lead }}"
   </div>
 </section>
 
+<!-- OPTIONAL INDUSTRY IMAGE (drop /images/industries/{slug}.jpg to enable) -->
+<section class="industry-image-band" data-image-slot>
+  <img src="/images/industries/{{ industry.slug }}.jpg" alt="{{ industry.title }} marketing"
+       loading="lazy" decoding="async" width="1600" height="800"
+       onerror="this.closest('[data-image-slot]').remove()">
+</section>
+
 <!-- WHY CHOOSE US -->
 <section style="background:var(--parchment);color:var(--black);padding:96px 0">
   <div class="wrap">

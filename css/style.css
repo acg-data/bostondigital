@@ -364,6 +364,46 @@ nav ul li.has-dropdown:focus-within .dropdown{
 .case .view{margin-top:20px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;display:inline-flex;gap:10px;align-items:center;transition:gap .2s}
 .case:hover .view{gap:16px;color:var(--lime)}
 
+/* ---------- universal page-image bands (about, services, industries, case studies, blog) ---------- */
+/* All <img> tags use object-fit:cover so any source aspect ratio works.
+   onerror handler on each <img> removes the whole [data-image-slot] section
+   when the file isn't present — so empty slots disappear cleanly. */
+.service-image-band,
+.industry-image-band,
+.case-image-band,
+.post-image-band,
+.team-photo-band{
+  background:var(--black);overflow:hidden;
+}
+.service-image-band img,
+.industry-image-band img,
+.case-image-band img,
+.post-image-band img,
+.team-photo-band img{
+  display:block;width:100%;height:auto;
+  aspect-ratio:16/9;object-fit:cover;
+  max-height:540px;
+}
+.team-photo-band img{aspect-ratio:21/9;max-height:480px}
+
+/* mission section (about) — 2-col with image */
+.mission-section{background:var(--parchment);color:var(--black);padding:96px 0}
+.mission-inner{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center;
+  max-width:1140px;margin:0 auto;
+}
+.mission-copy h2{font-size:clamp(30px,3.6vw,46px);margin:18px 0 22px;letter-spacing:-.01em}
+.mission-copy p{font-size:16px;line-height:1.7;color:#33312d;margin:0 0 18px}
+.mission-copy p:last-child{margin-bottom:0;color:#55524c}
+.page-image-frame{
+  margin:0;border-radius:8px;overflow:hidden;
+  box-shadow:0 30px 60px -25px rgba(0,0,0,.3);
+}
+.page-image-frame img{
+  display:block;width:100%;height:auto;
+  aspect-ratio:4/3;object-fit:cover;
+}
+
 /* ---------- service area image band (city pages) ---------- */
 .area-image-band{
   position:relative;min-height:280px;
@@ -804,6 +844,9 @@ footer{background:var(--black);padding:70px 0 40px;border-top:1px solid rgba(255
   .svc-category-label{flex-direction:column;gap:14px}
   .svc-category-mark{font-size:36px}
   .team-grid{grid-template-columns:repeat(2,1fr)}
+  .mission-inner{grid-template-columns:1fr;gap:40px;max-width:680px}
+  .service-image-band img,.industry-image-band img,.case-image-band img,
+  .post-image-band img,.team-photo-band img{max-height:380px}
   .pricing-grid{grid-template-columns:1fr;max-width:520px}
   .pricing-tier-popular{transform:none}
   .pricing-tier-popular:hover{transform:translateY(-4px)}
@@ -871,6 +914,8 @@ footer{background:var(--black);padding:70px 0 40px;border-top:1px solid rgba(255
   .svc-grid{grid-template-columns:1fr}
   .svc-card-grid{grid-template-columns:1fr}
   .team-grid{grid-template-columns:1fr}
+  .service-image-band img,.industry-image-band img,.case-image-band img,
+  .post-image-band img,.team-photo-band img{max-height:280px}
   .blog-grid{grid-template-columns:1fr}
   .blog-featured-body{padding:28px 22px}
   .blog-section-head{flex-direction:column;align-items:flex-start;gap:8px}
