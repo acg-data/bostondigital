@@ -50,151 +50,18 @@ description: "{{ service.shortDesc }}"
   <div class="watermark">{{ service.title | upper }}</div>
 </section>
 
-<!-- PROOF BAR -->
-<section class="proof-bar">
-  <div class="wrap proof-bar-inner">
-    <div class="proof-stat">
-      <span class="proof-num">200+</span>
-      <span class="proof-lbl">Boston Clients Served</span>
-    </div>
-    <div class="proof-stat">
-      <span class="proof-num">3.6x</span>
-      <span class="proof-lbl">Avg Return on Ad Spend</span>
-    </div>
-    <div class="proof-stat">
-      <span class="proof-num">4.9★</span>
-      <span class="proof-lbl">Client Satisfaction</span>
-    </div>
-    <div class="proof-stat">
-      <span class="proof-num">24hr</span>
-      <span class="proof-lbl">Response Time</span>
-    </div>
-  </div>
-</section>
+{# Shared body: proof bar, image, problems, benefits, process #}
+{% include "svc-proof-bar.njk" %}
+{% include "svc-content-sections.njk" %}
 
-<!-- OPTIONAL SERVICE IMAGE (drop /images/services/{slug}.jpg to enable) -->
-<section class="service-image-band" data-image-slot>
-  <img src="/images/services/{{ service.slug }}.jpg" alt="{{ service.title }}"
-       loading="lazy" decoding="async" width="1600" height="800"
-       onerror="this.closest('[data-image-slot]').remove()">
-</section>
+{# FAQs — use the per-service FAQs from services.json #}
+{% set faqs = service.faqs %}
+{% set faqHeading = service.title + " FAQs" %}
+{% set faqIntro = "The questions Boston business owners ask us most about " + service.title | lower + "." %}
+{% include "svc-faqs.njk" %}
 
-<!-- PROBLEMS SECTION -->
-{% if service.problems %}
-<section style="background:var(--parchment);color:var(--black);padding:96px 0">
-  <div class="wrap">
-    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 54px;text-align:center">Most campaigns have the same problems.</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px">
-      {% for problem in service.problems %}
-        <div style="text-align:center">
-          <div style="width:60px;height:60px;border-radius:50%;background:var(--coral);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:#fff">
-            {% if problem.icon == 'trending-down' %}
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7l9 9 4-4 5 5"/><path d="M21 17v-4h-4"/></svg>
-            {% elif problem.icon == 'trending-up' %}
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 17l9-9 4 4 5-5"/><path d="M21 7v4h-4"/></svg>
-            {% elif problem.icon == 'users' %}
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-            {% elif problem.icon == 'clock' %}
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            {% elif problem.icon == 'activity' %}
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            {% elif problem.icon == 'search' %}
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
-            {% else %}
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
-            {% endif %}
-          </div>
-          <h3 style="font-size:16px;font-weight:900;margin:0 0 12px;color:#111">{{ problem.title }}</h3>
-          <p style="color:#55524c;line-height:1.6">{{ problem.desc }}</p>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-
-<!-- BENEFITS SECTION -->
-{% if service.benefits %}
-<section style="background:#111;color:#fff;padding:96px 0">
-  <div class="wrap">
-    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 54px;text-align:center">What you get.</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px">
-      {% for benefit in service.benefits %}
-        <div style="text-align:center">
-          <div style="width:60px;height:60px;border-radius:50%;background:var(--lime);color:#111;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:28px;font-weight:900">✓</div>
-          <h3 style="font-size:16px;font-weight:900;margin:0 0 12px;color:#fff">{{ benefit.title }}</h3>
-          <p style="color:#b9b4ab;line-height:1.6">{{ benefit.desc }}</p>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-
-<!-- PROCESS SECTION -->
-{% if service.process %}
-<section style="background:var(--parchment);color:var(--black);padding:96px 0">
-  <div class="wrap">
-    <h2 style="font-size:clamp(32px,4vw,52px);margin:0 0 54px;text-align:center">Our process.</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;max-width:1000px;margin:0 auto">
-      {% for step in service.process %}
-        <div style="text-align:center;position:relative">
-          <div style="width:50px;height:50px;border-radius:50%;background:var(--lime);color:#111;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px">{{ loop.index }}</div>
-          <h3 style="font-size:14px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin:0 0 12px">{{ step.title or step }}</h3>
-          {% if step.desc %}<p style="color:#55524c;font-size:13px;line-height:1.5">{{ step.desc }}</p>{% endif %}
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-{% endif %}
-
-<!-- FAQ SECTION -->
+{# Service JSON-LD (Boston-wide, since this is the canonical service page) #}
 {% if service.faqs %}
-<section class="faq-section">
-  <div class="wrap">
-    <div class="faq-head">
-      <span class="eyebrow coral">Common Questions</span>
-      <h2>{{ service.title }} FAQs<span class="dot">.</span></h2>
-      <p>The questions Boston business owners ask us most about {{ service.title | lower }}.</p>
-    </div>
-    <div class="faq-list">
-      {% for faq in service.faqs %}
-        <details class="faq-item">
-          <summary>
-            <span>{{ faq.q }}</span>
-            <span class="faq-toggle" aria-hidden="true">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
-            </span>
-          </summary>
-          <div class="faq-answer">{{ faq.a }}</div>
-        </details>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<!-- FAQPage JSON-LD -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {%- for faq in service.faqs -%}
-    {
-      "@type": "Question",
-      "name": {{ faq.q | dump | safe }},
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": {{ faq.a | dump | safe }}
-      }
-    }{% if not loop.last %},{% endif %}
-    {%- endfor -%}
-  ]
-}
-</script>
-
-<!-- Service JSON-LD -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -205,10 +72,7 @@ description: "{{ service.shortDesc }}"
     "name": "{{ site.name }}",
     "url": "{{ site.siteUrl }}"
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "Boston"
-  },
+  "areaServed": { "@type": "City", "name": "Boston" },
   "description": {{ service.shortDesc | dump | safe }},
   "url": "{{ site.siteUrl }}/services/{{ service.slug }}/"
 }

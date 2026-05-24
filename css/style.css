@@ -364,6 +364,81 @@ nav ul li.has-dropdown:focus-within .dropdown{
 .case .view{margin-top:20px;font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#fff;display:inline-flex;gap:10px;align-items:center;transition:gap .2s}
 .case:hover .view{gap:16px;color:var(--lime)}
 
+/* ---------- Calendly embed section ---------- */
+.calendly-section{background:var(--parchment);color:var(--black);padding:80px 0 100px}
+.calendly-head{text-align:center;max-width:680px;margin:0 auto 40px}
+.calendly-head h2{font-size:clamp(28px,3.4vw,42px);margin:16px 0 14px;letter-spacing:-.01em}
+.calendly-head p{font-size:15px;color:#55524c;line-height:1.6;margin:0}
+.calendly-inline-widget{
+  background:#fff;border-radius:8px;
+  box-shadow:0 30px 60px -25px rgba(0,0,0,.2);
+  border:1px solid #ece8df;
+}
+
+/* ---------- services-by-location directory page ---------- */
+.sbl-jumpnav{
+  position:sticky;top:84px;z-index:50;
+  background:rgba(244,239,231,.96);backdrop-filter:blur(8px);
+  border-top:1px solid #ece8df;border-bottom:1px solid #ece8df;
+  padding:14px 0;
+}
+.sbl-jumpnav-inner{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.sbl-jumpnav-label{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--coral);flex-shrink:0}
+.sbl-jumpnav-links{display:flex;flex-wrap:wrap;gap:6px 4px;flex:1}
+.sbl-jumpnav-links a{
+  display:inline-block;padding:6px 12px;font-size:12.5px;font-weight:700;
+  color:var(--black);background:#fff;border:1px solid #ece8df;border-radius:30px;
+  transition:.15s ease;
+}
+.sbl-jumpnav-links a:hover{background:var(--black);color:#fff;border-color:var(--black)}
+
+.sbl-section{background:var(--parchment);color:var(--black);padding:80px 0 120px}
+.sbl-city{margin-top:80px;padding-top:60px;border-top:1px solid rgba(17,17,17,.1)}
+.sbl-city:first-of-type{margin-top:0;padding-top:0;border-top:none}
+.sbl-city-head{
+  display:grid;grid-template-columns:1fr .55fr;gap:50px;align-items:center;
+  margin-bottom:48px;
+}
+.sbl-city-tag{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--coral)}
+.sbl-city-headcopy h2{font-size:clamp(28px,3.4vw,42px);margin:14px 0 16px;letter-spacing:-.01em}
+.sbl-city-headcopy p{font-size:15px;line-height:1.6;color:#55524c;margin:0 0 18px}
+.sbl-city-image{
+  height:240px;border-radius:8px;
+  background-size:cover;background-position:center;
+  box-shadow:0 20px 40px -15px rgba(0,0,0,.25);
+}
+.sbl-cat{margin-bottom:30px}
+.sbl-cat-label{display:flex;align-items:baseline;gap:12px;margin-bottom:14px}
+.sbl-cat-num{font-family:'Anton',sans-serif;font-size:18px;color:var(--coral);letter-spacing:.04em}
+.sbl-cat-label h3{font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin:0;color:var(--black)}
+.sbl-svc-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;
+}
+.sbl-svc-link{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:14px 18px;background:#fff;border:1px solid #ece8df;border-radius:4px;
+  text-decoration:none;color:var(--black);
+  transition:transform .15s ease,border-color .15s ease,background .15s ease;
+}
+.sbl-svc-link:hover{
+  transform:translateX(4px);border-color:var(--coral);background:#fff;
+}
+.sbl-svc-title{font-size:13.5px;font-weight:700;line-height:1.3}
+.sbl-svc-arrow{color:var(--coral);font-weight:900;transition:transform .2s}
+.sbl-svc-link:hover .sbl-svc-arrow{transform:translateX(4px)}
+
+/* ---------- combo page (service x city) — distinctive "city context" band ---------- */
+.combo-context-band{background:#fff;color:var(--black);padding:96px 0;border-top:1px solid #ece8df;border-bottom:1px solid #ece8df}
+.combo-context-inner{
+  display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;
+  max-width:1140px;margin:0 auto;
+}
+.combo-context-copy h2{font-size:clamp(28px,3.4vw,42px);margin:18px 0 22px;letter-spacing:-.01em}
+.combo-context-copy p{font-size:15.5px;line-height:1.7;color:#33312d;margin:0 0 18px}
+.combo-context-copy p:last-child{margin-bottom:0;color:#55524c}
+.combo-context-image{margin:0;border-radius:8px;overflow:hidden;box-shadow:0 30px 60px -25px rgba(0,0,0,.3)}
+.combo-context-image img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+
 /* ---------- universal page-image bands (about, services, industries, case studies, blog) ---------- */
 /* All <img> tags use object-fit:cover so any source aspect ratio works.
    onerror handler on each <img> removes the whole [data-image-slot] section
@@ -845,6 +920,9 @@ footer{background:var(--black);padding:70px 0 40px;border-top:1px solid rgba(255
   .svc-category-mark{font-size:36px}
   .team-grid{grid-template-columns:repeat(2,1fr)}
   .mission-inner{grid-template-columns:1fr;gap:40px;max-width:680px}
+  .combo-context-inner{grid-template-columns:1fr;gap:40px;max-width:680px}
+  .sbl-city-head{grid-template-columns:1fr;gap:30px}
+  .sbl-city-image{height:200px}
   .service-image-band img,.industry-image-band img,.case-image-band img,
   .post-image-band img,.team-photo-band img{max-height:380px}
   .pricing-grid{grid-template-columns:1fr;max-width:520px}

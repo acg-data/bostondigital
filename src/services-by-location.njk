@@ -1,0 +1,83 @@
+---
+layout: base.njk
+title: All Marketing Services by Location
+description: Browse every service we offer for every city we serve — 140+ dedicated landing pages across the greater Boston area.
+permalink: /services-by-location/
+---
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner hero-solo">
+    <div>
+      <span class="eyebrow reveal" style="--d:.05s">Service Directory</span>
+      <h1 class="reveal" style="--d:.12s">Every service.<br>Every city we serve<span class="dot">.</span></h1>
+      <p class="lead reveal" style="--d:.22s">We offer 14 marketing services across 10 wealthy MA cities — that's 140 dedicated service-by-city landing pages. Browse the directory below or jump straight to your city.</p>
+    </div>
+  </div>
+  <div class="watermark">DIRECTORY</div>
+</section>
+
+<!-- STICKY CITY JUMP NAV -->
+<nav class="sbl-jumpnav" aria-label="Jump to city">
+  <div class="wrap sbl-jumpnav-inner">
+    <span class="sbl-jumpnav-label">Jump to city:</span>
+    <div class="sbl-jumpnav-links">
+      {% for area in areas %}
+        <a href="#{{ area.slug }}">{{ area.city }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</nav>
+
+<!-- 10 CITY SECTIONS, EACH WITH 14 SERVICES GROUPED BY CATEGORY -->
+<section class="sbl-section">
+  <div class="wrap">
+    {% for area in areas %}
+      <article class="sbl-city" id="{{ area.slug }}">
+        <header class="sbl-city-head">
+          <div class="sbl-city-headcopy">
+            <span class="sbl-city-tag">{{ area.city }}, MA</span>
+            <h2>Marketing services in {{ area.city }}</h2>
+            <p>{{ area.intro | truncate(220, true, "…") }}</p>
+            <a href="/{{ area.slug }}-marketing-company/" class="link-underline">{{ area.city }} overview →</a>
+          </div>
+          {% if area.image %}
+            <div class="sbl-city-image" style="background-image:url('{{ area.image }}')"></div>
+          {% endif %}
+        </header>
+
+        {% for cat in serviceCategories %}
+          <div class="sbl-cat">
+            <div class="sbl-cat-label">
+              <span class="sbl-cat-num">{% if loop.index < 10 %}0{% endif %}{{ loop.index }}</span>
+              <h3>{{ cat.label }}</h3>
+            </div>
+            <div class="sbl-svc-grid">
+              {% for service in services %}
+                {% if service.category == cat.slug %}
+                  <a href="/{{ service.slug }}-{{ area.slug }}/" class="sbl-svc-link">
+                    <span class="sbl-svc-title">{{ service.title }}</span>
+                    <span class="sbl-svc-arrow">→</span>
+                  </a>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctaband">
+  <div class="wrap ctaband-inner">
+    <div class="txt">
+      <div>
+        <h2>Don't see your exact combo?</h2>
+        <p>We serve businesses across greater Boston. Book a call and tell us what you need.</p>
+      </div>
+    </div>
+    <a href="/contact/" class="btn btn-lime">Book a Strategy Call <span class="arr">→</span></a>
+  </div>
+</section>

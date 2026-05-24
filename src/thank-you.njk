@@ -13,10 +13,25 @@ eleventyExcludeFromCollections: true
       <h1 class="reveal" style="--d:.12s">Thanks. We'll be in touch within 24 hours<span class="dot">.</span></h1>
       <p class="lead reveal" style="--d:.22s">Your request has landed in our inbox. A member of our team will reach out with a custom plan and next steps. In the meantime, feel free to explore our work.</p>
       <div class="hero-cta reveal" style="--d:.3s">
-        <a href="/case-studies/" class="btn btn-lime">View Case Studies <span class="arr">→</span></a>
-        <a href="/" class="link-underline">Back to Home →</a>
+        <a href="#book-now" class="btn btn-lime">Book a Call Now <span class="arr">→</span></a>
+        <a href="/case-studies/" class="link-underline">View Case Studies →</a>
       </div>
     </div>
   </div>
   <div class="watermark">THANK YOU</div>
+</section>
+
+<!-- CALENDLY EMBED — book instantly after form submission -->
+<section class="calendly-section" id="book-now">
+  <div class="wrap">
+    <div class="calendly-head">
+      <span class="eyebrow coral center">Don't Wait</span>
+      <h2>Skip the email tag and book now<span class="dot">.</span></h2>
+      <p>We respond to every form within 24 hours — but if you want to lock in a time right now, grab one below.</p>
+    </div>
+    <div class="calendly-inline-widget"
+         data-url="{{ site.calendlyUrl }}?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=ff4f3e"
+         style="min-width:320px;height:680px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </div>
 </section>

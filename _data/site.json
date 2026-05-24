@@ -6,6 +6,7 @@
   "ga4Id": "G-REPLACE_WITH_YOUR_GA4_ID",
   "googleSiteVerification": "",
   "ogImage": "/images/hero-boston.png",
+  "calendlyUrl": "https://calendly.com/YOUR-USERNAME/strategy-call",
   "phone": "(617) 123-4567",
   "email": "hello@bostondigitalmarketing.com",
   "location": "Boston, Massachusetts",
@@ -38,6 +39,7 @@
     { "label": "Case Studies", "href": "/case-studies/" },
     { "label": "Pricing", "href": "/pricing/" },
     { "label": "Service Areas", "href": "/service-areas/" },
+    { "label": "Services Directory", "href": "/services-by-location/" },
     { "label": "Careers", "href": "/careers/" },
     { "label": "Contact", "href": "/contact/" }
   ],

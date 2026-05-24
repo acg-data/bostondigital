@@ -1,0 +1,163 @@
+---
+layout: base.njk
+pagination:
+  data: serviceLocations
+  size: 1
+  alias: combo
+permalink: /{{ combo.slug }}/
+title: "{{ combo.title }}"
+description: "{{ combo.description }}"
+---
+
+{# Expose service + area as top-level vars so shared includes work identically #}
+{% set service = combo.service %}
+{% set area = combo.area %}
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-inner hero-form-layout">
+    <div>
+      <span class="eyebrow reveal" style="--d:.05s">{{ service.title }} in {{ area.city }}, MA</span>
+      <h1 class="reveal" style="--d:.12s">{{ service.title }} that works for<br>{{ area.city }} businesses<span class="dot">.</span></h1>
+      <p class="lead reveal" style="--d:.22s">{{ service.hero.lead }} Built specifically around the {{ area.city }} market.</p>
+      <div class="hero-cta reveal" style="--d:.3s">
+        <a href="/{{ area.slug }}-marketing-company/" class="link-underline">All {{ area.city }} services →</a>
+      </div>
+    </div>
+    <aside class="reveal" style="--d:.2s">
+      <div class="hero-form-card">
+        <span class="hero-form-eyebrow">Free {{ service.title }} Audit</span>
+        <h3>Get a custom plan for your {{ area.city }} business.</h3>
+        <p class="hero-form-sub">Tell us about your {{ area.city }} business and goals. We'll respond within 24 hours with a tailored {{ service.title | lower }} plan — no obligation.</p>
+        <form action="{{ site.formEndpoint }}" method="POST" class="hero-form">
+          <input type="hidden" name="_subject" value="Strategy call — {{ service.title }} in {{ area.city }}">
+          <input type="hidden" name="_next" value="{{ site.siteUrl }}/thank-you/">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="form_source" value="combo:{{ combo.slug }}">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+          <input type="text" name="name" required placeholder="Your name" autocomplete="name" />
+          <input type="email" name="email" required placeholder="Email address" autocomplete="email" />
+          <input type="tel" name="phone" placeholder="Phone (optional)" autocomplete="tel" />
+          <textarea name="message" rows="3" placeholder="What are you looking to achieve?"></textarea>
+          <button type="submit" class="btn btn-lime hero-form-btn">Get My Free Audit <span class="arr">→</span></button>
+          <div class="hero-form-trust">
+            <span><span class="check">✓</span> No obligation</span>
+            <span><span class="check">✓</span> 24hr response</span>
+            <span><span class="check">✓</span> 100% private</span>
+          </div>
+          <div class="hero-form-call">Prefer to talk? Call <a href="tel:{{ site.phone }}">{{ site.phone }}</a></div>
+        </form>
+      </div>
+    </aside>
+  </div>
+  <div class="watermark">{{ service.title | upper }}</div>
+</section>
+
+{# Shared body — SAME INCLUDES as /services/{slug}/ pages.
+   When you update svc-content-sections.njk, both pages update. DRY by design. #}
+{% include "svc-proof-bar.njk" %}
+
+{# CITY CONTEXT — what makes this page distinct from the generic service page #}
+<section class="combo-context-band">
+  <div class="wrap combo-context-inner">
+    <div class="combo-context-copy">
+      <span class="eyebrow coral">Why {{ area.city }} is different</span>
+      <h2>{{ service.title }} that fits the {{ area.city }} market<span class="dot">.</span></h2>
+      <p>{{ area.intro }}</p>
+      <p>Our {{ service.title | lower }} work in {{ area.city }} is specifically tuned to this — not a generic playbook with the city name swapped in. That's why our {{ area.city }} clients see results faster.</p>
+    </div>
+    {% if area.image %}
+      <figure class="combo-context-image" data-image-slot>
+        <img src="{{ area.image }}" alt="{{ area.city }}, MA"
+             loading="lazy" decoding="async" width="800" height="600"
+             onerror="this.closest('[data-image-slot]').remove()">
+      </figure>
+    {% endif %}
+  </div>
+</section>
+
+{% include "svc-content-sections.njk" %}
+
+{# Combo-specific FAQs — city + service templated for uniqueness #}
+{% set faqs = [
+  { "q": "Do you do " + service.title | lower + " specifically for " + area.city + " businesses?",
+    "a": "Yes. We run " + service.title | lower + " campaigns for businesses across " + area.city + " every month. The market dynamics in " + area.city + " are distinct, and our work reflects that — different audiences, different competitive landscape, different conversion patterns than other Boston-area towns." },
+  { "q": "How much should a " + area.city + " business spend on " + service.title | lower + "?",
+    "a": "Most of our " + area.city + " " + service.title | lower + " engagements start at $2,500-5,000/month including ad spend (where applicable). We help right-size based on your goals, competition, and growth runway." },
+  { "q": "How long until I see results from " + service.title | lower + " in " + area.city + "?",
+    "a": "Paid campaigns can show results in 30-60 days. SEO and content typically compound over 3-6 months. We set clear milestones from day one so you know exactly what to expect at each checkpoint." },
+  { "q": "What makes you different from other " + area.city + " " + service.title | lower + " agencies?",
+    "a": "Most agencies servicing " + area.city + " are generalists applying national playbooks. We focus specifically on the Boston metro and have local-market depth — proven creative, vetted strategies, and benchmarks from running " + service.title | lower + " in " + area.city + " specifically." }
+] %}
+{% set faqHeading = service.title + " in " + area.city + " — FAQs" %}
+{% set faqIntro = "What " + area.city + " business owners ask us most about " + service.title | lower + "." %}
+{% include "svc-faqs.njk" %}
+
+{# Service JSON-LD scoped to this specific city #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": {{ service.title | dump | safe }},
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "{{ site.name }}",
+    "url": "{{ site.siteUrl }}"
+  },
+  "areaServed": { "@type": "City", "name": {{ area.city | dump | safe }} },
+  "description": {{ combo.description | dump | safe }},
+  "url": "{{ site.siteUrl }}/{{ combo.slug }}/"
+}
+</script>
+
+{# RELATED: same service in OTHER cities + other services in THIS city #}
+<section class="related-section">
+  <div class="wrap">
+    <div class="related-head">
+      <span class="eyebrow coral">Explore More</span>
+      <h2>{{ service.title }} in other cities, and other services in {{ area.city }}<span class="dot">.</span></h2>
+    </div>
+    <div class="related-grid">
+      {# 2 nearby cities for this same service #}
+      {%- set cityShown = 0 -%}
+      {% for otherArea in areas %}
+        {% if otherArea.slug != area.slug and cityShown < 2 %}
+          {% set cityShown = cityShown + 1 %}
+          <a href="/{{ service.slug }}-{{ otherArea.slug }}/" class="related-card">
+            <span class="related-tag">Same service, different city</span>
+            <h3>{{ service.title }} in {{ otherArea.city }}</h3>
+            <p>Custom-built {{ service.title | lower }} strategy for {{ otherArea.city }} businesses.</p>
+            <span class="related-arrow">Learn more →</span>
+          </a>
+        {% endif %}
+      {% endfor %}
+      {# 1 related service in this same city #}
+      {%- set svcShown = 0 -%}
+      {% for otherSvc in services %}
+        {% if otherSvc.slug != service.slug and otherSvc.category == service.category and svcShown < 1 %}
+          {% set svcShown = svcShown + 1 %}
+          <a href="/{{ otherSvc.slug }}-{{ area.slug }}/" class="related-card">
+            <span class="related-tag">Pair well together in {{ area.city }}</span>
+            <h3>{{ otherSvc.title }} in {{ area.city }}</h3>
+            <p>{{ otherSvc.shortDesc }}</p>
+            <span class="related-arrow">Learn more →</span>
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ctaband">
+  <div class="wrap ctaband-inner">
+    <div class="txt">
+      <div>
+        <h2>Ready to grow your {{ area.city }} business with {{ service.title | lower }}?</h2>
+        <p>Let's build a {{ service.title | lower }} strategy tailored to the {{ area.city }} market.</p>
+      </div>
+    </div>
+    <a href="/contact/" class="btn btn-lime">Book a Strategy Call <span class="arr">→</span></a>
+  </div>
+</section>
