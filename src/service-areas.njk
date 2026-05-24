@@ -22,22 +22,20 @@ description: We serve businesses across Boston, Newton, Cambridge, Brookline, We
     <div class="area-grid">
       {% for area in areas %}
         <a href="/{{ area.slug }}-marketing-company/" class="area-card">
-          <div class="area-card-head">
+          {% if area.image %}
+            <div class="area-card-thumb" style="background-image:url('{{ area.image }}')"></div>
+          {% endif %}
+          <div class="area-card-body">
             <span class="area-card-tag">Service Area</span>
             <h2>{{ area.city }}</h2>
-            <div class="area-card-stats">
-              <span><strong>{{ area.population }}</strong> pop</span>
-              <span class="dot-sep">·</span>
-              <span><strong>{{ area.median_income }}</strong> median income</span>
+            <p class="area-card-teaser">{{ area.highlights[0] }}</p>
+            <div class="area-card-industries">
+              {% for ind in area.keyIndustries %}
+                <span class="area-card-pill">{{ ind }}</span>
+              {% endfor %}
             </div>
+            <span class="area-card-link">View {{ area.city }} marketing <span class="arr">→</span></span>
           </div>
-          <p>{{ area.intro | truncate(180, true, "…") }}</p>
-          <div class="area-card-industries">
-            {% for ind in area.keyIndustries %}
-              <span class="area-card-pill">{{ ind }}</span>
-            {% endfor %}
-          </div>
-          <span class="area-card-link">View {{ area.city }} marketing <span class="arr">→</span></span>
         </a>
       {% endfor %}
     </div>

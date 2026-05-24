@@ -25,11 +25,15 @@ description: Data-driven marketing strategies that drive real growth for Boston 
     <div class="logo-strip-head">
       <span class="eyebrow coral center">Trusted By 200+ Boston Businesses</span>
     </div>
-    <div class="logo-strip-grid">
-      {% for client in clients %}
-        <div class="logo-strip-item">
-          <img src="/images/clients/{{ client.file }}" alt="{{ client.name }}" loading="lazy">
-        </div>
+  </div>
+  <div class="logo-marquee">
+    <div class="logo-marquee-track">
+      {% for pass in [1, 2] %}
+        {% for client in clients %}
+          <div class="logo-marquee-item"{% if pass == 2 %} aria-hidden="true"{% endif %}>
+            <img src="/images/clients/{{ client.file }}" alt="{{ client.name }}" loading="lazy">
+          </div>
+        {% endfor %}
       {% endfor %}
     </div>
   </div>
