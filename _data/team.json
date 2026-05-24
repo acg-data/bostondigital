@@ -1,30 +1,30 @@
 [
   {
-    "name": "Alex Carter",
+    "name": "Justin Abrams",
     "role": "Founder & CEO",
-    "bio": "15+ years scaling local businesses with data-driven marketing. Former growth lead at two Boston SaaS startups.",
-    "initials": "AC",
+    "bio": "Spent 15 years scaling local businesses across New England before starting the Boston Marketing Company. Believes great marketing should be measurable, honest, and built around real customer relationships — not vanity metrics.",
+    "initials": "JA",
     "accent": "lime"
   },
   {
-    "name": "Maya Patel",
-    "role": "Head of Strategy",
-    "bio": "Strategy obsessed. Builds custom growth roadmaps for every client. Previously led brand at a national agency.",
-    "initials": "MP",
+    "name": "Josh Eissler",
+    "role": "Head of Paid Media",
+    "bio": "Manages 7-figures in annual ad spend across Google, Meta, TikTok, and LSAs. Cut his teeth running campaigns for one of Boston's largest auto groups — learned what high-stakes performance marketing actually looks like.",
+    "initials": "JE",
     "accent": "coral"
   },
   {
-    "name": "Jordan Lee",
-    "role": "Director of Paid Media",
-    "bio": "Google Premier Partner with 200+ campaigns under management. Specializes in lowering CPA without sacrificing volume.",
-    "initials": "JL",
+    "name": "Vivian Sierra",
+    "role": "Head of Brand & Creative",
+    "bio": "Built brand systems for local startups, restaurants, and SaaS companies before joining the team. Obsessed with consistency — believes the best logo work is invisible, and the best campaigns feel inevitable.",
+    "initials": "VS",
     "accent": "lime"
   },
   {
-    "name": "Sam Rivera",
-    "role": "SEO & Content Lead",
-    "bio": "Ranks Boston businesses on page one. Built content engines that drove 200%+ organic growth for service-based clients.",
-    "initials": "SR",
+    "name": "Shohel Das",
+    "role": "Head of SEO & Analytics",
+    "bio": "Engineering background turned SEO specialist. Built ranking systems that put Boston businesses on page one for the keywords that actually drive revenue. Loves data, has zero tolerance for fluff.",
+    "initials": "SD",
     "accent": "coral"
   }
 ]
