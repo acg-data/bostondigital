@@ -111,7 +111,7 @@ nav ul li.has-dropdown:focus-within .dropdown{
 .dropdown-narrow{min-width:260px}
 
 /* mega dropdown — multi-column for categorized services */
-.dropdown-mega{min-width:780px;left:auto;right:-20px}
+.dropdown-mega{min-width:780px;left:-20px;right:auto}
 .dropdown-multicol{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:22px 12px 18px}
 .dropdown-multicol .dropdown-col{border-right:1px solid #f0ece4;padding:0}
 .dropdown-multicol .dropdown-col:last-child{border-right:none}

@@ -5,7 +5,7 @@ date: 2026-04-15
 displayDate: "April 15, 2026"
 category: "Strategy"
 categoryColor: "lime"
-author: "Alex Carter"
+author: "Adrian Escalano"
 readTime: "6 min read"
 excerpt: "An honest look at why retainers turn sour, what most agencies hide, and the operating model we built to keep clients for years instead of months."
 ---

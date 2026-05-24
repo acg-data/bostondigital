@@ -5,7 +5,7 @@ date: 2026-04-02
 displayDate: "April 2, 2026"
 category: "Social"
 categoryColor: "coral"
-author: "Maya Patel"
+author: "Adrian Escalano"
 readTime: "8 min read"
 excerpt: "If you're a contractor, dentist, or med spa, here's exactly which platforms move the needle — and which to ignore. With benchmarks."
 ---

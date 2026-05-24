@@ -5,7 +5,7 @@ date: 2026-04-28
 displayDate: "April 28, 2026"
 category: "Paid Media"
 categoryColor: "coral"
-author: "Jordan Lee"
+author: "Adrian Escalano"
 readTime: "12 min read"
 excerpt: "A no-fluff walkthrough of how to set up, structure, and scale Google Ads for local service businesses. Includes our exact campaign template."
 ---

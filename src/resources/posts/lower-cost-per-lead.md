@@ -5,7 +5,7 @@ date: 2026-05-09
 displayDate: "May 9, 2026"
 category: "Paid Media"
 categoryColor: "coral"
-author: "Jordan Lee"
+author: "Adrian Escalano"
 readTime: "9 min read"
 excerpt: "Most agencies will tell you to spend more. We'll show you the four account audits that consistently slash CPA — using only what you already have."
 ---

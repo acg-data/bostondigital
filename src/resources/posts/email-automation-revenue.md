@@ -5,7 +5,7 @@ date: 2026-03-20
 displayDate: "March 20, 2026"
 category: "Email"
 categoryColor: "lime"
-author: "Maya Patel"
+author: "Adrian Escalano"
 readTime: "5 min read"
 excerpt: "Five automations that any local business can set up this week — and the average revenue lift our clients see in the first 90 days."
 ---

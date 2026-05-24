@@ -5,7 +5,7 @@ date: 2026-05-18
 displayDate: "May 18, 2026"
 category: "SEO"
 categoryColor: "lime"
-author: "Sam Rivera"
+author: "Adrian Escalano"
 readTime: "7 min read"
 excerpt: "Forget the gimmicks. Here's what's driving real organic growth for Boston businesses this year — and how to apply each to your site."
 ---
