@@ -4,6 +4,7 @@ pagination:
   data: serviceLocations
   size: 1
   alias: combo
+  addAllPagesToCollections: true
 permalink: /{{ combo.slug }}/
 eleventyComputed:
   title: "{{ combo.service.title }} in {{ combo.area.city }}, MA — Local Agency"

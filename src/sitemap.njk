@@ -4,10 +4,28 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{%- for item in collections.all %}
+{%- for item in collections.all -%}
+  {%- set url = item.url -%}
+  {%- set changefreq = "monthly" -%}
+  {%- set priority = "0.6" -%}
+  {%- if url == "/" -%}
+    {%- set changefreq = "daily" -%}
+    {%- set priority = "1.0" -%}
+  {%- elif "/resources/" in url and url != "/resources/" -%}
+    {%- set changefreq = "weekly" -%}
+    {%- set priority = "0.8" -%}
+  {%- elif url in ["/about/", "/contact/", "/services/", "/case-studies/", "/pricing/", "/service-areas/", "/services-by-location/", "/resources/", "/free-checklist/"] -%}
+    {%- set changefreq = "weekly" -%}
+    {%- set priority = "0.9" -%}
+  {%- elif url in ["/privacy/", "/terms/", "/thank-you/", "/404.html"] -%}
+    {%- set changefreq = "yearly" -%}
+    {%- set priority = "0.3" -%}
+  {%- endif %}
   <url>
-    <loc>{{ site.siteUrl }}{{ item.url }}</loc>
+    <loc>{{ site.siteUrl }}{{ url }}</loc>
     <lastmod>{{ item.date.toISOString() }}</lastmod>
+    <changefreq>{{ changefreq }}</changefreq>
+    <priority>{{ priority }}</priority>
   </url>
 {%- endfor %}
 </urlset>

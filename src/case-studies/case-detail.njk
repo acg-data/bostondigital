@@ -4,6 +4,7 @@ pagination:
   data: case_studies
   size: 1
   alias: case
+  addAllPagesToCollections: true
 permalink: /case-studies/{{ case.slug }}/
 eleventyComputed:
   title: "{{ case.client }}: {{ case.results[0].metric }} {{ case.results[0].label }} — Case Study"
